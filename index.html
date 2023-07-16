@@ -6,33 +6,73 @@
     <title>არტეფაქტი</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+    <link rel="icon" href="/logo/jpg.jpeg">
 </head>
 <body>
     <header>
-        <div class="navbar-container">
-            <div class="logo">
-                <a href="index.html"><img src="logo/png.png" alt="logo" width="60px"></a>
-            </div>
-        
-            <div class="nav-info">
+        <div class="navbar-div-responsive">
+            <div class="nav-info-responsive">
                 <ul>
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="">About</a></li>
-                    <li><a href="">Projects goal</a></li>
-                    <li><a href="">Svanuri</a></li>
-                    <li><a href="">About svaneti</a></li>
-                    <li><a href="">Contact</a></li>
-                    <li><a href="">Search</a></li>
-                    <li><a href="">Partners</a></li>
-                    <li><a href="">Blog</a></li>
+                    <li><a href="smartVillage.html">Smart village</a></li>
+                    <li><a href="projectGoal.html">Projects goal</a></li>
+                    <li><a href="svanuri.html">Svanuri Lang</a></li>
+                    <li><a href="aboutSvaneti.html">About svaneti</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="search.html">Search</a></li>
+                    <!-- <li><a href="">Partners</a></li> -->
                 </ul>
             </div>
+            <div class="navbar-container-responsive">
+                <div class="navbar-container-responsive-div">
+                    <img class="burger-menu-open" src="images/bar-24px.png" alt="menu" onclick="openBurgerMenu()">
+                    <img class="burger-menu-close" src="images/close - 16 px.png" alt="menu" onclick="closeBurgerMenu()"">
+                </div>
+                
+                <div class="logo-responsive">
+                    <a href="index.html">
+                        <img src="/logo/png.png" alt="logo" width="60px">
+                    </a>
+                </div>
+            
+                <div class="log-info-responsive">
+                    <ul>
+                        <li><a href="">Sign In</a></li>
+                        <li><a href="">Sign Up</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
 
-            <div class="log-info">
-                <ul>
-                    <li><a href="">Sign In</a></li>
-                    <li><a href="">Sign Up</a></li>
-                </ul>
+        <div class="navbar-div">
+            <div class="navbar-container">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="/logo/png.png" alt="logo" width="60px">
+                    </a>
+                </div>
+            
+                <div class="nav-info">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="smartVillage.html">Smart village</a></li>
+                        <li><a href="projectGoal.html">Projects goal</a></li>
+                        <li><a href="svanuri.html">Svanuri Lang</a></li>
+                        <li><a href="aboutSvaneti.html">About svaneti</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="search.html">Search</a></li>
+                        <!-- <li><a href="">Partners</a></li> -->
+                    </ul>
+                </div>
+
+                <div class="log-info">
+                    <ul>
+                        <li><a href="">Sign In</a></li>
+                        <li><a href="">Sign Up</a></li>
+                    </ul>
+                </div>
             </div>
         </div>
     </header>
@@ -68,19 +108,7 @@
 
 
 
-        <div class="about-container">
-            <h1>ჭკვიანი სოფელი საქართველო  / Smart Village Georgia
-                „თუ კაცი გონიერია, სოფელი ღონიერია.“
-                </h1>
-
-            <div class="about-text">
-                    <p>სტატუსი -  არასამეწარმეო(არაკომერციული) იურიდიული პირი
-                        ჩვენ დავიწყეთ კეთილი ნებით, გავერთიანდით, თვალი გავუსწორეთ გამოწვევებს და გავაცნობიერეთ ჩვენი როლი დროსა და სივრცეში, აქ და ახლა, ამ მომენტში. მერე გული გულს შეხვდა, გონი გონს და გაჩნდა კითხვა: “სოფლის შენებას რა უნდა?” პასუხად კი, ჭეშმარიტად, იშვა ჭკვიანი სოფელი საქართველო/Smart Village Georgia, ხოლო
-                        გენიალური ქართული ხალხური ანდაზა “თუ კაცი გონიერია, სოფელი ღონიერია” ჩვენს ლაიტმოტივად გავრცელდა. 
-                        ჭკვიანი სოფელი საქართველო წარმოადგენს კერას, რომელიც ორიენტირებულია სოფლის მდგრად განვითარებასა და გაძლიერებაზე...
-                    <button onclick="myFunction()" id="myBtn"><a href="about.html">Read more</a></button>
-            </div>
-      </div>
+        
 
       <div class="partners-header">
         <h1>Our Partners</h1>
@@ -105,6 +133,20 @@
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
           </div>
       </div>
+
+      <div class="about-container">
+        <h1>ჭკვიანი სოფელი საქართველო  / Smart Village Georgia
+            „თუ კაცი გონიერია, სოფელი ღონიერია.“
+            </h1>
+
+        <div class="about-text">
+                <p>სტატუსი -  არასამეწარმეო(არაკომერციული) იურიდიული პირი
+                    ჩვენ დავიწყეთ კეთილი ნებით, გავერთიანდით, თვალი გავუსწორეთ გამოწვევებს და გავაცნობიერეთ ჩვენი როლი დროსა და სივრცეში, აქ და ახლა, ამ მომენტში. მერე გული გულს შეხვდა, გონი გონს და გაჩნდა კითხვა: “სოფლის შენებას რა უნდა?” პასუხად კი, ჭეშმარიტად, იშვა ჭკვიანი სოფელი საქართველო/Smart Village Georgia, ხოლო
+                    გენიალური ქართული ხალხური ანდაზა “თუ კაცი გონიერია, სოფელი ღონიერია” ჩვენს ლაიტმოტივად გავრცელდა. 
+                    ჭკვიანი სოფელი საქართველო წარმოადგენს კერას, რომელიც ორიენტირებულია სოფლის მდგრად განვითარებასა და გაძლიერებაზე...
+                <button onclick="myFunction()" id="myBtn"><a href="about.html">Read more</a></button>
+        </div>
+    </div>
 
       <div class="footer-clean">
         <footer>
@@ -134,7 +176,11 @@
                             <li><a href="#">Benefits</a></li>
                         </ul>
                     </div>
-                    <div class="col-lg-3 item social"><a href="#"><i class="icon ion-social-facebook"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-instagram"></i></a>
+                    <div class="col-lg-3 item social">
+                        <a href="#"><i class="icon ion-social-facebook"></i></a>
+                        <a href="#"><i class="icon ion-social-twitter"></i></a>
+                        <a href="#"><i class="icon ion-social-snapchat"></i></a>
+                        <a href="#"><i class="icon ion-social-instagram"></i></a>
                         <p class="copyright">Artefacts © 2023</p>
                     </div>
                 </div>
