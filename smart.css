@@ -110,90 +110,91 @@ header{
 
 /* Start - carousel */
 .main-carousel {
-    position: relative;
-    
-    .carousel {
-      width: 100%;
-      height: 800px;
-      
-      .items {
-        width: 100%;
-
-        .carousel-image {
-          width: 100%;
-          height: 800px;
-           object-fit: cover;
-          position: absolute;
-          opacity: 0;
-          transition: 0.5s all;
-          filter: brightness(70%);
-        }
-        .current {
-          opacity: 1;
-        }
-      }
-    }
-    .buttons {
-      #prevBtn,
-      #nextBtn {
-        height: 35px;
-        width: 35px;
-        outline: none;
-        border: none;
-        cursor: pointer;
-        color: white;
-        opacity: 0.7;
-        position: absolute;
-        
-        &:hover {
-          opacity: 1;
-        }
-      }
-      #prevBtn {
-        top: 50%;
-        left: 3%;
-      }
-      #nextBtn {
-        top: 50%;
-        right: 3%;
-      }
-    }
-    .nav-dots {
-      width: 200px;
-      height: 40px;
-      display: flex;
-      justify-content: space-around;
-      position: absolute;
-      top: 90%;
-      left: 50%;
-      transform: translate(-50%, 0%);
-      z-index: 0;    
-   
-      .dot {
-        width: 20px;
-        height: 20px;
-        background-color: #ffffff;
-        border-radius: 50%;
-        opacity: 0.5;
-        cursor: pointer;
-        z-index: 0; 
-      }
-      .active {
-        opacity: 1;
-      }
-    }
-  }
-
-  .centered {
+  position: relative;
+}
+.carousel {
+  width: 100%;
+  height: 800px;
+}
+.items {
+  width: 100%;
+}
+.carousel-image {
+  width: 100%;
+  height: 800px;
+    object-fit: cover;
+  position: absolute;
+  opacity: 0;
+  transition: 0.5s all;
+  filter: brightness(70%);
+}
+.current {
+  opacity: 1;
+}
+  
+.buttons a{
+  text-decoration: none;
+}
+.buttons #prevBtn,
+.buttons #nextBtn {
+    height: 35px;
+    width: 35px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    color: white;
+    opacity: 0.7;
     position: absolute;
-    top: 50%;
-    left: 50%;
-    text-align: center;
-    transform: translate(-50%, -50%);
-    font-size: 50px;
-    color: #F7931E;
-    font-weight: bolder;
+    transform: scale(2);
   }
+.buttons #prevBtn:hover,
+.buttons #nextBtn:hover {
+      opacity: 1;
+    }
+  
+.buttons #prevBtn {
+    top: 50%;
+    left: 3%;
+  }
+.buttons #nextBtn {
+    top: 50%;
+    right: 3%;
+  }
+ .nav-dots {
+  width: 200px;
+  height: 40px;
+  display: flex;
+  justify-content: space-around;
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, 0%);
+}
+  .dot {
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    border-radius: 50%;
+    opacity: 0.5;
+    cursor: pointer;
+    z-index: 0; 
+  }
+  .active {
+    opacity: 1;
+  }
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  text-align: center;
+  transform: translate(-50%, -50%);
+  font-size: 50px;
+  color: #F7931E;
+  font-weight: bolder;
+}
+
+/* End - carousel */
   .about-container {
     display: flex;
     flex-direction: column;
@@ -202,9 +203,7 @@ header{
     padding: 10em;
   }
   .about-container h1 {
-    /* margin-left: 28%; */
     color: white;
-    /* padding-top: 20px; */
     width: 50%;
     text-align: center;
   }
@@ -213,9 +212,7 @@ header{
     width: 50%;
     color: white;
     text-align: center;
-    /* font-size: 1.25em; */
   }
-/* End - carousel */
 
 
 /* text about smart village */

@@ -17,8 +17,8 @@ function closeBurgerMenu(){
 
 
 
+// Start - IMAGE CAROUSEL SCRIPT 
 
-// IMAGE CAROUSEL SCRIPT 
 const images = document.querySelectorAll(".carousel-image");
 const dots = document.querySelectorAll(".dot");
 const prevBtn = document.querySelector("#prevBtn");
@@ -97,6 +97,4 @@ const dotJump = () => {
 };
 dotJump();
 
-
-
-
+// End - IMAGE CAROUSEL SCRIPT 
