@@ -76,15 +76,22 @@ const questions = [
   
   function nextQuestion() {
     const answerElements = document.querySelectorAll(`input[name=q${currentQuestionIndex}]:checked`);
+    const question = questions[currentQuestionIndex];
+    let questionScore = 1;
   
     answerElements.forEach((answerElement) => {
       const selectedAnswer = parseInt(answerElement.value);
-      const question = questions[currentQuestionIndex];
   
       if (question.correctAnswers.includes(selectedAnswer)) {
-        score++;
+        if (question.correctAnswers.length === 1) {
+          questionScore = 0.8; // Both correct answers selected, full credit
+        } else {
+          questionScore = 0; // Only one correct answer selected, half credit
+        }
       }
     });
+  
+    score += questionScore;
   
     currentQuestionIndex++;
   
@@ -95,6 +102,7 @@ const questions = [
     }
   }
   
+
 
   function showResults() {
     isSubmitted = true;

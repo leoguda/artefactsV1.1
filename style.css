@@ -1,8 +1,13 @@
+@font-face {
+  font-family: ;
+  src: url(fonts/KaterinaAlt-Bold.ttf);
+}
+
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: sans-serif;
 }
 html {
     scroll-behavior: smooth;
@@ -74,10 +79,12 @@ header{
     justify-content: space-around;
     align-items: center;
     background-color: white;
-    box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(62, 62, 62, 0.3) 0px 8px 16px -8px;
 }
 .navbar-container .logo {
   padding:  1.5em;
+  filter: brightness(80%);
+  border-radius: 50%;
 }
 .navbar-container .logo img{
   transform: scale(1.5);
@@ -127,8 +134,9 @@ header{
     position: absolute;
     opacity: 0;
     transition: 0.5s all;
-    filter: brightness(50%);
+    filter: brightness(55%);
   }
+
   .current {
     opacity: 1;
   }
@@ -191,13 +199,13 @@ header{
     text-align: center;
     transform: translate(-50%, -50%);
     font-size: 50px;
-    color: #F7931E;
+    color: white;
     font-weight: bolder;
   }
 
   /* End - carousel */
 
-  .about-container {
+  /* .about-container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -214,7 +222,7 @@ header{
     color: white;
     text-align: center;
     /* font-size: 1.25em; */
-  }
+  } */
 
 /* Start - more less */
   #myBtn {
@@ -285,8 +293,6 @@ h1 {
     padding:50px 0;
     background-color:#6FA141;
     color:#000000;
-    background-image: url(svaneti.jpg);
-
     width: 100%;
     background-repeat: no-repeat;
     object-fit: cover;
