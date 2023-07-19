@@ -241,6 +241,7 @@ header{
 .partniorship-container {
   display: flex;
   justify-content: center;
+  border: 1px solid white;
 }
 
 h1 {
@@ -258,6 +259,8 @@ h1 {
     margin: 1em 1em 5em 1em;
     padding: 10px;
   }
+
+
   .card img {
     width: 100%;
     max-height: 300px;
@@ -282,6 +285,12 @@ h1 {
     padding:50px 0;
     background-color:#6FA141;
     color:#000000;
+    background-image: url(svaneti.jpg);
+
+    width: 100%;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    background-size: cover;
   }
   
   .footer-clean h3 {

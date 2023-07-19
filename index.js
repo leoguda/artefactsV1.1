@@ -120,3 +120,47 @@ function opentab(tabname) {
 }
 
 
+
+
+
+// Declare the "score" variable
+// var score = 0;
+// var questions = [
+// ["T or F: Two plus two is ten."],
+// ["T or F: George Washington was the first U.S.president."],
+// ["T or F: Al Gore is our current Vice President."],
+// ["T or F: Two plus two is four."],
+// ["T or F: You are not an alien from Mars."]
+// ];
+// // Create the answer key array
+// var answer_key = [
+// ["F"],
+// ["T"],
+// ["F"],
+// ["T"],
+// ["T"]
+// ];
+// // Ask each question
+// function askQuestion(question) {
+//   var answer = prompt(question[0], "");
+//   if (answer.toUpperCase() == answer_key[i]) {
+//     alert("Correct!");
+//     score++;
+//   } else if (answer==null || answer=="") {
+//     alert("You must enter T or F!");
+//     i--;
+//   } else {
+//     alert("Sorry. The correct answer is " + answer_key[i]);
+//   }
+// }
+// for (var i = 0; i < questions.length; i++) {
+//   askQuestion(questions[i]);
+// }
+
+// // Caclulate score
+// function scoreTest(answer, questions) {
+// var score = (answer/questions) * 100;
+// return score;
+// }
+// var message = "Your score for the test is " + scoreTest(score, questions.length);
+// document.write("<p>" + message + "%</p>")
