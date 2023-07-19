@@ -329,6 +329,12 @@ text-decoration: underline;
    width: 100%;
  }
  
+.form-container input{
+margin: 10px;
+
+}
+
+
  .container {
   margin: 20px;
    background-color: #bf7206;
@@ -339,7 +345,7 @@ text-decoration: underline;
    overflow: hidden;
    width: 768px;
    max-width: 100%;
-   min-height: 480px;
+   min-height: 380px;
  }
  
  .form-container {
