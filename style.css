@@ -241,8 +241,6 @@ header{
   }
   
 
-
-<<<<<<< HEAD
 /* searchbar */
 
 .search{
@@ -316,9 +314,6 @@ justify-content: center;
   }
 }
 
-
-=======
->>>>>>> db2acc3726264c55fdfa26f1d292c0530a8fbe24
 /* Start - more less */
   #myBtn {
     background-color: #6FA141;
@@ -697,7 +692,7 @@ h1 {
   transition: 0.5s;
 }
 
-.tab-links .active-link::{
+.tab-links .active-link{
   width: 30%;
 }
 
