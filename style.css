@@ -14,7 +14,6 @@ html {
 }
 
 
-
 header{
   top: 0;
   z-index: 10000000;
@@ -216,7 +215,7 @@ header{
     left: 50%;
     text-align: center;
     transform: translate(-50%, -50%);
-    font-size: 50px;
+    font-size: 55px;
     color: white;
     font-weight: bolder;
     animation: typing 2.5s steps(22), blink .5s step-end infinite alternate;
@@ -241,9 +240,9 @@ header{
     }
   }
   
-  /* End - carousel */
 
 
+<<<<<<< HEAD
 /* searchbar */
 
 .search{
@@ -318,6 +317,8 @@ justify-content: center;
 }
 
 
+=======
+>>>>>>> db2acc3726264c55fdfa26f1d292c0530a8fbe24
 /* Start - more less */
   #myBtn {
     background-color: #6FA141;
@@ -373,15 +374,12 @@ justify-content: center;
 
 
 /* Start - partners */
-.partners-header {
-  display: flex;
-  justify-content: center;
-  padding: 4em;
-}
+
 .partniorship-container {
   display: flex;
   justify-content: center;
   border: 1px solid white;
+  margin: 50px;
 }
 
 h1 {
@@ -389,16 +387,6 @@ h1 {
   justify-content: center;
   top: 60px;
 }
-  .card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 300px;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    margin: 1em 1em 5em 1em;
-    padding: 10px;
-  }
 
 
   .card img {
@@ -420,15 +408,71 @@ h1 {
   }
 /* End - partners */
 
+
+.partners-header {
+  margin-top: 50px;
+}
+
+.partners-logo {
+  margin-bottom: 30px;
+}
+
+.partners-logo img{
+  width: 7%;
+}
+
+.partners-logo .logos {
+  display: inline-flex;
+  justify-content: space-around;
+}
+
+.partners-logo .flag {
+  width: 13%;
+  height: 4%;
+}
+
+.partners-logo .flag2 {
+  width: 10%;
+  height: 4%;
+}
+
+.partners-logo .flag3 {
+  width: 5%;
+  height: 4%;
+}
+
+.partners-logo .flag4 {
+  width: 10%;
+  height: 5%;
+}
+
+.partners-logo .flag5 {
+  width: 12%;
+  height: 5%;
+}
+
+.partners-logo .flag6 {
+  width: 5%;
+  height: 10%;
+}
+
+.partners-logo .flag7 {
+  width: 5%;
+}
+
+
+
 /* Start - footer */
   .footer-clean {
     padding:50px 0;
-    background-color:#aa9277;
+    background-color:rgb(246, 243, 243);
     color:#000000;
     width: 100%;
     background-repeat: no-repeat;
     object-fit: cover;
+    border-top: 1px solid rgb(237, 237, 237);
     background-size: cover;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(62, 62, 62, 0.3) 0px 8px 16px -8px;
   }
   
   .footer-clean h3 {
@@ -436,7 +480,7 @@ h1 {
     margin-bottom:12px;
     font-weight:bold;
     font-size:18px;
-    color: white;
+    color: black;
   }
   
   .footer-clean ul {
@@ -445,11 +489,8 @@ h1 {
     line-height:1.6;
     font-size:16px;
     margin-bottom:0;
-    color: white;
+    color: black;
   }
-  
-  
-
 
   .footer-clean ul a {
     color:inherit;
@@ -483,7 +524,7 @@ h1 {
     margin-top:14px;
     margin-bottom:0;
     font-size:13px;
-    color: white;
+    color: black;
   }
 
 
@@ -681,6 +722,8 @@ h1 {
 }
 
 /*  */
+
+
 
 /* Demo Code: */
 
