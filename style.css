@@ -244,25 +244,79 @@ header{
   /* End - carousel */
 
 
+/* searchbar */
 
-  /* .about-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #6FA141;
-    padding: 10em;
+.search{
+display: flex;
+justify-content: center;
+}
+
+.input-box {
+  position: relative;
+  height: 76px;
+  max-width: 900px;
+  width: 100%;
+  background: #fff;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+.input-box i,
+.input-box .button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.input-box i {
+  left: 20px;
+  font-size: 30px;
+  color: #707070;
+}
+.input-box input {
+  height: 100%;
+  width: 100%;
+  outline: none;
+  font-size: 18px;
+  font-weight: 400;
+  border: none;
+  padding: 0 155px 0 65px;
+  background-color: transparent;
+}
+.input-box .button {
+  right: 20px;
+  font-size: 16px;
+  font-weight: 400;
+  color: #fff;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 6px;
+  background-color: #4070f4;
+  cursor: pointer;
+}
+.input-box .button:active {
+  transform: translateY(-50%) scale(0.98);
+}
+/* Responsive */
+@media screen and (max-width: 500px) {
+  .input-box {
+    height: 66px;
+    margin: 0 8px;
   }
-  .about-container h1 {
-    color: white;
-    width: 50%;
-    text-align: center;
+  .input-box i {
+    left: 12px;
+    font-size: 25px;
   }
-  .about-container .about-text {
-    width: 50%;
-    color: white;
-    text-align: center;
-    /* font-size: 1.25em; */
-  /* } */
+  .input-box input {
+    padding: 0 112px 0 50px;
+  }
+  .input-box .button {
+    right: 12px;
+    font-size: 14px;
+    padding: 8px 18px;
+  }
+}
+
 
 /* Start - more less */
   #myBtn {
@@ -629,11 +683,7 @@ h1 {
 /*  */
 
 /* Demo Code: */
-body {
-  font-family: 'Open Sans', arial, sans-serif;
-  color: #333;
-  font-size: 14px;
-}
+
 .projcard-container {
   margin: 50px 0;
 }
@@ -820,3 +870,8 @@ body {
   right: -10px;
   top: 0;
 }
+
+
+
+
+
