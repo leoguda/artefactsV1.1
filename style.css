@@ -246,7 +246,7 @@ justify-content: center;
   max-width: 900px;
   width: 100%;
   background: #fff;
-  margin-top: 20px;
+  margin-top: 50px;
   margin-bottom: 20px;
   border-radius: 8px;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
@@ -320,36 +320,64 @@ justify-content: center;
   text-decoration: none;
 }
 /* End - more less */
-.goals-container {
+
+
+/* აგი არ წაშალოთ, დიდი თხოვნა. გ.ბ*/
+/* .goals-container {
   display: flex;
   justify-content: center;
   margin-top: 60px;
   align-items: center;
   width: 100%;
+
 }
 .projects-goal {
   display: flex;
   width: 50%;
   font-size: 20px;
+
 }
 .projects-goal .projects-text {
   text-align: center;
   color: black;
+
+} */
+
+.art {
+  color: #ffaf55;
+  font-weight: bold;
 }
-.text-underline {
-  display: flex;
-  justify-content: center;
-  /* background-color: #aa9277; */
-  background-color: #5794ff;
-  border: 1px solid #5794ff;
-  width: 39.1%;
-  height: 30px;
+
+
+.mission-section {
+  background-color: #f1f0f0;
+  padding: 2rem 0;
+  text-align: center;
+  margin-top: 40px;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-.container-underlined {
-  display: flex;
-  justify-content: center;
-  margin-top: 10px;
+
+
+.mission-section .mission-text p{
+  font-size: 1.2rem;
+  color: black;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 1rem;
 }
+
+
+/* Media Query for Responsive Design */
+@media (max-width: 600px) {
+  .mission-section h2 {
+    font-size: 1.5rem;
+  }
+  .mission-section p {
+    font-size: 1rem;
+  }
+}
+
 /* Start - partners */
 
 .partniorship-container {
@@ -382,10 +410,6 @@ h1 {
   }
 /* End - partners */
 
-
-.partners-header {
-  margin-top: 50px;
-}
 
 .partners-logo {
   margin-bottom: 30px;
@@ -429,12 +453,12 @@ h1 {
 /* Start - footer */
 .footer-clean {
   padding:50px 0;
-  background-color:rgb(246, 243, 243);
+  background-color:#f9f9f9;
   color:#000000;
   width: 100%;
   background-repeat: no-repeat;
   object-fit: cover;
-  border-top: 1px solid rgb(237, 237, 237);
+  border-top: 1px solid #f1f0f0;
   background-size: cover;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(62, 62, 62, 0.3) 0px 8px 16px -8px;
 }
@@ -606,11 +630,13 @@ body {
 .projcard-container * {
   box-sizing: border-box;
 }
+
 .projcard-container {
   margin-left: auto;
   margin-right: auto;
-  width: 1000px;
+  width: 800px;
 }
+
 .projcard {
   position: relative;
   width: 100%;
