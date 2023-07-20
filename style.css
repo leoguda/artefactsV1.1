@@ -240,28 +240,7 @@ header{
     }
   }
   
-  /* End - carousel */
 
-
-
-  /* .about-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #6FA141;
-    padding: 10em;
-  }
-  .about-container h1 {
-    color: white;
-    width: 50%;
-    text-align: center;
-  }
-  .about-container .about-text {
-    width: 50%;
-    color: white;
-    text-align: center;
-    /* font-size: 1.25em; */
-  /* } */
 
 /* Start - more less */
   #myBtn {
@@ -318,15 +297,12 @@ header{
 
 
 /* Start - partners */
-.partners-header {
-  display: flex;
-  justify-content: center;
-  padding: 10px;
-}
+
 .partniorship-container {
   display: flex;
   justify-content: center;
   border: 1px solid white;
+  margin: 50px;
 }
 
 h1 {
@@ -355,6 +331,10 @@ h1 {
   }
 /* End - partners */
 
+
+.partners-header {
+  margin-top: 50px;
+}
 
 .partners-logo {
   margin-bottom: 30px;
