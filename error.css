@@ -1,0 +1,337 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: rgba(16, 27, 27, 0.788);
+}
+.error-content-container *{
+    color:pink
+}
+.error-content-container {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    max-width: 70em;
+    padding: 2em;
+}
+
+.error-h1 {
+    align-self: center;
+    font-size: 5em;
+    animation-name:error;
+    animation-duration:5.5s;
+    animation-iteration-count:infinite;
+    animation-timing-function: steps(1, start)
+}
+
+@keyframes  error{
+    0%        { color: rgb(61, 28, 28); text-shadow: 0 0 3px #635861, 0 0 5px white; }
+    1%        { color: gray; text-shadow: 0 0 5px white, 0 0 10px white, 0 0 17px white, 0 0 38px white}
+    4%        { color: white; text-shadow: 0 0 5px white, 0 0 10px white, 0 0 17px white, 0 0 38px white}
+    7%        { color: rgb(39, 29, 7); text-shadow: 0 0 3px white, 0 0 5px white; }
+    8%        { color: rgb(41, 7, 7); text-shadow: 0 0 5px white, 0 0 10px white, 0 0 17px white, 0 0 38px white}
+    12%        { color: gray; text-shadow: 0 0 3px white, 0 0 5px white; }
+    22%        { color: white; text-shadow: 0 0 3px white, 0 0 5px white; }
+    23%        { color: rgb(48, 30, 78); text-shadow: 0 0 5px white, 0 0 10px white, 0 0 15px white, 0 0 20px white, 0 0 30px white, 0 0 40px white; }
+    26%        { color: gray; text-shadow: 0 0 3px white, 0 0 5px white; }
+    28%        { color: rgb(65, 61, 61); text-shadow: 0 0 5px white, 0 0 10px white, 0 0 17px white, 0 0 38px white}
+    34%        { color: gray; text-shadow: 0 0 5px white, 0 0 10px white, 0 0 15px white, 0 0 20px white, 0 0 30px white, 0 0 40px white; }
+    36%        { color: rgb(3, 36, 3); text-shadow: 0 0 3px white, 0 0 5px white; }
+    42%        { color: gray; text-shadow: 0 0 5px white, 0 0 10px white, 0 0 17px white, 0 0 38px white}
+    55%        { color: rgb(43, 40, 40); text-shadow: 0 0 5px white, 0 0 10px white, 0 0 15px white, 0 0 20px white, 0 0 30px white, 0 0 40px white; }
+    60%        { color: gray; text-shadow: 0 0 3px white, 0 0 5px white; }
+    63%        { color: rgb(58, 23, 23); text-shadow: 0 0 5px white, 0 0 10px white, 0 0 15px white, 0 0 20px white, 0 0 30px white, 0 0 40px white; }
+    67%        { color: white; text-shadow: 0 0 3px white, 0 0 5px white; }
+    72%        { color: gray; text-shadow: 0 0 3px white, 0 0 5px white; }
+    73%        { color: gray; text-shadow: 0 0 5px white, 0 0 10px white, 0 0 17px white, 0 0 38px white}
+    76%        { color: rgb(42, 8, 46); text-shadow: 0 0 3px white, 0 0 5px white; }
+    78%        { color: white; text-shadow: 0 0 5px white, 0 0 10px white, 0 0 17px white, 0 0 38px white}
+    84%        { color: rgb(58, 34, 34); text-shadow: 0 0 5px white, 0 0 10px white, 0 0 15px white, 0 0 20px white, 0 0 30px white, 0 0 40px white; }
+    86%        { color: rgb(48, 9, 9); text-shadow: 0 0 3px white, 0 0 5px white; }
+    96%        { color: white; text-shadow: 0 0 5px white, 0 0 10px white, 0 0 17px white, 0 0 38px white}
+    100%       { color: rgb(46, 10, 10); text-shadow: 0 0 5px white, 0 0 10px white, 0 0 15px white, 0 0 20px white, 0 0 30px white, 0 0 40px white; }
+}
+
+.error-h1:hover{
+    cursor:no-drop;
+}
+.container-error-h3{
+    align-self: flex-end;
+    display: flex;
+    flex-direction: column;
+    max-width: 40em;
+
+}
+.error-h3 {
+    font-size: 2.5em;
+    padding: 0 2em;
+}
+.error-h31{
+    align-self: flex-start;
+    animation-name: try-again1;
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+}
+.error-h32{
+    align-self: center;
+    animation-name: try-again2;
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+}
+.error-h33{
+    align-self: flex-end;
+    animation-name: try-again3;
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+}
+@keyframes try-again1{
+    0%{
+        text-shadow: 0 0 1px black, 0 0 10px black;
+    }
+    20%{
+        text-shadow: 0 0 1px black, 0 0 10px white;
+
+    }
+    40%{
+        text-shadow: 0 0 1px black, 0 0 10px white;
+
+    }
+    60%{
+        text-shadow: 0 0 1px black, 0 0 10px black;
+
+    }
+    80%{
+        text-shadow: 0 0 1px black, 0 0 10px white;
+
+    }
+    100%{
+        text-shadow: 0 0 1px black, 0 0 10px white;
+
+    }
+}
+@keyframes try-again2{
+    0%{
+        text-shadow: 0 0 1px black, 0 0 10px white;
+    }
+    20%{
+        text-shadow: 0 0 1px black, 0 0 10px black;
+
+    }
+    40%{
+        text-shadow: 0 0 1px black, 0 0 10px white;
+
+    }
+    60%{
+        text-shadow: 0 0 1px black, 0 0 10px white;
+
+    }
+    80%{
+        text-shadow: 0 0 1px black, 0 0 10px black;
+
+    }
+    100%{
+        text-shadow: 0 0 1px black, 0 0 10px white;
+
+    }
+}
+
+@keyframes try-again3{
+    0%{
+        text-shadow: 0 0 1px black, 0 0 10px white;
+    }
+    20%{
+        text-shadow: 0 0 1px black, 0 0 10px white;
+    }
+    40%{
+        text-shadow: 0 0 1px black, 0 0 10px black;
+
+    }
+    60%{
+        text-shadow: 0 0 1px black, 0 0 10px white;
+
+    }
+    80%{
+        text-shadow: 0 0 1px black, 0 0 10px white;
+
+    }
+    100%{
+        text-shadow: 0 0 1px black, 0 0 10px black;
+
+    }
+}
+
+.face {
+    position: absolute;
+    margin:20em 15em;
+    width: 20em;
+    height: 20em;
+    background-color: lightgoldenrodyellow;
+    border-radius: 50%;
+}
+.eye{
+    width: 2em;
+    height: 2em;
+    position: absolute;
+    z-index: 1;
+}
+.static-eye {
+    background-color: black;
+    margin: 6em 5em;
+    border-radius: 50%;
+}
+.moving-eye1 {
+    background-color: black;
+    margin: 6em 13em;
+    border-radius: 50%;
+    animation-name: open-eye;
+    animation-iteration-count: infinite;
+    animation-duration: 12s;
+}
+@keyframes open-eye{
+    0%{
+        background-color: transparent;
+    }
+    1%{
+        background-color: black;
+    }
+    24%{
+        background-color: black;
+    }
+    25%{
+        background-color: transparent;
+    }
+    26%{
+        background-color: black;
+    }
+    49%{
+        background-color: black;
+    }
+    50%{
+        background-color: transparent;
+    }
+    51%{
+        background-color: black;
+    }
+    74%{
+        background-color: black;
+    }
+    75%{
+        background-color: transparent;
+    }
+    76%{
+        background-color: black;
+    }
+    99%{
+        background-color: black;
+    }
+    100%{
+        background-color: transparent;
+    }
+}
+.moving-eye1:hover{
+    background-color: transparent;
+}
+
+.moving-eye2 {
+    display: block;
+    margin: 1em -0.5em;
+    width: 3em;
+    height: 0.75em;
+    /* background-color: transparent; */
+    animation-name: closed-eye;
+    animation-iteration-count: infinite;
+    animation-duration: 12s;
+}
+@keyframes closed-eye{
+    0%{
+        background-color: black;
+    }
+    1%{
+        background-color: transparent;
+    }
+    24%{
+        background-color: transparent;
+    }
+    25%{
+        background-color: black;
+    }
+    26%{
+        background-color: transparent;
+    }
+    49%{
+        background-color: transparent;
+    }
+    50%{
+        background-color: black;
+    }
+    51%{
+        background-color: transparent;
+    }
+    74%{
+        background-color: transparent;
+    }
+    75%{
+        background-color: black;
+    }
+    76%{
+        background-color: transparent;
+    }
+    99%{
+        background-color: transparent;
+    }
+    100%{
+        background-color: black;
+    }
+}
+/* .moving-eye1:hover .moving-eye2:hover {
+    background-color: black;
+} */
+.smile {
+    margin: 7em 5em ;
+    width: 10em;
+    height: 10em;
+    background-color: black;
+    border-radius: 50%;
+}
+.smile::after{
+    position: absolute;
+    content: '';
+    margin: -1em -0.5em;
+    width: 11em;
+    height: 10em;
+    border-radius: 50%;
+    background-color: lightgoldenrodyellow;
+
+}
+.back-to-main{
+    margin-top: 10em;
+    text-decoration: none;
+    text-align: center;
+    font-size: 1.5em;
+    color: black;
+    padding: 0 1em 1em 1em;
+    transition: background-color 150ms;
+}
+.back-to-main:hover{
+    background-color: lightskyblue;
+    text-decoration: underline;
+}
+
+@media only screen and (max-width:900px){
+    .face {
+        position: relative;
+        margin:auto;
+        
+    }
+    .error-h3 {
+        display: none;
+    }
+}
+@media only screen and (max-width:650px){
+    .error-h1{
+        text-align: center;
+    }
+}
