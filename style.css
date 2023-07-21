@@ -904,6 +904,7 @@ body {
   .buttons #prevBtn,
   .buttons #nextBtn {
     transform: scale(5);
+    opacity: 0.25;
   }
   .buttons #prevBtn {
     top: 70%;
