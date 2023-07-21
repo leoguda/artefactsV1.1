@@ -63,7 +63,6 @@ header{
     padding-bottom: 1em;
     padding-left: 5em;
   }
-
   .navbar-div-responsive .nav-info-responsive ul li,
   .navbar-container-responsive .log-info-responsive ul li{
     list-style: none;
@@ -318,41 +317,14 @@ justify-content: center;
 }
 /* End - more less */
 
-
-/* აგი არ წაშალოთ, დიდი თხოვნა. გ.ბ*/
-/* ხარაშოოოოო ლ.გ */
-/* .goals-container {
-  display: flex;
-  justify-content: center;
-  margin-top: 60px;
-  align-items: center;
-  width: 100%;
-
-}
-.projects-goal {
-  display: flex;
-  width: 50%;
-  font-size: 20px;
-
-}
-.projects-goal .projects-text {
-  text-align: center;
-  color: black;
-
-} */
-
 .goal {
   font-weight: bold;
   font-size: 2em;
 }
-
-
 .art {
   color: #ffaf55;
   font-weight: bold;
 }
-
-
 .mission-section {
   background-color: #f1f0f0;
   padding: 2rem 0;
@@ -360,8 +332,6 @@ justify-content: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
-
-
 .mission-section .mission-text p{
   font-size: 1.2rem;
   color: black;
@@ -370,11 +340,7 @@ justify-content: center;
   padding: 0 1rem;
 }
 
-
-
-
 /* Start - partners */
-
 .partniorship-container {
   display: flex;
   justify-content: center;
@@ -404,7 +370,6 @@ h1 {
     font-size: 14px;
   }
 /* End - partners */
-
 
 .partners-logo {
   margin-bottom: 30px;
@@ -445,7 +410,6 @@ h1 {
   width: 5%;
 }
 
-<<<<<<< Updated upstream
 /* Start - footer */
 .footer-clean {
   padding:50px 0;
@@ -512,110 +476,6 @@ h1 {
 /* End - footer */
 
 
-=======
-/* about */
-
-/* Demo Code: */
-body {
-  font-family: 'Open Sans', arial, sans-serif;
-  color: #333;
-}
-#about-info {
-  padding: 80px 0;
-  color: black;
-  display: flex;
-  justify-content: center;
-  
-}
-.container-about {
-  border: 1px solid rgb(145, 145, 216);
-  background-color: rgb(145, 145, 216);
-  color: white;
-  border-radius: 10px;
-  width: 300px;
-}
-.row {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-}
-
-.about-col-1 {
-  flex-basis: 35%;
-}
-
-.about-col-1 img{
-  width: 100%;
-  border-radius: 15px;
-}
-
-.about-col-2 {
-  flex-basis: 60%;
-}
-
-
-.sub-title {
-  font-size: 60px;
-  font-weight: 600;
-  color: black;
-}
-
-
-.tab-titles {
-  display: flex;
-  margin: 20px 0 40px;
-}
-
-.tab-links {
-  margin-right: 50px;
-  font-size: 18px;
-  font-weight: 500;
-  cursor: pointer;
-  position: relative;
-  left: 2%;
-}
-
-.tab-links::after{
-  content: '';
-  width: 0;
-  height: 3px;
-  background: #ff004f;
-  position: absolute;
-  left: 0;
-  bottom: -8px;
-  transition: 0.5s;
-}
-
-.tab-links .active-link{
-  width: 30%;
-}
-
-.tab-items ul li {
-  list-style: none;
-  margin: 10px 0;
-  display: flex;
-  justify-content: center;
-}
-
-.tab-items ul li span span {
-  color: #b54769;
-  font-size: 14px;
-}
-
-.tab-items {
-  display: none;
-}
-
-.tab-items.active-tab {
-  display: block;
-}
-
-/*  */
-
-
-
-/* Demo Code: */
->>>>>>> Stashed changes
 
 .projcard-container {
   margin: 50px 0;
