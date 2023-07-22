@@ -942,8 +942,8 @@ h1 {
 }
 button {
   border-radius: 20px;
-  border: solid 1px #4184a1;
-  background-color: #4184a1;
+  border: solid 1px #484f52;
+  background-color: #484f52;
   color: #FFFFFF;
   font-size: 12px;
   font-weight: bold;
@@ -1052,8 +1052,8 @@ margin: 10px;
 .overlay {
   border: none;
   background: #0b33b5;
-  background: -webkit-linear-gradient(to right, #4c32db, #071d7b);
-  background: linear-gradient(to right, #417ea19b, #1183c4);
+  background: -webkit-linear-gradient(to right, #858585, #86888e);
+  background: linear-gradient(to right, #525252, #6c7072);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 0 0;
