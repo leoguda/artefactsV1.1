@@ -397,6 +397,13 @@ h1 {
 }
 
 /* Start - footer */
+
+.footer-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .footer-clean {
   padding:50px 0;
   background-color:#f9f9f9;
@@ -662,6 +669,7 @@ h1 {
   object-fit: cover;
   border-top: 1px solid #f1f0f0;
   background-size: cover;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(62, 62, 62, 0.3) 0px 8px 16px -8px;
 }
 .footer-clean h3 {
   margin-top:0;
@@ -671,11 +679,9 @@ h1 {
   color: black;
 }
 .footer-clean ul {
-  padding:0;
   list-style:none;
   line-height:1.6;
   font-size:16px;
-  margin-bottom:0;
   color: black;
 }
 .footer-clean ul a {
