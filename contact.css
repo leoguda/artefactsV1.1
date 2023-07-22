@@ -233,7 +233,13 @@ font-style: normal;
 
 
 /* Start - footer */
- .footer-clean {
+.footer-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-clean {
   padding:50px 0;
   background-color:#f9f9f9;
   color:#000000;
@@ -252,9 +258,11 @@ font-style: normal;
   color: black;
 }
 .footer-clean ul {
+  padding:0;
   list-style:none;
   line-height:1.6;
   font-size:16px;
+  margin-bottom:0;
   color: black;
 }
 .footer-clean ul a {
