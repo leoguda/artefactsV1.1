@@ -17,6 +17,43 @@ function closeBurgerMenu(){
 
 
 
+// authorize popup 
+var modal = document.getElementById("myModal");
+var btn = document.getElementById("myBtn");
+var closeBtn = document.getElementsByClassName("close")[0];
+ 
+
+btn.addEventListener("click", function() {
+  modal.style.display = "block";
+});
+                                
+
+closeBtn.addEventListener("click", function() {
+modal.style.display = "none";
+});
+                                
+
+window.addEventListener("click", function(event) {
+if (event.target == modal) {
+modal.style.display = "none";
+}
+});
+
+
+const signUpButton = document.getElementById('signUp');
+const signInButton = document.getElementById('signIn');
+const container = document.getElementById('container');
+
+signUpButton.addEventListener('click', () => {
+    container.classList.add("right-panel-active");
+});
+
+signInButton.addEventListener('click', () => {
+    container.classList.remove("right-panel-active");
+});
+
+
+
 // Start - IMAGE CAROUSEL SCRIPT 
 
 const images = document.querySelectorAll(".carousel-image");
@@ -119,12 +156,6 @@ function opentab(tabname) {
   document.getElementById(tabname).classList.add("active-tab")
 }
 
-
-
-// This adds some nice ellipsis to the description:
-document.querySelectorAll(".projcard-description").forEach(function(box) {
-  $clamp(box, {clamp: 6});
-});
 
 
 

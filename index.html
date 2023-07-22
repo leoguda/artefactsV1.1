@@ -61,105 +61,54 @@
                     </ul>
                 </div>
 
-                <div class="log-info">
-                    <ul>
-                        <li>
-
-                            <div id="myModal" class="modal">
-                            
-                                  <span class="close">&times;</span>
-                                 
-
-                                  <div class="container" id="container">
-                                    <div class="form-container sign-up-container">
-                                        <form action="#">
-                                            <h1>დარეგისტრირდი</h1>
-                                            <input type="text" placeholder="სახელი" />
-                                            <input type="email" placeholder="ელფოსტა" />
-                                            <input type="password" placeholder="პაროლი" />
-                                            <button>რეგისტრაცია</button>
-                                        </form>
-                                    </div>
-                                    <div class="form-container sign-in-container">
-                                        <form action="#">
-                                            <h1>შესვლა</h1>
-                                            <input type="email" placeholder="ელფოსტა" />
-                                            <input type="password" placeholder="პაროლი" />
-                                            <a href="#">დაგავიწყდა პაროლი?</a>
-                                            <button>შესვლა</button>
-                                        </form>
-                                    </div>
-                                    <div class="overlay-container">
-                                        <div class="overlay">
-                                            <div class="overlay-panel overlay-left">
-                                                <h1>კეთილი იყოს შენი დაბრუნება!</h1>
-                                                <p>დარჩი ჩვენთან შენი პირადი ინფორმავიით</p>
-                                                <button class="ghost" id="signIn">შესვლა</button>
-                                            </div>
-                                            <div class="overlay-panel overlay-right">
-                                                <h1>გამარჯობა!</h1>
-                                                <p>შეიყვანე პირადი ინფორმაცია და დაიწყე შენი თავგადასავალი</p>
-                                                <button class="ghost" id="signUp">რეგისტრაცია</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                  
-                                  
-                                
-                                <script>
-                                const signUpButton = document.getElementById('signUp');
-                                const signInButton = document.getElementById('signIn');
-                                const container = document.getElementById('container');
-                                
-                                signUpButton.addEventListener('click', () => {
-                                    container.classList.add("right-panel-active");
-                                });
-                                
-                                signInButton.addEventListener('click', () => {
-                                    container.classList.remove("right-panel-active");
-                                });
-                                
-                                </script>
-
-                              
-                              </div>
-                              
-                              <button id="myBtn">ავტორიზაცია</button>
-                              
-
-
-                              <script>
-                                // Obtener referencias a los elementos del DOM
-var modal = document.getElementById("myModal");
-var btn = document.getElementById("myBtn");
-var closeBtn = document.getElementsByClassName("close")[0];
-
-// Abrir modal al hacer clic en el botón
-btn.addEventListener("click", function() {
-  modal.style.display = "block";
-});
-
-// Cerrar modal al hacer clic en el botón de cerrar
-closeBtn.addEventListener("click", function() {
-  modal.style.display = "none";
-});
-
-// Cerrar modal al hacer clic fuera del contenido del modal
-window.addEventListener("click", function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-});
-
-                              </script>
-                        </li>
-                        <li><a href="dashboard.html">dashboard</a></li>
-                    </ul>
-                </div>
-            </div>
+<div class="log-info">
+  <ul>
+    <li>
+        <div id="myModal" class="modal">         
+            <span class="close">&times;</span>
+                <div class="container" id="container">
+                    <div class="form-container sign-up-container">
+                        <form action="#">
+                          <h1>დარეგისტრირდი</h1>
+                            <input type="text" placeholder="სახელი" />
+                            <input type="email" placeholder="ელფოსტა" />
+                            <input type="password" placeholder="პაროლი" />
+                            <button>რეგისტრაცია</button>
+                          </form>
+                    </div>
+        <div class="form-container sign-in-container">
+            <form action="#">
+                <h1>შესვლა</h1>
+                    <input type="email" placeholder="ელფოსტა" />
+                     <input type="password" placeholder="პაროლი" />
+                        <a href="#">დაგავიწყდა პაროლი?</a>
+                        <button>შესვლა</button>
+            </form>
         </div>
-    </header>
+        <div class="overlay-container">
+            <div class="overlay">
+                <div class="overlay-panel overlay-left">
+                    <h1>კეთილი იყოს შენი დაბრუნება!</h1>
+                    <p>დარჩი ჩვენთან შენი პირადი ინფორმავიით</p>
+                    <button class="ghost" id="signIn">შესვლა</button>
+                </div>
+        <div class="overlay-panel overlay-right">
+            <h1>გამარჯობა!</h1>
+            <p>შეიყვანე პირადი ინფორმაცია და დაიწყე შენი თავგადასავალი</p>
+            <button class="ghost" id="signUp">რეგისტრაცია</button>
+        </div>
+    </div>
+</div>
+</div>
+</div>
+<button id="myBtn">ავტორიზაცია</button> 
+    </li>
+    <li><a href="dashboard.html">dashboard</a></li>
+    </ul>
+    </div>
+</div>
+ </div>
+</header>
 
     <main>
         <div class="main-carousel">
