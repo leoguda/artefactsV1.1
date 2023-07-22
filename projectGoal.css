@@ -1,4 +1,3 @@
-
 * {
     margin: 0;
     padding: 0;
@@ -112,11 +111,76 @@ header{
   filter:brightness(95%);
   text-decoration: underline;
 }
+/* header end */
 
 
+/* course card start */
+
+main {
+  margin: 146px;
+}
+
+.course-cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+.course-card {
+  max-width: 320px;
+  margin: 10px;
+  width: 100%;
+  border: 1px solid #e0e0e0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  overflow: hidden;
+}
+.course-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  filter: brightness(70%);
+}
+.course-card .content {
+  padding: 15px;
+}
+.course-card h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+.course-card p {
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 15px;
+}
+.button-start {
+  display: block;
+  width: 100%;
+  padding: 10px 20px;
+  background-color: rgb(219, 219, 219);
+  color: #fff;
+  text-align: center;
+
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button-start a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  list-style: none;
+}
 
 
+.button-start:hover {
+  background-color: #a7a7a7;
+}
 
+.button-start a:hover {
+  color: white;
+}
 
 
 
@@ -125,16 +189,22 @@ header{
 
 
 /* Start - footer */
+
+footer {
+  margin-top: 200px;
+}
+
 .footer-clean {
-    
-    padding:50px 0;
-    background-color:#f9f9f9;
-    color:#000000;
-    width: 100%;
-    border-top: 1px solid #f1f0f0;
-    background-size: cover;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(62, 62, 62, 0.3) 0px 8px 16px -8px;
-  }
+  display: flex;
+  justify-content: center;
+  padding:50px 0;
+  background-color:#e4e4e4;
+  color:#000000;
+  width: 100%;
+  border-top: 1px solid #e4e4e4;
+  background-size: cover;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(62, 62, 62, 0.3) 0px 8px 16px -8px;
+}
   .footer-clean h3 {
     margin-top:0;
     margin-bottom:12px;
@@ -147,11 +217,14 @@ header{
     line-height:1.6;
     font-size:16px;
     color: black;
+    position: relative;
+    right: 31px;
   }
   .footer-clean ul a {
     color:inherit;
     text-decoration:none;
     opacity:0.8;
+    margin-right: 100px;
   }
   .footer-clean ul a:hover {
     opacity:1;
@@ -272,5 +345,10 @@ header{
     }
   }
 
-
+/* Media query for cards */
+@media (max-width: 768px) {
+  .course-card {
+    max-width: 100%;
+  }
+}
   

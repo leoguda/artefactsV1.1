@@ -212,9 +212,8 @@
     </div>
 </div>
 
-
-    <div class="footer-clean">
-        <footer>
+<footer>
+  <div class="footer-clean">
             <div class="footer-container">
                 <div class="row justify-content-center">
                     <div class="col-sm-4 col-md-3 item">
@@ -252,5 +251,16 @@
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="index.js"></script>
+    <script>
+          const modal = document.getElementById('myModal');
+
+function openModal() {
+  modal.classList.add('active');
+}
+
+function closeModal() {
+  modal.classList.remove('active');
+}
+    </script>
 </body>
 </html>
