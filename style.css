@@ -105,7 +105,7 @@ header{
   transform: scale(1.5);
 }
 .logo-responsive a img, .logo a img{
-  width:121.5px;
+  width:100px;
 }
 .navbar-container .nav-info ul{
   display: flex;

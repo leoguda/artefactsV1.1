@@ -1,0 +1,81 @@
+main {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    margin-top: 146px;
+    border: 1px solid #a2a2a2;
+    background-color: #a2a2a2;
+    height: 500px;
+    border-radius: 20px;
+  }
+  
+  .pretest-section {
+    text-align: center;
+    margin-bottom: 20px;
+    color: white;
+  }
+  
+  .title-test {
+    font-size: 35px;
+  }
+  
+  .text-test {
+    font-size: 20px;
+    line-height: 1.5;
+  
+  }
+  
+  .start-test button {
+    padding: 15px 60px;
+    margin-top: 40px;
+    font-size: 20px;
+    background-color: #ffaf55;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.2s;
+  
+  }
+  
+  .start-test button a {
+    text-decoration: none;
+    color: white;
+  }
+  
+  
+  .start-test button:hover {
+    background-color: #df9b4c;
+  }
+  
+  /* Media queries for responsiveness */
+  @media only screen and (max-width: 768px) {
+    /* Styles for screens up to 768px wide */
+    .title-test {
+        font-size: 20px;
+    }
+  
+    .text-test {
+        font-size: 16px;
+    }
+  }
+  
+  @media only screen and (max-width: 480px) {
+    /* Styles for screens up to 480px wide */
+    .title-test {
+        font-size: 18px;
+    }
+  
+    .text-test {
+        font-size: 14px;
+    }
+  
+    .start-test button {
+        font-size: 14px;
+        position: relative;
+        top: -25px;
+    }
+  }
+  
+  
+  
