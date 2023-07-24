@@ -17,7 +17,7 @@ function myFunction() {
 
 // authorize popup 
 var modal = document.getElementById("myModal");
-var btn = document.getElementById("myBtn");
+var btn = document.getElementById("myBaton");
 var btn1 = document.getElementById("myBtnResponsive");
 var closeBtn = document.getElementsByClassName("close")[0];
  
