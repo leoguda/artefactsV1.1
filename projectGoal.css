@@ -129,7 +129,7 @@ header{
   border: 1px solid rgb(172, 172, 172);
   background-color: rgb(172, 172, 172);
   padding-bottom: 2em;
-  padding-top: 3em;
+
 }
 
 .course-text {
@@ -146,9 +146,6 @@ header{
   align-items: center;
 }
 
-.img-container img {
-  width: 200px;
-}
 
 .img-container .lecture {
   width: 20em;
@@ -167,6 +164,7 @@ header{
 .fullwrap {
   max-width: 300px;
   position: relative; 
+  top: 2.01em;
 }
  
 /* (B) POSITION CAPTION */
