@@ -558,7 +558,7 @@ header{
     .navbar-container .log-info ul li a{
       letter-spacing: 0.2px;
     }
-  }
+  
   @media (max-width:992px) {
     .nav-info-responsive ul{
       height: 30em;
