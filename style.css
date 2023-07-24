@@ -669,9 +669,7 @@ h1 {
 .footer-clean ul a:hover {
   opacity:1;
 }
-.footer-clean .item.social {
-  /* text-align:right; */
-}
+
 .footer-clean .item.social > a {
   font-size:24px;
   /* width:40px; */
@@ -697,6 +695,7 @@ h1 {
   filter: brightness(70%);
 }
 .footer-container-div{
+  width: 1400px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -898,6 +897,9 @@ h1 {
   top: 0;
 }
 
+.partniorship-container-responsive{
+  display: none;
+}
 /* Start - footer */
 .footer-clean {
     display: flex;
@@ -965,6 +967,9 @@ h1 {
   .navbar-container .log-info ul li a{
     letter-spacing: 0.8px;
   }
+  .footer-container-div{
+    width: 1200px;
+  }
 }
 @media (max-width:1500px) {
   .projcard-container {
@@ -999,6 +1004,9 @@ h1 {
   .buttons #prevBtn {
     top: 50%;
     left: 7%;
+  }
+  .footer-container-div{
+    width: 950px;
   }
 }
 @media (max-width:1215px) {
@@ -1044,8 +1052,15 @@ h1 {
   .footer-clean .item.social > a {
     margin-top:40px;
   }
+  .footer-container-div{
+    width: initial;
+  }
 }
 @media (max-width:800px) {
+  .goal {
+    font-weight: bold;
+    font-size: 1.6em;
+  }
   .typing-demo{
     font-size: 1.5em;
   }
@@ -1098,6 +1113,19 @@ h1 {
     align-items: center;
   }
 }
+@media (max-width:400px) {
+  .goal {
+    font-weight: bold;
+    font-size:initial;
+  }
+  .nav-info-responsive ul li a{
+    font-size: 0.7em;
+  }
+  .navbar-div-responsive .nav-info-responsive ul li{
+    padding-bottom: 1em;
+    padding-left: 1em;
+  }
+}
 /* @media (max-width:500px) {
   .partniorship-container{
     transform: scale(0.5);
@@ -1113,18 +1141,50 @@ h1 {
 /* Start - რესპონსივის კოდის ეს ნაწილი იყო შუაში გამოკვეტებული, ობოლი ბავშვივით */
 /* Media Query for Responsive Design */
 @media (max-width: 600px) {
-  .projcard-innerbox {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
+  .partniorship-container{
+    display: none;
   }
   .mission-section h2 {
     font-size: 1.5rem;
   }
   .mission-section p {
     font-size: 1rem;
+  }
+  .partniorship-container-responsive{
+    margin: 3em 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+  }
+  .projcard-img-responsive{
+    box-shadow: 0.3em 0.3em 0.3em rgb(159, 159, 159);
+  }
+  .partniorship-container-div,
+  .partniorship-container-div a,
+  .projcard-title-responsive{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .projcard-title-responsive a{
+    color: white;
+  }
+  .projcard-img-responsive{
+    width: 80%;
+  }
+  .projcard-title-responsive{
+    position: absolute;
+    color: white;
+    background-color: rgba(128, 128, 128, 0.702);
+    width: 50%;
+  }
+  .projcard-subtitle-responsive {
+    font-family: 'Voces', 'Open Sans', arial, sans-serif;
+    color: white;
+    text-align: center;
   }
 }
 @media screen and (max-width: 500px) {
@@ -1153,8 +1213,11 @@ h1 {
   .nav-info-responsive ul{
     top: 4.5em;
   }
-   .log-info-responsive ul li a{
+  .log-info-responsive ul li a{
     font-size: 0.5em;
+  }
+  .log-info-responsive{
+    margin-right: 0.1em;
   }
   .typing-demo{
     font-size: 1em;
@@ -1169,7 +1232,61 @@ h1 {
     border-right: none;
   }
 }
+@media (max-width:340px) {
+  /* .wrapper{
+    display: none;
+  } */
+  .typing-demo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-weight: bolder;
+    animation: typing 2.5s steps(22), blink .5s step-end infinite alternate;
+    overflow: hidden;
+    width: 19.5ch;
+    white-space: nowrap;
+    border-right: 1px solid;
+    font-family: monospace;
+    font-size: 0.8em;
+  }
+  .projcard-img-responsive{
+    width: 90%;
+  }
+  .buttons #prevBtn,
+  .buttons #nextBtn {
+    transform: scale(3);
+  }
+  .nav-dots {
+    width: 150px;
+  }
+  .dot {
+    width: 10px;
+    height: 10px;
+    }
+  .logo-responsive a img, .logo a img{
+    width:51.5px;
+  }
+  .goal{
+    font-size: 0.9em;
 
+  }
+  .mission-section .mission-text p{
+    font-size: 0.75em;
+  }
+  .projcard-title-responsive{
+    position: absolute;
+    color: white;
+    background-color: rgba(128, 128, 128, 0.702);
+    width: 70%;
+  }
+  .projcard-title-responsive p,
+  .projcard-title-responsive a{
+    font-size: 0.75em;
+  }
+}
 @media (min-width:993px) {
 .navbar-div-responsive{
   display: none;
