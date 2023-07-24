@@ -20,10 +20,14 @@ function closeBurgerMenu(){
 // authorize popup 
 var modal = document.getElementById("myModal");
 var btn = document.getElementById("myBtn");
+var btn1 = document.getElementById("myBtnResponsive");
 var closeBtn = document.getElementsByClassName("close")[0];
  
 
 btn.addEventListener("click", function() {
+  modal.style.display = "block";
+});
+btn1.addEventListener("click", function() {
   modal.style.display = "block";
 });
                                 
