@@ -397,8 +397,7 @@ margin: 10px;
 
 .fullwrap img { width: 100%; }
 
-.fullwrap img:hover {
-}
+
 
 .fullwrap {
   max-width: 300px;
@@ -457,10 +456,9 @@ p {
   background-color: #ffaf55;
   width: 200px;
   height: 65px;
-  border-radius: 5px;
+  border-radius: 7px;
   transition: 0.2s;
   font-size: medium;
-  text-decoration: none;
   text-align: center;
   justify-content: center;
 }
