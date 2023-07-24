@@ -21,6 +21,7 @@
                     <li><a href="projectGoal.html">სვანური ენა</a></li>
                     <li><a href="blog.html">არტეფაქტების ბანკი</a></li>
                     <li><a href="contact.html">კონტაქტი</a></li>
+                    <li><a href="dashboard.html">dashboard</a></li>
                 </ul>
             </div>
             <div class="navbar-container-responsive">
@@ -37,7 +38,9 @@
             
                 <div class="log-info-responsive">
                     <ul>
-                        <li><a href="singIn.html"><img src="images/user-24px.png" alt="user"></a></li>
+                        <li>
+                            <img  id="myBtnResponsive" src="images/user-24px.png" alt="user">
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -62,9 +65,48 @@
                 </div>
 
                 <div class="log-info">
-                    <ul>
-                        <li><a href="login.html">ავტორიზაცია</a></li>
-                        <li><a href="dashboard.html">dashboard</a></li>
+                <ul>
+                    <li>
+                        <div id="myModal" class="modal">         
+                            <span class="close">&times;</span>
+                                <div class="container" id="container">
+                                    <div class="form-container sign-up-container">
+                                        <form action="#">
+                                        <h1>დარეგისტრირდი</h1>
+                                            <input type="text" placeholder="სახელი" />
+                                            <input type="email" placeholder="ელფოსტა" />
+                                            <input type="password" placeholder="პაროლი" />
+                                            <button>რეგისტრაცია</button>
+                                        </form>
+                                    </div>
+                        <div class="form-container sign-in-container">
+                            <form action="#">
+                                <h1>შესვლა</h1>
+                                    <input type="email" placeholder="ელფოსტა" />
+                                    <input type="password" placeholder="პაროლი" />
+                                        <a href="#">დაგავიწყდა პაროლი?</a>
+                                        <button>შესვლა</button>
+                            </form>
+                        </div>
+                        <div class="overlay-container">
+                            <div class="overlay">
+                                <div class="overlay-panel overlay-left">
+                                    <h1>კეთილი იყოს შენი დაბრუნება!</h1>
+                                    <p>დარჩი ჩვენთან შენი პირადი ინფორმავიით</p>
+                                    <button class="ghost" id="signIn">შესვლა</button>
+                                </div>
+                        <div class="overlay-panel overlay-right">
+                            <h1>გამარჯობა!</h1>
+                            <p>შეიყვანე პირადი ინფორმაცია და დაიწყე შენი თავგადასავალი</p>
+                            <button class="ghost" id="signUp">რეგისტრაცია</button>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                </div>
+                <button id="myBtn">ავტორიზაცია</button> 
+                    </li>
+                    <li><a href="dashboard.html">dashboard</a></li>
                     </ul>
                 </div>
             </div>
@@ -228,7 +270,7 @@
 
     <div class="footer-clean">
         <footer>
-            <div class="container">
+            <div class="footer-container">
                 <div class="row justify-content-center">
                     <div class="col-sm-4 col-md-3 item">
                         <h3>პროდუქტი</h3>
@@ -264,6 +306,6 @@
         ებაუთის ნაწილში, ჭკვიანი სოფელის და კონტაქტის ინფოს. და მესამე სექციაში ინფორმაციას ზოგადს -->
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="index.js"></script>
+    <script src="smart.js"></script>
 </body>
 </html>
