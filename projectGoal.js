@@ -80,3 +80,31 @@ const sectionHeaders = document.querySelectorAll(".section-header");
 
   // By default, hide all section contents except the first one
   toggleSectionContent(0);
+
+
+
+
+  
+
+const items = document.querySelectorAll('.accordion button');
+  function toggleAccordion() {
+    const itemToggle = this.getAttribute('aria-expanded');
+    for (i = 0; i < items.length; i++) {
+      items[i].setAttribute('aria-expanded', 'false');
+    }
+    if (itemToggle == 'false') {
+      this.setAttribute('aria-expanded', 'true');
+    }
+  }
+items.forEach((item) => item.addEventListener('click', toggleAccordion));
+
+
+
+
+const showContentLink = document.getElementById('showContentLink');
+const hiddenContent = document.getElementById('hiddenContent');
+
+showContentLink.onclick = function () {
+  hiddenContent.classList.toggle('visible');
+  return false; // Prevent the link from causing a page refresh
+};
