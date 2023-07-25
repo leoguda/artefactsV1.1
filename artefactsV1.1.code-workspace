@@ -1,10 +1,10 @@
 {
 	"folders": [
 		{
-			"path": "."
+			"path": "../../../../../../xampp/htdocs/artefactsV1.1"
 		},
 		{
-			"path": "../../../Desktop/acordion"
+			"path": "."
 		}
 	],
 	"settings": {
