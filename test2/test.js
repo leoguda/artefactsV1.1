@@ -1,26 +1,44 @@
 const questions = [
     {
-      question: "What is the highest peak in Svaneti?",
-      answers: ["Ushba", "Tetnuldi", "Shkhara", "Laila"],
-      correctAnswers: [2], // Shkhara is the correct answer
+      question: "1.   სვანურში მისალმების ფორმაა: ",
+      answers: ["ა)    ღრბეთუ  ლაჯშედა!  ", "ბ)    ივასუ ხრი!  ", " გ)   იმჟი ხრი!", "დ)   ხოჩა  ლადეღ!", "ე)   მიშგუ  ლადეღ  სი!"],
+      correctAnswers: [3], // Shkhara is the correct answer
       allowMultiple: false,
     },
     {
-      question: "Which famous trekking route is located in Svaneti?",
-      answers: ["Appalachian Trail", "Great Himalaya Trail", "Tour du Mont Blanc", "Mestia-Ushguli Trek"],
-      correctAnswers: [3], // Mestia-Ushguli Trek is the correct answer
+      question: "2.	ქართველური ენებია: ",
+      answers: ["ა)   კოლხური,  სვანური,  აფხაზური,  ხუნძური", "ბ)    ქართული,  მეგრულ-ჭანური / ზანური,   სვანური", "გ)    იბერიული,   ეტრუსკული,  ბასკური, ადიღური", "დ)   სვანური,  პელაზგური,   ხეთური, ბასკური"],
+      correctAnswers: [1], // Mestia-Ushguli Trek is the correct answer
       allowMultiple: false,
     },
     {
-      question: "What is the traditional Svanetian defensive tower called?",
-      answers: ["Chateau", "Rook", "Svaneti Tower", "Koshki"],
-      correctAnswers: [3], // Koshki is the correct answer
+      question: "3. მესამე პირის  ნაცვალსახელებია: ",
+      answers: ["ა)   ეჯა   –   ეჯრ", "ბ)    მი       –   ნ", "გ)   ნ    –    სგ", "დ)  სგ   –    სი"],
+      correctAnswers: [0], // Koshki is the correct answer
       allowMultiple: false,
     },
     {
-        question: "What is the main town in Upper Svaneti?",
-        answers: ["Mestia", "Ushguli", "abgd", "evzt"],
-        correctAnswers: [0, 1], // Mestia and Ushguli are both correct answers
+      question: "4.  სვანური ენის  დიალექტებია:",
+      answers: ["ა) უშგულური,  ლატალური,  ცხუმარული, ჩოლურული", "ბ)  ბალსზემოური,  ბალსქვემოური,   ლენტეხური,  ლაშხური", "გ)   კოდორული,  მულახური,  ლახამულური,  ლენტეხური ", "დ) ლაშხური,  ბეჩოური,   მესტიურ-ლენჯერული,  ეცერული"],
+      correctAnswers: [1], // Koshki is the correct answer
+      allowMultiple: false,
+    },
+    {
+      question: "5.	პირველი  ისტორიული ცნობები   სვანეთისა  და სვანური  ენის შესახებ  გვხვდება:",
+      answers: ["  ა)    I   საუკუნეში    ", "ბ)    IX  საუკუნეში", "გ)    V  საუკუნეში", "დ)   II საუკუნეში", "ე)    ანტიკურ პერიოდში"],
+      correctAnswers: [4], // Koshki is the correct answer
+      allowMultiple: false,
+    },
+    {
+      question: "6. კვირის  დღეს   არ  აღნიშნავს: ",
+      answers: ["ა)  დშდიშ ", "ბ)   ნაგზი", "გ)   საფტინ ", "დ)  მიშლადეღ ", "ე)    თახშ"],
+      correctAnswers: [1], // Koshki is the correct answer
+      allowMultiple: false,
+    },
+    {
+        question: "7.  წელიწადის  დროს  აღნიშნავს: ",
+        answers: ["ა)    ლიმრიე", "ბ)   თანაფ", "გ)    გვირკ", "დ)   ლალხორშ  ", "ე)     მუჟღვერ ", "ვ)    ლუფხვ "],
+        correctAnswers: [4, 5], // Mestia and Ushguli are both correct answers
         allowMultiple: true,
         distributePercentage: true, // Add a property to indicate equal distribution of percentage
       }
