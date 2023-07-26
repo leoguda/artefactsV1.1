@@ -387,7 +387,7 @@ margin: 10px;
 }
 .carousel-image {
   width: 100%;
-  height: 800px;
+  height: 830px;
     object-fit: cover;
   position: absolute;
   opacity: 0;
@@ -484,10 +484,11 @@ margin: 10px;
 /* searchbar */
 
 .search{
-display: flex;
+display: flex; 
 justify-content: center;
+margin-top: 35px;
 }
-
+/* სერჩ ბარის პირველი ვერსია
 .input-box {
   position: relative;
   height: 76px;
@@ -533,8 +534,8 @@ justify-content: center;
 }
 .input-box .button:active {
   transform: translateY(-50%) scale(0.98);
-}
-
+} */
+/* searchbar */
 
 .goal {
   font-weight: bold;
@@ -651,7 +652,7 @@ h1 {
 
 .projcard {
   position: relative;
-  width: 700px;
+  width: 800px;
   height: 400px;
   margin-bottom: 40px;
   border-radius: 10px;
@@ -705,6 +706,13 @@ h1 {
 .projcard:hover .projcard-bar {
   width: 70px;
 }
+
+.projcard a {
+  text-decoration: none;
+  color: #000000;
+}
+
+
 .projcard-textbox {
   position: absolute;
   top: 7%;
