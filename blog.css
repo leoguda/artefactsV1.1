@@ -687,8 +687,11 @@ input {
       }
   }
 
+  .space-div{
+    height: 45vh;
+  }
+
   .main-blog-meaning{
-      margin: 25em 0 0 0;
       background-color: #f1f0f0;
   }
 
