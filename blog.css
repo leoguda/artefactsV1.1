@@ -1346,6 +1346,9 @@ input {
     }
   }
   @media (max-width:261px){
+    .space-div{
+      height: 5vh;
+    }
     .main-blog0{
       transform: scale(0.7);
     }
