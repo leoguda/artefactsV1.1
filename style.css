@@ -484,13 +484,11 @@ margin: 10px;
 /* searchbar */
 
 .search{
-display: flex;
+display: flex; 
 justify-content: center;
 margin-top: 35px;
 }
-
-
-
+/* სერჩ ბარის პირველი ვერსია
 .input-box {
   position: relative;
   height: 76px;
@@ -536,8 +534,8 @@ margin-top: 35px;
 }
 .input-box .button:active {
   transform: translateY(-50%) scale(0.98);
-}
-
+} */
+/* searchbar */
 
 .goal {
   font-weight: bold;
