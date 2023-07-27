@@ -84,8 +84,6 @@ const sectionHeaders = document.querySelectorAll(".section-header");
 
 
 
-  
-
 const items = document.querySelectorAll('.accordion button');
   function toggleAccordion() {
     const itemToggle = this.getAttribute('aria-expanded');
@@ -108,3 +106,24 @@ showContentLink.onclick = function () {
   hiddenContent.classList.toggle('visible');
   return false; // Prevent the link from causing a page refresh
 };
+
+
+
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+  
+
+
+
