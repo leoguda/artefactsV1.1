@@ -197,7 +197,7 @@ const questions = [
       {
         question: "33. გუნ ხოჩა ლიმბვლ  ხოხალდა  ჯაბექს  –  კარგი საუბარი  იცოდა ჯაბექმა. სუბიექტი  ამ  წინადადებაში დგას: ",
         answers: ["ა)  მოთხრობითში", "ბ) ვითარებითში", "გ) სახელობითში", "დ) მიცემითში ", "ე)   ნათესაობითში"],
-        correctAnswers: [3], // Koshki is the correct answer
+        correctAnswers: [4], // Koshki is the correct answer
         allowMultiple: false,
       },
       {
@@ -215,7 +215,7 @@ const questions = [
       {
         question: "36. სვანურისთვის  აზრობრივად  არასწორი  წინადადებაა:",
         answers: ["ა)  სი  ესღრი ქორ-თე   –   შენ  მიდიხარ  სახლ-ში.  ", "ბ )     სი  ხრი  ქორ-ს   –   შენს  ხარ  სახლ-ში. ", "გ) ჯაბექ  აჩდ  შვნ-თე    –  ჯაბექი  წავიდა  სვანეთში. ", "დ)     ჯაბექ   რი   შვნ-თე    –  ჯაბექი  არის  სვანეთში. ", "ე) ჯაბექ  რი  შვნ-ს   –  ჯაბექი  არის  სვანეთში. "],
-        correctAnswers: [3], // Koshki is the correct answer
+        correctAnswers: [4], // Koshki is the correct answer
         allowMultiple: false,
       },
       {
