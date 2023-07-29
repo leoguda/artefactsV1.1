@@ -41,6 +41,13 @@ const questions = [
         correctAnswers: [4, 5], // Mestia and Ushguli are both correct answers
         allowMultiple: true,
         distributePercentage: true, // Add a property to indicate equal distribution of percentage
+      },
+      {
+        question: "8. ვის  არის ავტორი  სვანურის პირველი  გრამატიკული  მიმოხილვისა:",
+        answers: ["ა)    ლიმრიე", "ბ)   თანაფ", "გ)    გვირკ", "დ)   ლალხორშ  ", "ე)     მუჟღვერ ", "ვ)    ლუფხვ "],
+        correctAnswers: [4, 5], // Mestia and Ushguli are both correct answers
+        allowMultiple: true,
+        distributePercentage: true, // Add a property to indicate equal distribution of percentage
       }
   ];
   
