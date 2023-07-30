@@ -124,9 +124,6 @@ signInButton.addEventListener('click', () => {
 //   });
 // }
   
-
-
-
 const accordionItemHeaders = document.querySelectorAll(
   ".accordion-item-header"
 );
@@ -154,3 +151,43 @@ accordionItemHeaders.forEach((accordionItemHeader) => {
     }
   });
 });
+
+
+function showVideo(topic) {
+  // Get the video URL based on the topic
+  var videoUrl = getVideoUrl(topic);
+
+  if (videoUrl) {
+    // Create the iframe element and set its attributes
+    var iframe = document.createElement('iframe');
+    iframe.setAttribute('width', '560');
+    iframe.setAttribute('height', '315');
+    iframe.setAttribute('src', videoUrl);
+    iframe.setAttribute('frameborder', '0');
+    iframe.setAttribute('allowfullscreen', 'true');
+
+    // Clear the previous content in the videoContainer
+    var videoContainer = document.getElementById('videoContainer');
+    videoContainer.innerHTML = '';
+
+    // Append the iframe to the videoContainer
+    videoContainer.appendChild(iframe);
+  }
+}
+
+function getVideoUrl(topic) {
+  // Replace these URLs with the actual video URLs for each topic
+  var videoUrls = {
+    'html_css_js': 'https://www.youtube.com/embed/your_html_css_js_video',
+    'frameworks': 'https://www.youtube.com/embed/your_frameworks_video',
+    'responsive_design': 'https://www.youtube.com/embed/your_responsive_design_video',
+    'git': 'https://www.youtube.com/embed/your_git_video',
+    'testing_debugging': 'https://www.youtube.com/embed/your_testing_debugging_video',
+    'dev_tools': 'https://www.youtube.com/embed/your_dev_tools_video',
+    'web_performance': 'https://www.youtube.com/embed/your_web_performance_video',
+    'seo': 'https://www.youtube.com/embed/your_seo_video',
+    // Add more video URLs for other topics if needed
+  };
+
+  return videoUrls[topic] || null;
+}
