@@ -8,19 +8,19 @@ const questions = [
     {
       question: "2. ჩამოთვლილი ზმნებიდან რომელია ინკლუზიური ფორმა?",
       answers: ["ა) ნ ლაშდბად – ჩვენ ვმუშაობთ", "ბ) ნ ხვიჭვდნიდ – ჩვენ ვკითხულობთ", "გ) ნ ხვიზელლდ – ჩვენ დავდივართ", "დ) ნ ნალტ – ჩვენ გვიყვარს"],
-      correctAnswers: [3], // Mestia-Ushguli Trek is the correct answer
+      correctAnswers: [0], // Mestia-Ushguli Trek is the correct answer
       allowMultiple: false,
     },
     {
-      question: "3.  ჩამოთვლილთაგან რომელია რთული სიტყვა ანუ კომპოზიტი: ",
-      answers: ["ა) ჯაბექ ი ბექნუ ", "ბ) ბიძ-ნიბშინ", "გ) ხოჩმდ იღრლ ", "დ) ხქლხ გაცხდ "],
+      question: "3. სვანურად ვიჭმ ლექსემით აღინიშნება:",
+      answers: ["ა) შიმშილობა ", "ბ) მარხვა, ქრისტეშობის მარხვა, დეკემბერი ", "გ) თიბვა, მკა, ლეწვა ", "დ) პურობა, დაპურება, ტრაპეზი"],
       correctAnswers: [1], // Koshki is the correct answer
       allowMultiple: false,
     },
     {
-      question: "4. ჩამოთვლილ ფორმათაგან რომელი არ გამოხატავს ბრძანებით კილოს?",
-      answers: ["ა) ლქვინ ეჯნემ", "ბ) ლქვახ ეჯრდ მლე ", " გ) ლხღირლ სი ", "დ) ამერინ შვნთე  ", "ე) ლხღირლედ სგ "],
-      correctAnswers: [0], // Koshki is the correct answer
+      question: "4. ჩამთვლილ ზმნათაგან რომელი გამოხატავს ბრძანებას მესამე პირისადმი?",
+      answers: ["ა) ადერდ სგ! ", "ბ) ლჭოდნას ეჯნემ! ", "გ) ხეკვეს აჩე სი!", "დ) ათგედ სგ!", "ე) აჩდდ სგ! "],
+      correctAnswers: [1], // Koshki is the correct answer
       allowMultiple: false,
     }
     
