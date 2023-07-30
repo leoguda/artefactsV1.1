@@ -75,7 +75,7 @@ header{
     justify-content: space-around;
     align-items: center;
     background-color: white;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(62, 62, 62, 0.3) 0px 8px 16px -8px;
+    box-shadow: rgba(62, 62, 62, 0.3) 0px 8px 16px -8px;
 }
 .navbar-container .logo {
   padding:  1.5em;
