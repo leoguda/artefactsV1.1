@@ -57,73 +57,100 @@ signInButton.addEventListener('click', () => {
 // accordion
 
 
-const sectionHeaders = document.querySelectorAll(".section-header");
-  const sectionContents = document.querySelectorAll(".section-content");
+// const sectionHeaders = document.querySelectorAll(".section-header");
+//   const sectionContents = document.querySelectorAll(".section-content");
 
-  // Function to toggle the visibility of section content
-  function toggleSectionContent(index) {
-    sectionContents.forEach((content, i) => {
-      if (i === index) {
-        content.classList.toggle("show");
-      } else {
-        content.classList.remove("show");
-      }
-    });
-  }
+//   // Function to toggle the visibility of section content
+//   function toggleSectionContent(index) {
+//     sectionContents.forEach((content, i) => {
+//       if (i === index) {
+//         content.classList.toggle("show");
+//       } else {
+//         content.classList.remove("show");
+//       }
+//     });
+//   }
 
-  // Add click event listeners to section headers
-  sectionHeaders.forEach((header, index) => {
-    header.addEventListener("click", () => {
-      toggleSectionContent(index);
-    });
-  });
+//   // Add click event listeners to section headers
+//   sectionHeaders.forEach((header, index) => {
+//     header.addEventListener("click", () => {
+//       toggleSectionContent(index);
+//     });
+//   });
 
-  // By default, hide all section contents except the first one
-  toggleSectionContent(0);
-
-
-
-
-const items = document.querySelectorAll('.accordion button');
-  function toggleAccordion() {
-    const itemToggle = this.getAttribute('aria-expanded');
-    for (i = 0; i < items.length; i++) {
-      items[i].setAttribute('aria-expanded', 'false');
-    }
-    if (itemToggle == 'false') {
-      this.setAttribute('aria-expanded', 'true');
-    }
-  }
-items.forEach((item) => item.addEventListener('click', toggleAccordion));
+//   // By default, hide all section contents except the first one
+//   toggleSectionContent(0);
 
 
 
 
-const showContentLink = document.getElementById('showContentLink');
-const hiddenContent = document.getElementById('hiddenContent');
+// const items = document.querySelectorAll('.accordion button');
+//   function toggleAccordion() {
+//     const itemToggle = this.getAttribute('aria-expanded');
+//     for (i = 0; i < items.length; i++) {
+//       items[i].setAttribute('aria-expanded', 'false');
+//     }
+//     if (itemToggle == 'false') {
+//       this.setAttribute('aria-expanded', 'true');
+//     }
+//   }
+// items.forEach((item) => item.addEventListener('click', toggleAccordion));
 
-showContentLink.onclick = function () {
-  hiddenContent.classList.toggle('visible');
-  return false; // Prevent the link from causing a page refresh
-};
 
 
 
-var acc = document.getElementsByClassName("accordion");
-var i;
+// const showContentLink = document.getElementById('showContentLink');
+// const hiddenContent = document.getElementById('hiddenContent');
 
-for (i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var panel = this.nextElementSibling;
-    if (panel.style.display === "block") {
-      panel.style.display = "none";
-    } else {
-      panel.style.display = "block";
-    }
-  });
-}
+// showContentLink.onclick = function () {
+//   hiddenContent.classList.toggle('visible');
+//   return false; // Prevent the link from causing a page refresh
+// };
+
+
+
+// var acc = document.getElementsByClassName("accordion");
+// var i;
+
+// for (i = 0; i < acc.length; i++) {
+//   acc[i].addEventListener("click", function() {
+//     this.classList.toggle("active");
+//     var panel = this.nextElementSibling;
+//     if (panel.style.display === "block") {
+//       panel.style.display = "none";
+//     } else {
+//       panel.style.display = "block";
+//     }
+//   });
+// }
   
 
 
 
+const accordionItemHeaders = document.querySelectorAll(
+  ".accordion-item-header"
+);
+
+accordionItemHeaders.forEach((accordionItemHeader) => {
+  accordionItemHeader.addEventListener("click", (event) => {
+    // Uncomment in case you only want to allow for the display of only one collapsed item at a time!
+
+    const currentlyActiveAccordionItemHeader = document.querySelector(
+      ".accordion-item-header.active"
+    );
+    if (
+      currentlyActiveAccordionItemHeader &&
+      currentlyActiveAccordionItemHeader !== accordionItemHeader
+    ) {
+      currentlyActiveAccordionItemHeader.classList.toggle("active");
+      currentlyActiveAccordionItemHeader.nextElementSibling.style.maxHeight = 0;
+    }
+    accordionItemHeader.classList.toggle("active");
+    const accordionItemBody = accordionItemHeader.nextElementSibling;
+    if (accordionItemHeader.classList.contains("active")) {
+      accordionItemBody.style.maxHeight = accordionItemBody.scrollHeight + "px";
+    } else {
+      accordionItemBody.style.maxHeight = 0;
+    }
+  });
+});

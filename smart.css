@@ -72,11 +72,10 @@ header{
 
 .navbar-container {
     display: flex;
-    height: 90px;
     justify-content: space-around;
     align-items: center;
     background-color: #6FA141 ;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(62, 62, 62, 0.3) 0px 8px 16px -8px;
+    box-shadow: rgba(62, 62, 62, 0.3) 0px 8px 16px -8px;
 }
 .navbar-container .logo {
   padding:  1em;
@@ -89,7 +88,7 @@ header{
 }
 .logo-responsive a img, .logo a img{
   width:60px;
-  margin-top: 27px;
+  margin-top: 16px;
 }
 .navbar-container .nav-info ul{
   display: flex;
@@ -429,9 +428,21 @@ font-size: small;
    */
 
  
+    .news-text {
+      text-align: center;
+      font-weight: bolder;
+      font-size: 2em;
+      margin-top: 50px;
+    }
+
+    .news-text h1 {
+      font-size: 1.5em;
+    }
+
+
 
    article {
-    margin-top: 30px;
+    margin-top: 60px;
     --img-scale: 1.001;
     --title-color: black;
     --link-icon-translate: -20px;
@@ -439,16 +450,18 @@ font-size: small;
     position: relative;
     border-radius: 16px;
     box-shadow: none;
-    background: #ebebeb;
+    background: #f3f4f8;
     transform-origin: center;
     transition: all 0.4s ease-in-out;
     overflow: hidden;
     margin-bottom: 30px;
+    cursor: pointer;
   }
 
   
   /* basic article elements styling */
   article h2 {
+    text-align: center;
     margin: 0 0 18px 0;
     font-family: "Bebas Neue", cursive;
     font-size: 1.9rem;
@@ -457,6 +470,11 @@ font-size: small;
     transition: color 0.3s ease-out;
   }
   
+article p {
+  font-size: 1em;
+  text-align: center;
+}
+
   figure {
     margin: 0;
     padding: 0;
@@ -502,7 +520,7 @@ font-size: small;
     --title-color: #28666e;
     --link-icon-translate: 0;
     --link-icon-opacity: 1;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    box-shadow: rgba(144, 144, 151, 0.2) 0px 7px 29px 0px;
   }
   
   
@@ -518,14 +536,21 @@ font-size: small;
   
   .articles img{
     width: 100%;
-    max-height: 400px;
+    max-height: 250px;
+    filter: grayscale(20%);
+    transition: 1s;
   }
   
+
+
+  .articles img:hover {
+    filter: grayscale(50%);
+  }
   
 
   .articles {
     display: grid;
-    max-width: 1200px;
+    max-width: 550px;
     margin-inline: auto;
     padding-inline: 24px;
     /* grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); */
@@ -572,10 +597,56 @@ font-size: small;
     width: 1px;
   }
 
+  .news-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+  }
+  
+  .news-card {
+    width: 300px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    padding: 20px;
+  }
+  
+  .news-card img {
+    width: 100%;
+    border-radius: 5px;
+  }
+  
+  .news-card h3 {
+    font-size: 18px;
+    margin: 10px 0;
+  }
+  
+  .news-card p {
+    font-size: 14px;
+    color: #555555;
+  }
+  
+  .news-card a {
+    display: block;
+    text-align: center;
+    margin-top: 15px;
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+  }
+  
+  .news-card a:hover {
+    color: #0056b3;
+  }
+
+
+
+
 
 /* პარტნიორები */
 .partners-logo {
-
   margin-bottom: -200px;
   margin-top: 20px;
 }
