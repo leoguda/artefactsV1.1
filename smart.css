@@ -78,7 +78,6 @@ header{
 }
 .navbar-container .logo {
 padding:  1.5em;
-filter: brightness(80%);
 border-radius: 50%;
 }
 .navbar-container .logo img{
