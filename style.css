@@ -57,7 +57,7 @@ header{
     padding: 3em 0em;
     width: 100%;
     border-top: #e7e7e7 solid 1px;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(62, 62, 62, 0.3) 0px 8px 16px -8px;
+    box-shadow: rgba(50, 50, 93, 0.25) -1px 10px 5px;
   }
   .navbar-div-responsive .nav-info-responsive ul li{
     padding-bottom: 1em;
@@ -488,54 +488,6 @@ display: flex;
 justify-content: center;
 margin-top: 35px;
 }
-/* სერჩ ბარის პირველი ვერსია
-.input-box {
-  position: relative;
-  height: 76px;
-  max-width: 900px;
-  width: 100%;
-  background: #fff;
-  margin-top: 50px;
-  margin-bottom: 20px;
-  border-radius: 8px;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
-}
-.input-box i,
-.input-box .button {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-}
-.input-box i {
-  left: 20px;
-  font-size: 30px;
-  color: #707070;
-}
-.input-box input {
-  height: 100%;
-  width: 100%;
-  outline: none;
-  font-size: 18px;
-  font-weight: 400;
-  border: none;
-  padding: 0 155px 0 65px;
-  background-color: transparent;
-}
-.input-box .button {
-  right: 20px;
-  font-size: 16px;
-  font-weight: 400;
-  color: #fff;
-  border: none;
-  padding: 12px 30px;
-  border-radius: 6px;
-  background-color: #4070f4;
-  cursor: pointer;
-}
-.input-box .button:active {
-  transform: translateY(-50%) scale(0.98);
-} */
-/* searchbar */
 
 .goal {
   font-weight: bold;
@@ -957,6 +909,9 @@ h1 {
   }
 /* End - footer */
 
+
+
+
 /* Start - responsive */
 @media (max-width:1700px) {
   .navbar-container .logo img{
@@ -1036,6 +991,7 @@ h1 {
 }
 @media (max-width:992px) {
   .nav-info-responsive ul{
+    top: 6em;
     height: 30em;
   }
   .navbar-container-responsive{
@@ -1082,11 +1038,11 @@ h1 {
     top: 70%;
     right: 40%;
   }
-}
-@media (max-width:767px) {
   .partniorship-container{
     transform: scale(0.8);
   }
+}
+@media (max-width:767px) {
   .footer-clean .item {
     text-align:center;
     padding-bottom:20px;
@@ -1118,33 +1074,6 @@ h1 {
     align-items: center;
   }
 }
-@media (max-width:400px) {
-  .goal {
-    font-weight: bold;
-    font-size:initial;
-  }
-  .nav-info-responsive ul li a{
-    font-size: 0.7em;
-  }
-  .navbar-div-responsive .nav-info-responsive ul li{
-    padding-bottom: 1em;
-    padding-left: 1em;
-  }
-}
-/* @media (max-width:500px) {
-  .partniorship-container{
-    transform: scale(0.5);
-  }
-} */
-
-
-
-
-
-
-
-/* Start - რესპონსივის კოდის ეს ნაწილი იყო შუაში გამოკვეტებული, ობოლი ბავშვივით */
-/* Media Query for Responsive Design */
 @media (max-width: 600px) {
   .partniorship-container{
     display: none;
@@ -1210,8 +1139,18 @@ h1 {
     padding: 8px 18px;
   }
 }
-/* End - რესპონსივის კოდის ეს ნაწილი იყო შუაში გამოკვეტებული */
 @media (max-width:400px) {
+  .goal {
+    font-weight: bold;
+    font-size:initial;
+  }
+  .nav-info-responsive ul li a{
+    font-size: 0.7em;
+  }
+  .navbar-div-responsive .nav-info-responsive ul li{
+    padding-bottom: 1em;
+    padding-left: 1em;
+  }
   .logo-responsive a img, .logo a img{
     width:71.5px;
   }
@@ -1224,13 +1163,12 @@ h1 {
   .log-info-responsive{
     margin-right: 0.1em;
   }
-  .typing-demo{
-    font-size: 1em;
-  }
+ 
   .projects-goal .projects-text{
     font-size: 0.75em;
   }
   .typing-demo {
+    font-size: 1em;
     display: flex;
     flex-direction: column;
     animation:none;
@@ -1238,9 +1176,9 @@ h1 {
   }
 }
 @media (max-width:340px) {
-  /* .wrapper{
-    display: none;
-  } */
+  .nav-info-responsive ul{
+    top: 3em;
+  } 
   .typing-demo {
     position: absolute;
     top: 50%;
@@ -1276,7 +1214,6 @@ h1 {
   }
   .goal{
     font-size: 0.9em;
-
   }
   .mission-section .mission-text p{
     font-size: 0.75em;
@@ -1298,5 +1235,8 @@ h1 {
 }
 }
 /* End - responsive */
+
+
+
 
 
