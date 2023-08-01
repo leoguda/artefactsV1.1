@@ -89,10 +89,10 @@ const prevSlide = () => {
   dotsPrevSlide();
 };
 
-nextBtn.addEventListener("click", k => {
+nextBtn.addEventListener("click", () => {
   nextSlide();
 });
-prevBtn.addEventListener("click", k => {
+prevBtn.addEventListener("click", () => {
   prevSlide();
 });
 
