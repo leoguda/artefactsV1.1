@@ -15,6 +15,14 @@
     margin: 0;
     background-color: #f1f0f0;
   }
+
+
+  .quiz {
+    text-decoration: none;
+    color: black;
+    margin-left: 15px;
+  }
+
   .accordion-container {
     display: flex;
     flex-direction: column;
@@ -48,7 +56,7 @@
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
-    height: 100vh;
+    height: 150vh;
   }
   .container-button ul li {
     list-style: none;
@@ -82,3 +90,4 @@
         margin-right: 0em;
       }
   }
+
