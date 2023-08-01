@@ -311,8 +311,6 @@ margin: 10px;
   text-align: center;
   text-rendering: geometricprecision;
   text-transform: none;
-  user-select: none;
-  -webkit-user-select: none;
   touch-action: manipulation;
   vertical-align: middle;
 }
@@ -324,16 +322,6 @@ margin: 10px;
   color: white;
   }
 
-.button-24:hover,
-.button-24:active {
-  background-color: #ff4842d8;
-  background-position: 0 0;
-  color: white;
-}
-
-.button-24:active {
-  opacity: .5;
-}
 
 
 #myBaton {
