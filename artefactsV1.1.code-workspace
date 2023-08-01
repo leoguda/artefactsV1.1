@@ -1,14 +1,11 @@
 {
 	"folders": [
 		{
-			"path": "../../../../../../xampp/htdocs/artefactsV1.1"
-		},
-		{
 			"path": "."
 		}
 	],
 	"settings": {
-		"liveServer.settings.port": 5503,
-		"liveServer.settings.multiRootWorkspaceName": "artefactsV1.1"
+		"liveServer.settings.port": 5504,
+		"liveServer.settings.multiRootWorkspaceName": "api test"
 	}
 }
