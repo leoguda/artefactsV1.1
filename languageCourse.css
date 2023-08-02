@@ -29,8 +29,7 @@
     margin: 0.5em 2em 0 2em;
   }
   #player{
-    /* margin-top: 10em;  იქნებ კურსების სიმაღლეზე გავაჩეროთ?*/
-    margin-right: 3em;
+    /* margin-top: 5em; */
     border-radius: 0.5em;
     box-shadow: 0 1em 1em rgb(95, 95, 95),0 0 0.5em black;
   }
