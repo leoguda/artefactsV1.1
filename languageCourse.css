@@ -20,7 +20,8 @@
   .quiz {
     text-decoration: none;
     color: black;
-    margin-left: 15px;
+    margin-left: 16px;
+    font-size: 1.2em;
   }
 
   .accordion-container {
@@ -35,10 +36,9 @@
   }
   .accordion {
     background-color: #f0f0ff;
-    color: #444;
     cursor: pointer;
     padding: 1em;
-    width: 12em;
+    width: 22em;
     text-align: left;
     outline: none;
     font-size: 1em;
@@ -57,7 +57,7 @@
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
-    height: 150vh;
+    height: 200vh;
   }
 
 
@@ -71,7 +71,7 @@
     padding: 1em;
     cursor: pointer;
     border-radius: 0.2em;
-    font-size: 1em;
+    font-size: 1.2em;
   }
   .hoverColor{
     text-decoration: underline;
