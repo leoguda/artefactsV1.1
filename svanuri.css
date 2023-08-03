@@ -405,19 +405,19 @@ margin: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 1px solid rgb(172, 172, 172);
-  background-color: rgb(172, 172, 172);
-  padding-bottom: 20em;
+  border: 1px solid rgb(187, 187, 187);
+  background-color: rgb(187, 187, 187);
+  padding-bottom: 11.5em;
 }
 
 
 
 .course-text {
+  text-align: center;
   width: 60%;
   text-align:justify;
-  margin-left: 20%;
   color: white;
-  padding-top: 50px;
+  padding-top: 10em;
 } 
 
 .img-container {
@@ -431,7 +431,7 @@ margin: 10px;
 
 
 p {
-  font-size: 1.2em;
+  font-size: 1.5em;
   width: 100%;
   line-height: 1.3;
 }
