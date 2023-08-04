@@ -74,3 +74,27 @@ function showCurrentVideo(){
     event.currentTarget.classList.add("hoverColor");
 }
 
+
+
+
+
+
+
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+      var panel = this.nextElementSibling;
+      var activeAccordions = document.querySelectorAll(".div-accordion-container .accordion.active");
+      for (var j = 0; j < activeAccordions.length; j++) {
+          activeAccordions[j].classList.remove("active");
+          activeAccordions[j].nextElementSibling.style.maxHeight = null;
+      }
+
+      this.classList.toggle("active");
+      panel.style.maxHeight = panel.scrollHeight + "px";
+  });
+}
+
+

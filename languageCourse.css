@@ -20,7 +20,7 @@
   .quiz {
     text-decoration: none;
     color: black;
-    margin-left: 16px;
+    margin-left: 1em;
     font-size: 1.2em;
   }
 
@@ -40,27 +40,33 @@
     padding: 1em;
     width: 22em;
     text-align: left;
-    outline: none;
     font-size: 1em;
     transition: 0.4s;
     border-radius: 0.5em;
     z-index: 10000000;
+    margin-top:20px;
+    text-align: left;
+    outline: none;
+    transition: 0.4s;
   }
+  
   .active, .accordion:hover {
     background-color: white; 
   }
+
   .panel {
     display: none;
-    
+    font-size: 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
   }
+
   .main-container {
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
-    height: 150vh;
   }
-
-
   
   .container-button ul li {
     list-style: none;
