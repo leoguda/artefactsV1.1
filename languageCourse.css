@@ -16,7 +16,9 @@
     background-color: #f1f0f0;
   }
 
-
+  .main-container{
+    background-color: rgb(199, 220, 199);
+  }
   .quiz {
     text-decoration: none;
     color: black;
@@ -30,12 +32,20 @@
     margin: 0.5em 2em 0 2em;
   }
   #player{
-    margin-top: 9em;
+    top: 2em;
+    right: 2em;
+    position: fixed;
+    /* background-color: rgb(163, 158, 150); */
+    background-position: 50%;
+    background-image: url(png/5.png);
+    background-repeat: no-repeat;
+    background-size: contain;
     border-radius: 0.5em;
-    box-shadow: 0 1em 1em rgb(95, 95, 95),0 0 0.5em black;
+    box-shadow: 0 1em 1em rgb(95, 95, 95),0 0 1em rgb(0, 0, 0);
   }
   .accordion {
-    background-color: #f0f0ff;
+    float: left;
+    background-color: rgba(5, 131, 5, 0.208);
     cursor: pointer;
     padding: 1em;
     width: 22em;
@@ -48,6 +58,7 @@
     text-align: left;
     outline: none;
     transition: 0.4s;
+    border: none;
   }
   
   .active, .accordion:hover {
@@ -64,7 +75,7 @@
 
   .main-container {
     display: flex;
-    flex-direction: row-reverse;
+    /* flex-direction: row-reverse; */
     justify-content: space-between;
   }
   
@@ -74,13 +85,13 @@
   .container-button button {
     border: none;
     background-color: transparent;
-    padding: 1em;
+    margin: 0.5em;
+    padding: 0.5em;
     cursor: pointer;
     border-radius: 0.2em;
     font-size: 1.2em;
   }
   .hoverColor{
-    text-decoration: underline;
     animation: hoverCover;
     animation-iteration-count: 1;
     animation-duration: 100ms;
@@ -88,10 +99,10 @@
   }
   @keyframes hoverCover{
     0%{
-        background-color: rgb(3, 207, 3);
+        background-color: rgb(0, 97, 0);
     }
     100%{
-        background-color: rgb(199, 220, 199);
+        background-color: rgb(222, 229, 222);
     }
   }
 
