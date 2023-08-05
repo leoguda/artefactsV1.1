@@ -313,6 +313,7 @@ margin: 10px;
   text-transform: none;
   touch-action: manipulation;
   vertical-align: middle;
+  transition: 0.2s;
 }
 
 
@@ -327,6 +328,47 @@ margin: 10px;
   }
 
   .button-24 a:hover {
+    color:white;
+  }
+
+  .button-25 {
+    margin-top: 10px;
+    width: 200px;
+    height: 65px;
+    background: rgb(84, 183, 84);
+    border: 1px solid rgb(84, 183, 84);
+    border-radius: 6px;
+    box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-family: nunito,roboto,proxima-nova,"proxima nova",sans-serif;
+    font-size: 16px;
+    font-weight: 800;
+    line-height: 16px;
+    min-height: 40px;
+    outline: 0;
+    padding: 12px 14px;
+    transition: 0.2s;
+    text-align: center;
+    text-rendering: geometricprecision;
+    text-transform: none;
+    touch-action: manipulation;
+    vertical-align: middle;
+  }
+
+  .button-25:hover {
+  background-color: rgb(78, 172, 78);
+}
+
+
+.button-25 a{
+  text-decoration: none;
+  color: white;
+  }
+
+  .button-25 a:hover {
     color:white;
   }
 

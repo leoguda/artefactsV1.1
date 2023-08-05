@@ -399,14 +399,6 @@ article p {
     padding: 1.5em;
   }
   
-  /* using the has() relational pseudo selector to update our custom properties */
-  /* article:has(:hover, :focus) {
-    --img-scale: 1.1;
-    --title-color: #28666e;
-    --link-icon-translate: 0;
-    --link-icon-opacity: 1;
-    box-shadow: rgba(144, 144, 151, 0.2) 0px 7px 20px 0px;
-  } */
   
   .articles img{
     width: 100%;
@@ -419,12 +411,13 @@ article p {
     filter: grayscale(50%);
   }
   .articles {
-    display: grid;
     max-width: 850px;
     margin-inline: auto;
     padding-inline: 24px;
     gap: 5em;
   }
+
+
 /* პარტნიორები */
 .partners-logo {
   margin-bottom: -200px;
