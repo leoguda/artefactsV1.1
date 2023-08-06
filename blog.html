@@ -20,7 +20,6 @@
                         <li><a href="svanuri.html">სვანური ენა</a></li>
                         <li><a href="blog.html">არტეფაქტების ბანკი</a></li>
                         <li><a href="contact.html">კონტაქტი</a></li>
-                        <!-- <li><a href="dashboard.html">dashboard</a></li> -->
                     </ul>
                 </div>
                 <div class="navbar-container-responsive">
@@ -114,54 +113,54 @@
         <main>
             <section class="main-navigation">
                 <div class="main-navigation-div">
-                    <div class="main-blog0 main-blog1"> 
-                        <a href="error.html">
+                    <div class="main-blog0 main-blog1 "> 
+                        <button onclick="showSection(div1)">
                             <img src="images/orange.png" alt="Vocabulary">
-                        </a>
-                        <a class="main-blog-a main-blog-a1" href="error.html">ლექსიკა</a>
+                        </button>
+                        <a onclick="showSection(div1)" class="main-blog-a main-blog-a1">ლექსიკა</a>
                     </div>
 
                     <div class="main-blog0 main-blog2">
-                        <a href="error.html">
+                        <button onclick="showSection(div2)">
                             <img src="images/blue.png" alt="Activities">
-                        </a>
-                        <a class="main-blog-a main-blog-a2" href="error.html">საქმიანობა</a>
+                        </button>
+                        <a onclick="showSection(div2)" class="main-blog-a main-blog-a2">საქმიანობა</a>
                     </div> 
 
                     <div class="main-blog0 main-blog3">
-                        <a href="error.html">
+                        <button onclick="showSection(div3)">
                             <img src="images/green.png" alt="Morals">
-                        </a>
-                        <a class="main-blog-a main-blog-a3" href="error.html"><!--ზნე- -->ჩვეულებანი</a>
+                        </button>
+                        <a onclick="showSection(div3)" class="main-blog-a main-blog-a3"><!--ზნე- -->ჩვეულებანი</a>
                     </div> 
 
                     <div class="main-blog0 main-blog4"> 
-                        <a href="error.html">
+                        <button onclick="showSection(div4)">
                             <img src="images/pink.png" alt="Stories">
-                        </a>
-                        <a class="main-blog-a main-blog-a4" href="error.html">გადმოცემები</a>
+                        </button>
+                        <a onclick="showSection(div4)" class="main-blog-a main-blog-a4">გადმოცემები</a>
                     </div>
                     
 
                     <div class="main-blog0 main-blog5"> 
-                        <a href="error.html">
+                        <button onclick="showSection(div5)">
                             <img src="images/black.png" alt="Holidays">
-                        </a>
-                        <a class="main-blog-a main-blog-a5" href="error.html">დღესასწაულები</a>
+                        </button>
+                        <a onclick="showSection(div5)" class="main-blog-a main-blog-a5">დღესასწაულები</a>
                     </div>
 
                     <div class="main-blog0 main-blog6"> 
-                        <a href="error.html">
+                        <button onclick="showSection(div6)">
                             <img src="images/lightblue.png" alt="Poetry, Folklore">
-                        </a>
-                        <a class="main-blog-a main-blog-a6" href="error.html"><!--პოეზია,--> ფოლკლორი</a>
+                        </button>
+                        <a onclick="showSection(div6)" class="main-blog-a main-blog-a6"><!--პოეზია,--> ფოლკლორი</a>
                     </div>
 
                     <div class="main-blog0 main-blog7"> 
-                        <a href="error.html">
+                        <button onclick="showSection(div7)">
                             <img src="images/brown.png" alt="Folk stories/Fairy tales">
-                        </a>
-                        <a class="main-blog-a main-blog-a7" href="error.html">ზღაპრები</a>
+                        </button>
+                        <a onclick="showSection(div7)" class="main-blog-a main-blog-a7">ზღაპრები</a>
                     </div>
                 </div>
             </section>
@@ -169,7 +168,7 @@
             <div class="space-div"></div>
 
             <section class="main-blog-meaning">
-                <div class="main-blog-meaning-div">
+                <div id="div0" class="main-blog-meaning-div active-blog">
                     <h2>არტეფაქტების ბანკი</h2>
                     <span>
                         <p> 
@@ -178,6 +177,90 @@
                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo fugit iure possimus, enim quod sit aliquam incidunt rem voluptatibus, nostrum sint quidem natus exercitationem tempora qui quisquam consequuntur at voluptates.
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim reprehenderit, assumenda sunt magnam, nulla, laudantium mollitia esse facilis veniam impedit maiores. Praesentium fugit dolores fugiat nesciunt eveniet velit at nobis.
                             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo fugit iure possimus, enim quod sit aliquam incidunt rem voluptatibus, nostrum sint quidem natus exercitationem tempora qui quisquam consequuntur at voluptates.
+                        </p>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo fugit iure possimus, enim quod sit aliquam incidunt rem voluptatibus, nostrum sint quidem natus exercitationem tempora qui quisquam consequuntur at voluptates.</p>
+                    </span>
+                </div>
+
+                <div id="div1" class="main-blog-meaning-div main-blog-meaning-div1">
+                    <h2>ლექსიკა</h2>
+                    <span>
+                        <p> 
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim reprehenderit, assumenda sunt magnam, nulla, laudantium mollitia esse facilis veniam impedit maiores. Praesentium fugit dolores fugiat nesciunt eveniet velit at nobis.
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo fugit iure possimus, enim quod sit aliquam incidunt rem voluptatibus, nostrum sint quidem natus exercitationem tempora qui quisquam consequuntur at voluptates.
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim reprehenderit, assumenda sunt magnam, nulla, laudantium mollitia esse facilis veniam impedit maiores. Praesentium fugit dolores fugiat nesciunt eveniet velit at nobis.
+                        </p>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo fugit iure possimus, enim quod sit aliquam incidunt rem voluptatibus, nostrum sint quidem natus exercitationem tempora qui quisquam consequuntur at voluptates.</p>
+                    </span>
+                </div>
+                
+                <div id="div2" class="main-blog-meaning-div main-blog-meaning-div2">
+                    <h2>საქმიანობა</h2>
+                    <span>
+                        <p> 
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim reprehenderit, assumenda sunt magnam, nulla, laudantium mollitia esse facilis veniam impedit maiores. Praesentium fugit dolores fugiat nesciunt eveniet velit at nobis.
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo fugit iure possimus, enim quod sit aliquam incidunt rem voluptatibus, nostrum sint quidem natus exercitationem tempora qui quisquam consequuntur at voluptates.
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim reprehenderit, assumenda sunt magnam, nulla, laudantium mollitia esse facilis veniam impedit maiores. Praesentium fugit dolores fugiat nesciunt eveniet velit at nobis.
+                        </p>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo fugit iure possimus, enim quod sit aliquam incidunt rem voluptatibus, nostrum sint quidem natus exercitationem tempora qui quisquam consequuntur at voluptates.</p>
+                    </span>
+                </div>
+
+                <div id="div3" class="main-blog-meaning-div main-blog-meaning-div3">
+                    <h2>ჩვეულებანი</h2>
+                    <span>
+                        <p> 
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim reprehenderit, assumenda sunt magnam, nulla, laudantium mollitia esse facilis veniam impedit maiores. Praesentium fugit dolores fugiat nesciunt eveniet velit at nobis.
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo fugit iure possimus, enim quod sit aliquam incidunt rem voluptatibus, nostrum sint quidem natus exercitationem tempora qui quisquam consequuntur at voluptates.
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim reprehenderit, assumenda sunt magnam, nulla, laudantium mollitia esse facilis veniam impedit maiores. Praesentium fugit dolores fugiat nesciunt eveniet velit at nobis.
+                        </p>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo fugit iure possimus, enim quod sit aliquam incidunt rem voluptatibus, nostrum sint quidem natus exercitationem tempora qui quisquam consequuntur at voluptates.</p>
+                    </span>
+                </div>
+
+                <div id="div4" class="main-blog-meaning-div main-blog-meaning-div4">
+                    <h2>გადმოცემები</h2>
+                    <span>
+                        <p> 
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim reprehenderit, assumenda sunt magnam, nulla, laudantium mollitia esse facilis veniam impedit maiores. Praesentium fugit dolores fugiat nesciunt eveniet velit at nobis.
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo fugit iure possimus, enim quod sit aliquam incidunt rem voluptatibus, nostrum sint quidem natus exercitationem tempora qui quisquam consequuntur at voluptates.
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim reprehenderit, assumenda sunt magnam, nulla, laudantium mollitia esse facilis veniam impedit maiores. Praesentium fugit dolores fugiat nesciunt eveniet velit at nobis.
+                        </p>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo fugit iure possimus, enim quod sit aliquam incidunt rem voluptatibus, nostrum sint quidem natus exercitationem tempora qui quisquam consequuntur at voluptates.</p>
+                    </span>
+                </div>
+
+                <div id="div5" class="main-blog-meaning-div main-blog-meaning-div5">
+                    <h2>დღესასწაულები</h2>
+                    <span>
+                        <p> 
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim reprehenderit, assumenda sunt magnam, nulla, laudantium mollitia esse facilis veniam impedit maiores. Praesentium fugit dolores fugiat nesciunt eveniet velit at nobis.
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo fugit iure possimus, enim quod sit aliquam incidunt rem voluptatibus, nostrum sint quidem natus exercitationem tempora qui quisquam consequuntur at voluptates.
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim reprehenderit, assumenda sunt magnam, nulla, laudantium mollitia esse facilis veniam impedit maiores. Praesentium fugit dolores fugiat nesciunt eveniet velit at nobis.
+                        </p>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo fugit iure possimus, enim quod sit aliquam incidunt rem voluptatibus, nostrum sint quidem natus exercitationem tempora qui quisquam consequuntur at voluptates.</p>
+                    </span>
+                </div>
+
+                <div id="div6" class="main-blog-meaning-div main-blog-meaning-div6">
+                    <h2>ფოლკლორი</h2>
+                    <span>
+                        <p> 
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim reprehenderit, assumenda sunt magnam, nulla, laudantium mollitia esse facilis veniam impedit maiores. Praesentium fugit dolores fugiat nesciunt eveniet velit at nobis.
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo fugit iure possimus, enim quod sit aliquam incidunt rem voluptatibus, nostrum sint quidem natus exercitationem tempora qui quisquam consequuntur at voluptates.
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim reprehenderit, assumenda sunt magnam, nulla, laudantium mollitia esse facilis veniam impedit maiores. Praesentium fugit dolores fugiat nesciunt eveniet velit at nobis.
+                        </p>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo fugit iure possimus, enim quod sit aliquam incidunt rem voluptatibus, nostrum sint quidem natus exercitationem tempora qui quisquam consequuntur at voluptates.</p>
+                    </span>
+                </div>
+
+                <div id="div7" class="main-blog-meaning-div main-blog-meaning-div7">
+                    <h2>ზღაპრები</h2>
+                    <span>
+                        <p> 
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim reprehenderit, assumenda sunt magnam, nulla, laudantium mollitia esse facilis veniam impedit maiores. Praesentium fugit dolores fugiat nesciunt eveniet velit at nobis.
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo fugit iure possimus, enim quod sit aliquam incidunt rem voluptatibus, nostrum sint quidem natus exercitationem tempora qui quisquam consequuntur at voluptates.
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim reprehenderit, assumenda sunt magnam, nulla, laudantium mollitia esse facilis veniam impedit maiores. Praesentium fugit dolores fugiat nesciunt eveniet velit at nobis.
                         </p>
                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo fugit iure possimus, enim quod sit aliquam incidunt rem voluptatibus, nostrum sint quidem natus exercitationem tempora qui quisquam consequuntur at voluptates.</p>
                     </span>
@@ -220,6 +303,16 @@
                 </div>
             </div>
         </footer>
+        <script>
+            const mainBlogDivs = document.getElementsByClassName("main-blog-meaning-div");
+
+            function showSection(divNum){
+                for (mainBlogDiv of mainBlogDivs){
+                    mainBlogDiv.classList.remove("active-blog")
+                }
+                divNum.classList.add("active-blog");
+            }
+        </script>
         <script src="responsiveNavBar.js"></script>
     </body>
 </html>
