@@ -113,6 +113,11 @@ padding-right: 1em;
 filter:brightness(95%);
 text-decoration: underline;
 }
+#myBtn {
+  background-color: #ffffff;
+  border: none;
+  color: #000000;
+}
 /* End - navbar */
 
 

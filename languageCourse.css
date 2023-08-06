@@ -29,13 +29,12 @@
   .accordion-container {
     display: flex;
     flex-direction: column;
-    margin: 0.5em 2em 0 2em;
+    margin:0 5em 0.5em 5em;
   }
   #player{
     top: 2em;
     right: 2em;
     position: fixed;
-    /* background-color: rgb(163, 158, 150); */
     background-position: 50%;
     background-image: url(png/5.png);
     background-repeat: no-repeat;
@@ -48,7 +47,7 @@
     background-color: rgba(5, 131, 5, 0.208);
     cursor: pointer;
     padding: 1em;
-    width: 22em;
+    width: 15em;
     text-align: left;
     font-size: 1em;
     transition: 0.4s;
@@ -60,25 +59,20 @@
     transition: 0.4s;
     border: none;
   }
-  
   .active, .accordion:hover {
     background-color: white; 
   }
-
   .panel {
     display: none;
-    font-size: 18px;
+    font-size: 1em;
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.3s ease-out;
   }
-
   .main-container {
     display: flex;
-    /* flex-direction: row-reverse; */
     justify-content: space-between;
   }
-  
   .container-button ul li {
     list-style: none;
   }
@@ -105,10 +99,73 @@
         background-color: rgb(222, 229, 222);
     }
   }
-
-  @media (max-width:1600px){
+  @media (max-width:1730px){
     #player{
-        margin-right: 0em;
+        right: 1.5em;
+        height: 620px;
+        width: 1102px;
+      }
+    .accordion-container {
+      margin:0 5em 0.5em 5em;
+    }
+  }
+  @media (max-width:1560px){
+    #player{
+      right: 1em;
+      height: 600px;
+      width: 1066px;
+    }
+    .accordion-container {
+      margin: 0.25em 4.5em 0.25em 4.5em;
+    }
+  }
+  @media (max-width:1500px){
+    .accordion-container {
+      margin: 0.25em 1.5em 0.25em 1.5em;
+    }
+  }
+  @media (max-width:1400px){
+    #player{
+      right: 0.5em;
+      height: 550px;
+     width: 977px;
+      }
+    .accordion-container {
+      margin: 0.25em 1.5em 0.25em 1.5em;
+    }
+  }
+  @media (max-width:1300px){
+    #player{
+      height: 500px;
+      width: 888px;
+      }
+    .accordion-container {
+      margin: 0.25em 1em 0.25em 1em;
+    }
+  }
+  @media (max-width:1200px){
+    #player{
+      height: 450px;
+      width: 800px;
       }
   }
-
+  @media (max-width:1100px){
+    #player{
+      height: 425px;
+      width: 755px;
+      }
+    .accordion-container {
+      margin: 0.25em 1em 0.25em 1em;
+    }
+  }@media (max-width:1100px){
+    #player{
+      right: 0.1em;
+      height: 400px;
+      width: 705px;
+      }
+    .accordion-container {
+      margin: 0.25em 1em 0.25em 1em;
+    }
+  }
+  
+  
