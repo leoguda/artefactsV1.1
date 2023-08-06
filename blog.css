@@ -65,6 +65,11 @@ header{
 .burger-menu-close{
   display: none;
 }
+#myBtn {
+  background-color: #ffffff;
+  border: none;
+  color: #000000;
+}
   /* End - responsive navbar */
   
   /* Start - navbar */
