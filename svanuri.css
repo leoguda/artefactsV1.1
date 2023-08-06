@@ -64,16 +64,6 @@ header{
 .burger-menu-close{
   display: none;
 }
-#myBtn123 {
-  background-color: #ffffff;
-  border: none;
-  color: #000000;
-}
-#myBtn123:hover{
-  background-color: #ffffff;
-  border: none;
-  color: #000000;
-}
   /* End - responsive navbar */
 
 
@@ -488,6 +478,7 @@ margin: 10px;
 
 
 p {
+  text-shadow: 0 0 0 black;
   font-size: 1.5em;
   width: 100%;
   line-height: 1.3;
