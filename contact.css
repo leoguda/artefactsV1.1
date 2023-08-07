@@ -26,20 +26,19 @@ header{
     transition: 300ms;
   }
   .nav-info-responsive ul{
-    text-align: center;
+    text-align: left;
     background-color: white;
     position: absolute;
-    top: 4.5em;
+    top: 7.6em;
     padding: 3em 0em;
     width: 100%;
     border-top: #e7e7e7 solid 1px;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(62, 62, 62, 0.3) 0px 8px 16px -8px;
-
+    box-shadow: rgba(50, 50, 93, 0.25) -1px 10px 5px;
   }
   .navbar-div-responsive .nav-info-responsive ul li{
     padding-bottom: 1em;
+    padding-left: 5em;
   }
-
   .navbar-div-responsive .nav-info-responsive ul li,
   .navbar-container-responsive .log-info-responsive ul li{
     list-style: none;
@@ -59,7 +58,7 @@ header{
   text-decoration: underline;
 }
 .navbar-container-responsive-div{
-  width: 8em;
+  width: 5em;
 }
 .burger-menu-close{
   display: none;
@@ -81,7 +80,9 @@ header{
 .navbar-container .logo img{
   transform: scale(1.5);
 }
-
+.logo-responsive a img, .logo a img{
+  width:100px;
+}
 .navbar-container .nav-info ul{
   display: flex;
   gap: 3em;
@@ -101,15 +102,22 @@ header{
   letter-spacing: 0.8px;
   transition: 100ms;
 }
+.navbar-container .log-info ul li a{
+  padding-right: 1em;
+}
 .navbar-container .nav-info ul li a:hover,
 .navbar-container .log-info ul li a:hover {
   filter:brightness(95%);
   text-decoration: underline;
 }
-#myBtn {
-  background-color: #ffffff;
+#myBtn123 {
+  background-color: white;
+  padding: 0em;
   border: none;
   color: #000000;
+}
+#myBtn123 a{
+  padding: 1em;
 }
 /* End - navbar */
 
