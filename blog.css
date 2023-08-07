@@ -65,6 +65,11 @@ header{
 .burger-menu-close{
   display: none;
 }
+#myBtn {
+  background-color: #ffffff;
+  border: none;
+  color: #000000;
+}
   /* End - responsive navbar */
   
   /* Start - navbar */
@@ -369,6 +374,10 @@ input {
       animation-timing-function: ease-in-out;
       animation-fill-mode: forwards;  
       opacity: 0;
+  }
+  .main-blog0 button{
+    background-color: transparent;
+    border: none;
   }
   .main-blog1{
       animation-name: blog-nav1;
@@ -690,18 +699,42 @@ input {
   .space-div{
     height: 45vh;
   }
-
   .main-blog-meaning{
       background-color: #f1f0f0;
   }
-
   .main-blog-meaning-div{
       padding: 10em;
-      display: flex;
+      display: none;
       flex-direction: column;
       justify-content: center;
       align-items: center;
       gap: 3em;
+  }
+  .active-blog{
+    display: flex;
+  }
+  .main-blog-meaning-div1{
+    background-color: rgb(252, 162, 97);
+  }
+  .main-blog-meaning-div2{
+    background-color: rgb(47, 59, 133);
+    color: white;
+  }
+  .main-blog-meaning-div3{
+    background-color: rgb(113, 151, 113);
+  }
+  .main-blog-meaning-div4{
+    background-color: rgb(174, 125, 174);
+  }
+  .main-blog-meaning-div5{
+    background-color: rgb(29, 42, 42);
+    color: white;
+  }
+  .main-blog-meaning-div6{
+    background-color: lightblue;
+  }
+  .main-blog-meaning-div7{
+    background-color: rgb(200, 162, 119);
   }
     /* End - main navigation */
 /* End - MAIN */
@@ -1342,6 +1375,7 @@ input {
     .main-blog-a{
       animation: none;
       opacity: 1;
+      cursor: pointer;
     }
     .main-blog-meaning{
       margin: 5em 0 0 0;

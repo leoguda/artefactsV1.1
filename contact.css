@@ -6,9 +6,6 @@
 html {
     scroll-behavior: smooth;
 }
-
-
-
 header{
   top: 0;
   z-index: 10000000;
@@ -109,28 +106,12 @@ header{
   filter:brightness(95%);
   text-decoration: underline;
 }
+#myBtn {
+  background-color: #ffffff;
+  border: none;
+  color: #000000;
+}
 /* End - navbar */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* kontaqti */
 .contact-container {
@@ -196,8 +177,6 @@ button:hover {
   border-top-right-radius: 20px;
 }
 
-
-
 /* Start - footer */
 
 .footer-container {
@@ -205,7 +184,6 @@ button:hover {
   align-items: center;
   justify-content: center;
 }
-
 .footer-clean {
   padding:50px 0;
   background-color:#f9f9f9;
@@ -317,8 +295,6 @@ button:hover {
     filter: brightness(70%);
   }
 /* End - footer */
-
-
 
 
 /* Start - responsive */
