@@ -118,13 +118,13 @@ const questions = [
     const resultsElement = document.getElementById("results");
     resultsElement.innerHTML = `<p>Your final score is: ${calculatePercentage(score, questions.length)}%</p>`;
 
-    function calculatePercentage(score, total) {
+  function calculatePercentage(score, total) {
         const percentage = (score / total) * 100;
         return Math.min(100, percentage).toFixed(2);
       }
   }
-  
 
+ 
   document.addEventListener("DOMContentLoaded", showQuestion);
 
 

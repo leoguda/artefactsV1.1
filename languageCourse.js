@@ -117,3 +117,16 @@ document.getElementById("lection-17").disabled = true;
 document.getElementById("lection-18").disabled = true;
 document.getElementById("lection-19").disabled = true;
 document.getElementById("lection-20").disabled = true;
+
+// import { calculatePercentage } from "./test2/quize1";
+
+// function nextQuize(){
+// if (calculatePercentage > 30, percentage) {
+//   document.getElementById("lection-2").disabled = false;
+// }
+// else (calculatePercentage < 30, percentage); {
+//   document.getElementById("lection-2").disabled = true;
+// }
+
+// }
+
