@@ -15,10 +15,9 @@
     margin: 0;
     background-color: #f1f0f0;
   }
+
   .main-container{
     background-color: rgb(199, 220, 199);
-    display: flex;
-    justify-content: space-between;
   }
   .quiz {
     text-decoration: none;
@@ -55,7 +54,9 @@
     border-radius: 0.5em;
     z-index: 10000000;
     margin-top:20px;
+    text-align: left;
     outline: none;
+    transition: 0.4s;
     border: none;
   }
   .active, .accordion:hover {
@@ -67,6 +68,10 @@
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.3s ease-out;
+  }
+  .main-container {
+    display: flex;
+    justify-content: space-between;
   }
   .container-button ul li {
     list-style: none;
@@ -123,7 +128,7 @@
     #player{
       right: 0.5em;
       height: 550px;
-      width: 977px;
+     width: 977px;
       }
     .accordion-container {
       margin: 0.25em 1.5em 0.25em 1.5em;
@@ -152,8 +157,7 @@
     .accordion-container {
       margin: 0.25em 1em 0.25em 1em;
     }
-  }
-  @media (max-width:1100px){
+  }@media (max-width:1100px){
     #player{
       right: 0.1em;
       height: 400px;
@@ -163,68 +167,5 @@
       margin: 0.25em 1em 0.25em 1em;
     }
   }
-  @media (max-width:1000px){
-    .main-container{
-      display: flex;
-      flex-direction: column;
-      justify-content: start;
-    }
-    .div-accordion-container{
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-    #player{
-      right: 0;
-      align-self: center;
-      top: 0;
-      right: initial;
-      position:initial;
-      box-shadow: none;
-    }
-    .span-column{
-      display: flex;
-      gap: 5em;
-    }
-    .accordion-container {
-      margin: 0.1em;
-    }
-    .accordion {
-      float: none;
-    }
-  }
-  @media (max-width:730px){
-    #player{
-      height: 30vh;
-      width: 100%;
-      }
-  }
-  @media (max-width:600px){
-    .span-column{
-      gap: 0.5em;
-    }
-  }
-  @media (max-width:500px){
-    .span-column{
-      flex-direction: column;
-      gap: initial;
-    }
-  }
-  @media (max-width:300px){
-    .span-column{
-      flex-direction: column;
-      gap: initial;
-    }
-    .accordion{
-      width: 10em;
-    }
-    .container-button button {
-      border: none;
-      background-color: transparent;
-      margin: 0.5em;
-      padding: 0.5em;
-      cursor: pointer;
-      border-radius: 0.2em;
-      font-size: 1em;
-    }
-  }
+  
+  

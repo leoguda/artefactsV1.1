@@ -77,6 +77,9 @@ function showCurrentVideo(){
 
 
 
+
+
+
 var acc = document.getElementsByClassName("accordion");
 var i;
 
@@ -94,4 +97,36 @@ for (i = 0; i < acc.length; i++) {
   });
 }
 
+
+document.getElementById("lection-2").disabled = true;
+document.getElementById("lection-3").disabled = true;
+document.getElementById("lection-4").disabled = true;
+document.getElementById("lection-5").disabled = true;
+document.getElementById("lection-6").disabled = true;
+document.getElementById("lection-7").disabled = true;
+document.getElementById("lection-8").disabled = true;
+document.getElementById("lection-9").disabled = true;
+document.getElementById("lection-10").disabled = true;
+document.getElementById("lection-11").disabled = true;
+document.getElementById("lection-12").disabled = true;
+document.getElementById("lection-13").disabled = true;
+document.getElementById("lection-14").disabled = true;
+document.getElementById("lection-15").disabled = true;
+document.getElementById("lection-16").disabled = true;
+document.getElementById("lection-17").disabled = true;
+document.getElementById("lection-18").disabled = true;
+document.getElementById("lection-19").disabled = true;
+document.getElementById("lection-20").disabled = true;
+
+// import { calculatePercentage } from "./test2/quize1";
+
+// function nextQuize(){
+// if (calculatePercentage > 30, percentage) {
+//   document.getElementById("lection-2").disabled = false;
+// }
+// else (calculatePercentage < 30, percentage); {
+//   document.getElementById("lection-2").disabled = true;
+// }
+
+// }
 
