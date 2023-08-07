@@ -117,6 +117,16 @@ header{
   filter:brightness(95%);
   text-decoration: underline;
 }
+#myBtn123 {
+  background-color: white;
+  padding: 0em;
+  border: none;
+  color: #000000;
+}
+#myBtn123 a{
+  padding: 1em;
+}
+/* End - navbar */
     /* Start - log in form */
     
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
