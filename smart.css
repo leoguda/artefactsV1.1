@@ -256,7 +256,8 @@ article img {
   height: 12em;
   border-radius: 1em;
   background-color: rgb(255, 245, 167);
-  border: 1px solid #6FA141;
+  border: 1px solid rgb(255, 245, 167);
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 .news-section-div a{
   padding: 25%;
