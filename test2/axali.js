@@ -58,11 +58,11 @@ function showQuestion(){
        const button = document.createElement("button");
        button.innerHTML = answer.text;
        button.classList.add("btn");
-       answerButtons.appendChild(button);
-//     if(answer.correct){
-//     button.dataset.correct = answer.correct;
-// }
-//     button.addEventListener("click", selectAnswer);
+       answerButton.appendChild(button);
+       if(answer.correct){
+          button.dataset.correct = answer.correct;
+ }
+    button.addEventListener("click", selectAnswer);
 });
 }
 
@@ -70,7 +70,7 @@ function showQuestion(){
 function resetState(){
    nextButton.style.display = "none";
    while(answerButtons.firstChild){
-      answerButtons.removeChild(answerButtons.firstChild);
+     answerButtons.removeChild(answerButton.firstChild);
 }
 }
 
