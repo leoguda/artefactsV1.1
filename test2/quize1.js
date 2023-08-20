@@ -1,34 +1,67 @@
 const questions = [
-    {
-      question: "1.   რას შეისწავლის ქართველოლოგია?  მინიშნება: ქართველოლოგია არის ქართველებისა და საქართველოს შემსწავლელი ყველა ჰუმანიტარული სამეცნიერო დისციპლინა. ",
-      answers: ["ა) ქართულ ენას ", "ბ) ქართულ კულტურას ", "  გ) საქართველოს ეთნოლოგიას ", "დ) ყველა პასუხი სწორია"],
-      correctAnswers: [3], // Shkhara is the correct answer
-      allowMultiple: false,
-    },
-    {
-      question: "2.	ვის ეკუთვნის ტერმინი „ქართველური ენები“? ",
-      answers: ["ა) ჰუგო შუხარტს", "ბ) აკაკი შანიძეს", "გ) გერჰარდ დეეტერსს", "დ) არნოლდ ჩიქობავას"],
-      correctAnswers: [0], // Mestia-Ushguli Trek is the correct answer
-      allowMultiple: false,
-    },
-    {
-      question: "3. ჩამოთვლილთაგან რომელია მესამე პირის ნაცვალსახელები:",
-      answers: ["ა) სგ – ეჯა", "ბ) მი – ნ", "გ) ნ – ეჯრ ", "დ) ეჯა – ეჯრ "],
-      correctAnswers: [3], // Koshki is the correct answer
-      allowMultiple: false,
-    },
-    {
-      question: "4.  ჩამოთვლილთაგან რომელია სვანური ენის დიალექტები?",
-      answers: [" ა) უშგულური", "ბ) ბალსზემოური ", "გ) ლატალური ", "დ) ლაშხური ", "ე) მხოლოდ ა) და დ)", "ვ) მხოლოდ ბ) და დ)", "ზ) ყველა პასუხი სწორია "],
-      correctAnswers: [6], // Koshki is the correct answer
-      allowMultiple: false,
-    },
-    {
-        question: "5.	ჩამოთვლილთაგან რომელი შეიძლება გამოვიყენოთ მისალმების ფორმად",
-        answers: ["ა) ხოჩა ლადეღ! ", "ბ) ივასუ ხრი! ", " გ) იმჟი ხრი! ", "დ) ღრბეთუ ლაჯშედა! "],
-        correctAnswers: [0], // Koshki is the correct answer
+    // {
+    //   question: "1.   რას შეისწავლის ქართველოლოგია?  მინიშნება: ქართველოლოგია არის ქართველებისა და საქართველოს შემსწავლელი ყველა ჰუმანიტარული სამეცნიერო დისციპლინა. ",
+    //   answers: ["ა) ქართულ ენას ", "ბ) ქართულ კულტურას ", "  გ) საქართველოს ეთნოლოგიას ", "დ) ყველა პასუხი სწორია"],
+    //   correctAnswers: [3], // Shkhara is the correct answer
+    //   allowMultiple: false,
+    // },
+    // {
+    //   question: "2.	ვის ეკუთვნის ტერმინი „ქართველური ენები“? ",
+    //   answers: ["ა) ჰუგო შუხარტს", "ბ) აკაკი შანიძეს", "გ) გერჰარდ დეეტერსს", "დ) არნოლდ ჩიქობავას"],
+    //   correctAnswers: [0], // Mestia-Ushguli Trek is the correct answer
+    //   allowMultiple: false,
+    // },
+    // {
+    //   question: "3. ჩამოთვლილთაგან რომელია მესამე პირის ნაცვალსახელები:",
+    //   answers: ["ა) სგ – ეჯა", "ბ) მი – ნ", "გ) ნ – ეჯრ ", "დ) ეჯა – ეჯრ "],
+    //   correctAnswers: [3], // Koshki is the correct answer
+    //   allowMultiple: false,
+    // },
+    // {
+    //   question: "4.  ჩამოთვლილთაგან რომელია სვანური ენის დიალექტები?",
+    //   answers: [" ა) უშგულური", "ბ) ბალსზემოური ", "გ) ლატალური ", "დ) ლაშხური ", "ე) მხოლოდ ა) და დ)", "ვ) მხოლოდ ბ) და დ)", "ზ) ყველა პასუხი სწორია "],
+    //   correctAnswers: [6], // Koshki is the correct answer
+    //   allowMultiple: false,
+    // },
+    // {
+    //     question: "5.	ჩამოთვლილთაგან რომელი შეიძლება გამოვიყენოთ მისალმების ფორმად",
+    //     answers: ["ა) ხოჩა ლადეღ! ", "ბ) ივასუ ხრი! ", " გ) იმჟი ხრი! ", "დ) ღრბეთუ ლაჯშედა! "],
+    //     correctAnswers: [0], // Koshki is the correct answer
+    //     allowMultiple: false,
+    //   }
+
+
+
+      {
+        question: "hkhkhk ",
+        answers: ["a) hkhk ", "b) fff ", "  c) uyiyi ", "v) yiyiyi"],
+        correctAnswers: [3], // Shkhara is the correct answer
         allowMultiple: false,
-      }
+      },
+      {
+        question: "hkhkhk ",
+        answers: ["a) hkhk ", "b) fff ", "  c) uyiyi ", "v) yiyiyi"],
+        correctAnswers: [0], // Mestia-Ushguli Trek is the correct answer
+        allowMultiple: false,
+      },
+      {
+        question: "hkhkhk ",
+        answers: ["a) hkhk ", "b) fff ", "  c) uyiyi ", "v) yiyiyi"],
+        correctAnswers: [3], // Koshki is the correct answer
+        allowMultiple: false,
+      },
+      {
+        question: "hkhkhk ",
+        answers: ["a) hkhk ", "b) fff ", "  c) uyiyi ", "v) yiyiyi"],
+        correctAnswers: [1], // Koshki is the correct answer
+        allowMultiple: false,
+      },
+      {
+        question: "hkhkhk ",
+        answers: ["a) hkhk ", "b) fff ", "  c) uyiyi ", "v) yiyiyi"],
+          correctAnswers: [0], // Koshki is the correct answer
+          allowMultiple: false,
+        }
     
   ];
   
