@@ -60,7 +60,6 @@ const questions = [
   let currentQuestionIndex = 0;
   let score = 0;
   
-  
   function startQuiz(){
     currentQuestionIndex = 0;
     score = 0;
@@ -134,7 +133,6 @@ const questions = [
           }
       }
   
-  
       nextButton.addEventListener("click", () => {
       if(currentQuestionIndex < questions.length){
           handleNextButton();
@@ -142,9 +140,8 @@ const questions = [
           startQuiz();
       }
       });
-  
-  
-  startQuiz();
+      
+startQuiz();
   
   
   
