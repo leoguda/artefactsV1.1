@@ -116,13 +116,14 @@ function selectAnswer(e){
 }
 
 
-    function showScore() {
-        resetState();
-        questionElement.innerHTML = `You scored ${score} out of ${questions.length}!`
-        nextButton.innerHTML = "Play Again";
-        nextButton.style.display = "block";
-    }
-
+function showScore() {
+    resetState();
+    const percentage = (score / questions.length) * 100;
+    const roundedPercentage = Math.round(percentage * 10) / 10; // Round to one decimal place
+    questionElement.innerHTML = `Your score: ${roundedPercentage}% (${score} out of ${questions.length})`;
+    nextButton.innerHTML = "Play Again";
+    nextButton.style.display = "block";
+}
 
     function handleNextButton() {
     currentQuestionIndex++;
