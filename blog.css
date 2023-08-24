@@ -1,7 +1,14 @@
+@font-face {
+  font-family: myfont;
+  src: url(bpg_extrasquare_mtavruli_2009.ttf);
+}
+
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: myfont;
 }
 html {
     scroll-behavior: smooth;
