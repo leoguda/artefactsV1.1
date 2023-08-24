@@ -220,8 +220,6 @@ header{
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 1px solid rgb(187, 187, 187);
-  background-color: rgb(187, 187, 187);
   background-image: url(SVANETIIMGS/svaneti144.jpg);
   background-repeat: no-repeat;
   background-size: cover;
