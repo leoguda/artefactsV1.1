@@ -1,166 +1,168 @@
-const questions = [
-    // {
-    //   question: "1.   რას შეისწავლის ქართველოლოგია?  მინიშნება: ქართველოლოგია არის ქართველებისა და საქართველოს შემსწავლელი ყველა ჰუმანიტარული სამეცნიერო დისციპლინა. ",
-    //   answers: ["ა) ქართულ ენას ", "ბ) ქართულ კულტურას ", "  გ) საქართველოს ეთნოლოგიას ", "დ) ყველა პასუხი სწორია"],
-    //   correctAnswers: [3], // Shkhara is the correct answer
-    //   allowMultiple: false,
-    // },
-    // {
-    //   question: "2.	ვის ეკუთვნის ტერმინი „ქართველური ენები“? ",
-    //   answers: ["ა) ჰუგო შუხარტს", "ბ) აკაკი შანიძეს", "გ) გერჰარდ დეეტერსს", "დ) არნოლდ ჩიქობავას"],
-    //   correctAnswers: [0], // Mestia-Ushguli Trek is the correct answer
-    //   allowMultiple: false,
-    // },
-    // {
-    //   question: "3. ჩამოთვლილთაგან რომელია მესამე პირის ნაცვალსახელები:",
-    //   answers: ["ა) სგ – ეჯა", "ბ) მი – ნ", "გ) ნ – ეჯრ ", "დ) ეჯა – ეჯრ "],
-    //   correctAnswers: [3], // Koshki is the correct answer
-    //   allowMultiple: false,
-    // },
-    // {
-    //   question: "4.  ჩამოთვლილთაგან რომელია სვანური ენის დიალექტები?",
-    //   answers: [" ა) უშგულური", "ბ) ბალსზემოური ", "გ) ლატალური ", "დ) ლაშხური ", "ე) მხოლოდ ა) და დ)", "ვ) მხოლოდ ბ) და დ)", "ზ) ყველა პასუხი სწორია "],
-    //   correctAnswers: [6], // Koshki is the correct answer
-    //   allowMultiple: false,
-    // },
-    // {
-    //     question: "5.	ჩამოთვლილთაგან რომელი შეიძლება გამოვიყენოთ მისალმების ფორმად",
-    //     answers: ["ა) ხოჩა ლადეღ! ", "ბ) ივასუ ხრი! ", " გ) იმჟი ხრი! ", "დ) ღრბეთუ ლაჯშედა! "],
-    //     correctAnswers: [0], // Koshki is the correct answer
-    //     allowMultiple: false,
-    //   }
-
-
-
+ const questions = [
+      // 1
       {
-        question: "hkhkhk ",
-        answers: ["a) hkhk ", "b) fff ", "  c) uyiyi ", "v) yiyiyi"],
-        correctAnswers: [3], // Shkhara is the correct answer
-        allowMultiple: false,
+      question: "რას შეისწავლის ქართველოლოგია?  მინიშნება: ქართველოლოგია არის ქართველებისა და საქართველოს შემსწავლელი ყველა ჰუმანიტარული სამეცნიერო დისციპლინა. ",
+      answers: [
+      { text:  "ა) ქართულ ენას ",   correct: false },
+      { text:  "ბ) ქართულ კულტურას ",   correct: false},
+      { text:  " გ) საქართველოს ეთნოლოგიას ",   correct: false},
+      { text:  "დ) ყველა პასუხი სწორია",     correct: true},
+            ]
       },
+      // 2
       {
-        question: "hkhkhk ",
-        answers: ["a) hkhk ", "b) fff ", "  c) uyiyi ", "v) yiyiyi"],
-        correctAnswers: [0], // Mestia-Ushguli Trek is the correct answer
-        allowMultiple: false,
-      },
-      {
-        question: "hkhkhk ",
-        answers: ["a) hkhk ", "b) fff ", "  c) uyiyi ", "v) yiyiyi"],
-        correctAnswers: [3], // Koshki is the correct answer
-        allowMultiple: false,
-      },
-      {
-        question: "hkhkhk ",
-        answers: ["a) hkhk ", "b) fff ", "  c) uyiyi ", "v) yiyiyi"],
-        correctAnswers: [1], // Koshki is the correct answer
-        allowMultiple: false,
-      },
-      {
-        question: "hkhkhk ",
-        answers: ["a) hkhk ", "b) fff ", "  c) uyiyi ", "v) yiyiyi"],
-          correctAnswers: [0], // Koshki is the correct answer
-          allowMultiple: false,
-        }
+          question: "ვის ეკუთვნის ტერმინი „ქართველური ენები“?",
+          answers: [
+          { text:  "ა) ჰუგო შუხარტს",   correct: true},
+          { text:  "ბ) აკაკი შანიძეს",   correct: false},
+          { text:  "გ) გერჰარდ დეეტერსს",   correct: false},
+          { text:  "დ) არნოლდ ჩიქობავას",     correct: false},
+                ]
+          },
+          // 3
+          {
+              question: " ჩამოთვლილთაგან რომელია მესამე პირის ნაცვალსახელები: ",
+              answers: [
+              { text:  "ა) სგ – ეჯა",   correct: false },
+              { text:  "ბ) მი – ნ",   correct: false},
+              { text:  "გ) ნ – ეჯრ ",   correct: false},
+              { text:  "დ) ეჯა – ეჯრ ",     correct: true},
+                 ]
+              },
+      // 4
+          {
+              question: "ჩამოთვლილთაგან რომელია სვანური ენის დიალექტები?",
+              answers: [
+              { text:  "ა) უშგულური",   correct: false },
+              { text:  "ბ) ბალსზემოური ",   correct: false},
+              { text:  "გ) ლატალური ",   correct: false},
+              { text:  "დ) ლაშხური ",     correct: false},
+              { text:  "ე) მხოლოდ ა) და დ)",     correct: false},
+              { text:  "ვ) მხოლოდ ბ) და დ)",     correct: false},
+              { text:  "ზ) ყველა პასუხი სწორია ",     correct: true},
+              ]
+          },
+      //  5
+          {
+              question: "ჩამოთვლილთაგან რომელი შეიძლება გამოვიყენოთ მისალმების ფორმად",
+              answers: [
+              { text:  "ა) ხოჩა ლადეღ! ",   correct: true },
+              { text:  "ბ) ივასუ ხრი!",   correct: false},
+              { text:  "გ) იმჟი ხრი!",   correct: false},
+              { text:  " დ) ღრბეთუ ლაჯშედა! ",     correct: false},
+              ]
+          },
+ 
+                         
+      ];
     
-  ];
-  
-
-  let currentQuestionIndex = 0;
-  let score = 0;
-  let isSubmitted = false;
-  
-  function showQuestion() {
-    const quizElement = document.getElementById("quiz");
-    quizElement.innerHTML = ""; // Clear existing content
-  
-    const questionContainer = document.createElement("div");
-    questionContainer.classList.add("question");
-    questionContainer.innerHTML = `<p>${currentQuestionIndex + 1}. ${questions[currentQuestionIndex].question}</p>`;
-  
-    const answersContainer = document.createElement("div");
-    answersContainer.classList.add("answers");
-  
-    questions[currentQuestionIndex].answers.forEach((answer, i) => {
-      const answerElement = document.createElement("div");
-      answerElement.classList.add("answer");
-      const input = document.createElement("input");
-      input.setAttribute("type", questions[currentQuestionIndex].allowMultiple ? "checkbox" : "radio");
-      input.setAttribute("name", `q${currentQuestionIndex}`);
-      input.setAttribute("value", i);
-      answerElement.appendChild(input);
-      answerElement.appendChild(document.createTextNode(answer));
-      answersContainer.appendChild(answerElement);
-    });
-  
-    questionContainer.appendChild(answersContainer);
-  
-    const nextButton = document.createElement("button");
-    nextButton.textContent = "Next";
-    nextButton.disabled = true;
-  
-    answersContainer.addEventListener("change", () => {
-      nextButton.disabled = false;
-    });
-  
-    nextButton.addEventListener("click", nextQuestion);
-  
-    const progressBar = document.querySelector(".progress");
-    progressBar.style.width = `${((currentQuestionIndex + 1) / questions.length) * 100}%`;
-  
-    quizElement.appendChild(questionContainer);
-    quizElement.appendChild(nextButton);
-  }
-  
-  
-  function nextQuestion() {
-    const answerElements = document.querySelectorAll(`input[name=q${currentQuestionIndex}]:checked`);
-    const question = questions[currentQuestionIndex];
-    let questionScore = 1;
-  
-    answerElements.forEach((answerElement) => {
-      const selectedAnswer = parseInt(answerElement.value);
-  
-      if (question.correctAnswers.includes(selectedAnswer)) {
-        if (question.correctAnswers.length === 1) {
-          questionScore = 0.8; // Both correct answers selected, full credit
-        } else {
-          questionScore = 0; // Only one correct answer selected, half credit
-        }
+      
+      const questionElement = document.getElementById("question");
+      const answerButton = document.getElementById("answer-buttons");
+      const nextButton = document.getElementById("next-btn");
+      
+      let currentQuestionIndex = 0;
+      let score = 0;
+      
+      function startQuiz(){
+        currentQuestionIndex = 0;
+        score = 0;
+        nextButton.innerHTML = "Next";
+        showQuestion();
       }
-    });
-  
-    score += questionScore;
-  
-    currentQuestionIndex++;
-  
-    if (currentQuestionIndex === questions.length) {
-      showResults();
-    } else {
-      showQuestion();
+      
+      function showQuestion(){
+          resetState();
+          let currentQuestion = questions[currentQuestionIndex];
+          let questionNo = currentQuestionIndex + 1;
+          questionElement.innerHTML = questionNo + ". " + currentQuestion.question;
+      
+          currentQuestion.answers.forEach(answer => {
+             const button = document.createElement("button");
+             button.innerHTML = answer.text;
+             button.classList.add("btn");
+             answerButton.appendChild(button);
+      
+             if(answer.correct){
+              button.dataset.correct = answer.correct;
+             }
+             button.addEventListener("click", selectAnswer);
+      });
+      }
+      
+      function resetState(){
+         nextButton.style.display = "none";
+         while(answerButton.firstChild){
+           answerButton.removeChild(answerButton.firstChild);
+      }
+      }
+      
+      
+      function selectAnswer(e){
+          const selectedBtn = e.target;
+          const isCorrect = selectedBtn.dataset.correct === "true";
+      
+          if(isCorrect){
+              selectedBtn.classList.add("correct");
+              score++;
+          }else{
+              selectedBtn.classList.add("incorrect");
+          }
+      
+      
+          Array.from(answerButton.children).forEach(button => {
+              if(button.dataset.correct === "true"){
+                   button.classList.add("correct");
+              }    
+              button.disabled = true; 
+              });
+              nextButton.style.display = "block"  
+      }
+      
+      
+      function showScore() {
+        resetState();
+        const percentage = (score / questions.length) * 100;
+        const roundedPercentage = Math.round(percentage * 10) / 10; // Round to one decimal place
+        questionElement.innerHTML = `Your score: ${roundedPercentage}% (${score} out of ${questions.length})`;
+        nextButton.innerHTML = "Play Again";
+        nextButton.style.display = "block";
     }
-  }
-  
-
-
-  function showResults() {
-    isSubmitted = true;
-    const quizElement = document.getElementById("quiz");
-    quizElement.style.display = "none";
-  
-    const resultsElement = document.getElementById("results");
-    resultsElement.innerHTML = `<p>Your final score is: ${calculatePercentage(score, questions.length)}%</p>`;
-
-    function calculatePercentage(score, total) {
-        const percentage = (score / total) * 100;
-        return Math.min(100, percentage).toFixed(2);
-      }
-  }
-  
-
-  document.addEventListener("DOMContentLoaded", showQuestion);
-
-
-
-
-  
+    
+      
+      
+          function handleNextButton() {
+          currentQuestionIndex++;
+              if(currentQuestionIndex < questions.length){
+              showQuestion();
+              }else{
+              showScore();
+              }
+          }
+      
+          nextButton.addEventListener("click", () => {
+          if(currentQuestionIndex < questions.length){
+              handleNextButton();
+          }else{
+              startQuiz();
+          }
+          });
+          
+    startQuiz();
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      

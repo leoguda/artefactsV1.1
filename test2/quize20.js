@@ -1,127 +1,157 @@
 const questions = [
-    {
-      question: "1. დიშის სახარება ქართული ოთხთავებიდან ყველაზე ძველი შატბერდში გადაწერილი თარიღიანი ხელნაწერია.  რომელ წელსა გადაწერილი ადიშის ოთხთავი?",
-      answers: [" ა) 897 წელს. ", "ბ) 864 წელს. ", "გ) 936 წელს. ", " დ) 555 წელს. "],
-      correctAnswers: [0], // Shkhara is the correct answer
-      allowMultiple: false,
-    },
-    {
-      question: "2. ზმნური პარადიგმებიდან რომელი წყვილი არ არის წარსული დროის ფორმა: ",
-      answers: ["ა) ნ ხვიზგად – სი ხიზგს ", "ბ) ეჯა იზგა – ეჯრ იზგახ ", "გ) სი ხიზგს – სგ ხიზგად ", "დ) მი ხვიზგს – სგ ხიზგად ", "ე) ეჯა იზგე – ეჯრ იზგეხ"],
-      correctAnswers: [4], // Mestia-Ushguli Trek is the correct answer
-      allowMultiple: false,
-    },
-    {
-      question: "3. ქართველური ენებია: ",
-      answers: ["ა) ქართლი, სვანური, მეგრულ-ჭანური / ზანური", "ბ) ქართული, არამეული, იაფეტური ", "გ) იბერიულ-კავკასიური, ფინიკიური, სირიული ", "დ) ქართული, ინდოევროპული, სემიტური "],
-      correctAnswers: [0], // Koshki is the correct answer
-      allowMultiple: false,
-    },
-    {
-      question: "4. ზმნური პარადიგმის რომელი ფორმა გამხატავს მეორე პირს? ",
-      answers: ["ა) მი მანწმნ – ეჯრს ხანწმნხ", "ბ) ეჯას ხანწმნ – ეჯრს ხანწმნხ", "გ) სი ჯანწმნ – სგ ჯანწმნხ", "დ) სი ჯანწმნ – ნ გვანწმნ  "],
-      correctAnswers: [2], // Koshki is the correct answer
-      allowMultiple: false,
-    }
-    
-  ];
-  
+  // 1 
+  {
+  question: "დიშის სახარება ქართული ოთხთავებიდან ყველაზე ძველი შატბერდში გადაწერილი თარიღიანი ხელნაწერია. რომელ წელსა გადაწერილი ადიშის ოთხთავი? ",
+  answers: [
+  { text:  " ა) 897 წელს. ",   correct:  true},
+  { text:  "ბ) 864 წელს. ",   correct: false},
+  { text:  "გ) 936 წელს. ",   correct: false},
+  { text:  " დ) 555 წელს.   ",   correct: false},
+        ]
+  },
 
+  // 2 
+  {
+      question: "ზმნური პარადიგმებიდან რომელი წყვილი არ არის წარსული დროის ფორმა: ",
+      answers: [
+      { text:  "ა) ნ ხვიზგად – სი ხიზგს",   correct: false},
+      { text:  "ბ) ეჯა იზგა – ეჯრ იზგახ ",   correct: false},
+      { text:  "გ) სი ხიზგს – სგ ხიზგად",   correct: false},
+      { text:  "დ) მი ხვიზგს – სგ ხიზგად",     correct: false},
+      { text:  "ე) ეჯა იზგე – ეჯრ იზგეხ ",     correct: true},
+            ]
+      },
+
+      // 3 
+      {
+          question: "ქართველური ენებია: ",
+          answers: [
+          { text:  "ა) ქართლი, სვანური, მეგრულ-ჭანური / ზანური",   correct: true},
+          { text:  "ბ) ქართული, არამეული, იაფეტური",   correct: false},
+          { text:  "გ) იბერიულ-კავკასიური, ფინიკიური, სირიული",   correct: false},
+          { text:  "დ) ქართული, ინდოევროპული, სემიტური ",     correct: false},
+             ]
+          },
+  // 4  
+      {
+          question: "ზმნური პარადიგმის რომელი ფორმა გამხატავს მეორე პირს?  ",
+          answers: [
+          { text:  "ა) მი მანწმნ – ეჯრს ხანწმნხ",   correct:  false},
+          { text:  "ბ) ეჯას ხანწმნ – ეჯრს ხანწმნხ",   correct: false},
+          { text:  "გ) სი ჯანწმნ – სგ ჯანწმნხ",   correct: true},
+          { text:  "დ) სი ჯანწმნ – ნ გვანწმნ",     correct: false},
+          ]
+      },
+  
+  ];
+
+  
+  const questionElement = document.getElementById("question");
+  const answerButton = document.getElementById("answer-buttons");
+  const nextButton = document.getElementById("next-btn");
+  
   let currentQuestionIndex = 0;
   let score = 0;
-  let isSubmitted = false;
   
-  function showQuestion() {
-    const quizElement = document.getElementById("quiz");
-    quizElement.innerHTML = ""; // Clear existing content
+  function startQuiz(){
+    currentQuestionIndex = 0;
+    score = 0;
+    nextButton.innerHTML = "Next";
+    showQuestion();
+  }
   
-    const questionContainer = document.createElement("div");
-    questionContainer.classList.add("question");
-    questionContainer.innerHTML = `<p>${currentQuestionIndex + 1}. ${questions[currentQuestionIndex].question}</p>`;
+  function showQuestion(){
+      resetState();
+      let currentQuestion = questions[currentQuestionIndex];
+      let questionNo = currentQuestionIndex + 1;
+      questionElement.innerHTML = questionNo + ". " + currentQuestion.question;
   
-    const answersContainer = document.createElement("div");
-    answersContainer.classList.add("answers");
+      currentQuestion.answers.forEach(answer => {
+         const button = document.createElement("button");
+         button.innerHTML = answer.text;
+         button.classList.add("btn");
+         answerButton.appendChild(button);
   
-    questions[currentQuestionIndex].answers.forEach((answer, i) => {
-      const answerElement = document.createElement("div");
-      answerElement.classList.add("answer");
-      const input = document.createElement("input");
-      input.setAttribute("type", questions[currentQuestionIndex].allowMultiple ? "checkbox" : "radio");
-      input.setAttribute("name", `q${currentQuestionIndex}`);
-      input.setAttribute("value", i);
-      answerElement.appendChild(input);
-      answerElement.appendChild(document.createTextNode(answer));
-      answersContainer.appendChild(answerElement);
-    });
+         if(answer.correct){
+          button.dataset.correct = answer.correct;
+         }
+         button.addEventListener("click", selectAnswer);
+  });
+  }
   
-    questionContainer.appendChild(answersContainer);
-  
-    const nextButton = document.createElement("button");
-    nextButton.textContent = "Next";
-    nextButton.disabled = true;
-  
-    answersContainer.addEventListener("change", () => {
-      nextButton.disabled = false;
-    });
-  
-    nextButton.addEventListener("click", nextQuestion);
-  
-    const progressBar = document.querySelector(".progress");
-    progressBar.style.width = `${((currentQuestionIndex + 1) / questions.length) * 100}%`;
-  
-    quizElement.appendChild(questionContainer);
-    quizElement.appendChild(nextButton);
+  function resetState(){
+     nextButton.style.display = "none";
+     while(answerButton.firstChild){
+       answerButton.removeChild(answerButton.firstChild);
+  }
   }
   
   
-  function nextQuestion() {
-    const answerElements = document.querySelectorAll(`input[name=q${currentQuestionIndex}]:checked`);
-    const question = questions[currentQuestionIndex];
-    let questionScore = 1;
+  function selectAnswer(e){
+      const selectedBtn = e.target;
+      const isCorrect = selectedBtn.dataset.correct === "true";
   
-    answerElements.forEach((answerElement) => {
-      const selectedAnswer = parseInt(answerElement.value);
-  
-      if (question.correctAnswers.includes(selectedAnswer)) {
-        if (question.correctAnswers.length === 1) {
-          questionScore = 0.8; // Both correct answers selected, full credit
-        } else {
-          questionScore = 0; // Only one correct answer selected, half credit
-        }
+      if(isCorrect){
+          selectedBtn.classList.add("correct");
+          score++;
+      }else{
+          selectedBtn.classList.add("incorrect");
       }
-    });
   
-    score += questionScore;
   
-    currentQuestionIndex++;
-  
-    if (currentQuestionIndex === questions.length) {
-      showResults();
-    } else {
-      showQuestion();
-    }
+      Array.from(answerButton.children).forEach(button => {
+          if(button.dataset.correct === "true"){
+               button.classList.add("correct");
+          }    
+          button.disabled = true; 
+          });
+          nextButton.style.display = "block"  
   }
   
-
-
-  function showResults() {
-    isSubmitted = true;
-    const quizElement = document.getElementById("quiz");
-    quizElement.style.display = "none";
   
-    const resultsElement = document.getElementById("results");
-    resultsElement.innerHTML = `<p>Your final score is: ${calculatePercentage(score, questions.length)}%</p>`;
+  function showScore() {
+    resetState();
+    const percentage = (score / questions.length) * 100;
+    const roundedPercentage = Math.round(percentage * 10) / 10; // Round to one decimal place
+    questionElement.innerHTML = `Your score: ${roundedPercentage}% (${score} out of ${questions.length})`;
+    nextButton.innerHTML = "Play Again";
+    nextButton.style.display = "block";
+}
 
-    function calculatePercentage(score, total) {
-        const percentage = (score / total) * 100;
-        return Math.min(100, percentage).toFixed(2);
+  
+  
+      function handleNextButton() {
+      currentQuestionIndex++;
+          if(currentQuestionIndex < questions.length){
+          showQuestion();
+          }else{
+          showScore();
+          }
       }
-  }
   
-
-  document.addEventListener("DOMContentLoaded", showQuestion);
-
-
-
-
+      nextButton.addEventListener("click", () => {
+      if(currentQuestionIndex < questions.length){
+          handleNextButton();
+      }else{
+          startQuiz();
+      }
+      });
+      
+startQuiz();
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
   

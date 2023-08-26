@@ -1,127 +1,158 @@
 const questions = [
-    {
-      question: "1.ჩამოთვლილთაგან რომელი არ არის რთული სიტყვა ანუ კოპმოზიტი?  ",
-      answers: ["ა) ლიმზირ-ლიჴრლ – ლოცვა-ვედრება ", "ბ) კინჩხიქვცა – შერცხვენა ", "გ) ქვინისდა – გადარჩენა ", "დ) ბოლკდა – ამოწყვეტა ", "ე) ჯიმ ი დირ – პურ-მარილი ", "ვ) ლილხვრი – მთაში ცხოვრება"],
-      correctAnswers: [5], // Shkhara is the correct answer
-      allowMultiple: false,
-    },
-    {
-      question: "2.ლაქთალრ, ლახმრ, ლაბტრ, ლადრ, ლაჩაიჟრ, ლაღუნვრ – ჩამოთვლილ სახელებში ლა- თავსართი აღნიშნავს: ",
-      answers: ["ა) კუთვნილებას ", "ბ) დანიშნულებას ", "გ) უქონლობას", "დ) კნინობითობას"],
-      correctAnswers: [1], // Mestia-Ushguli Trek is the correct answer
-      allowMultiple: false,
-    },
-    {
-      question: "3. ჰდშს ათხე იზგე ჩხარა მეზგე – ჰადიშში ახლა ცხოვრობს ცხრა კომლი / ცხრა ოჯახი. ამ წინადადებაში რომელ ბრუნვაში დგას ადგილის გარემოება?",
-      answers: ["ა) სახელობითში ", "ბ) ნათესაობითში", "გ) ვითარებითში", "დ) მიცემითში  "],
-      correctAnswers: [3], // Koshki is the correct answer
-      allowMultiple: false,
-    },
-    {
-      question: "4.მალატ ი მსისგ ჟი ესერ დს მოშ ხოწნა. ეს სვანური ანდაზა ქართულად ნიშნავს: ",
-      answers: ["ა) კარგი სტუმრის მოსვლა კერასაც უხარიაო.  ", "ბ) სიყვარული და სიძულვილი ვერავის აუწონიაო", "გ) უუფროსო სახლში ყველა უფროსია. ", "დ) სიყვარული ნემსის ყუნწში გამძვრენიაო. "],
-      correctAnswers: [1], // Koshki is the correct answer
-      allowMultiple: false,
-    }
-    
-  ];
-  
+  // 1 
+  {
+  question: "ჩამოთვლილთაგან რომელი არ არის რთული სიტყვა ანუ კოპმოზიტი?",
+  answers: [
+  { text:  "ა) ლიმზირ-ლიჴრლ – ლოცვა-ვედრება ",   correct:  false},
+  { text:  "ბ) კინჩხიქვცა – შერცხვენა",   correct: false},
+  { text:  "გ) ქვინისდა – გადარჩენა",   correct: false},
+  { text:  " დ) ბოლკდა – ამოწყვეტა  ",   correct: false},
+  { text:  "  ე) ჯიმ ი დირ – პურ-მარილი ",   correct: false},
+  { text:  " ვ) ლილხვრი – მთაში ცხოვრება ",   correct: true},
+        ]
+  },
 
+  // 2 
+  {
+      question: "ლაქთალრ, ლახმრ, ლაბტრ, ლადრ, ლაჩაიჟრ, ლაღუნვრ – ჩამოთვლილ სახელებში ლა- თავსართი აღნიშნავს: ",
+      answers: [
+      { text:  "ა) კუთვნილებას",   correct: false},
+      { text:  "ბ) დანიშნულებას ",   correct: true},
+      { text:  "გ) უქონლობას ",   correct: false},
+      { text:  "დ) კნინობითობას  ",     correct: false},
+            ]
+      },
+
+      // 3 
+      {
+          question: "ჰდშს ათხე იზგე ჩხარა მეზგე – ჰადიშში ახლა ცხოვრობს ცხრა კომლი / ცხრა ოჯახი. ამ წინადადებაში რომელ ბრუნვაში დგას ადგილის გარემოება? ",
+          answers: [
+          { text:  "ა) სახელობითში",   correct: false},
+          { text:  "ბ) ნათესაობითში",   correct: false},
+          { text:  "გ) ვითარებითში",   correct: false},
+          { text:  "დ) მიცემითში ",     correct: true},
+             ]
+          },
+  // 4  
+      {
+          question: "მალატ ი მსისგ ჟი ესერ დს მოშ ხოწნა. ეს სვანური ანდაზა ქართულად ნიშნავს:  ",
+          answers: [
+          { text:  "ა) კარგი სტუმრის მოსვლა კერასაც უხარიაო ",   correct:  false},
+          { text:  "ბ) სიყვარული და სიძულვილი ვერავის აუწონიაო",   correct: true},
+          { text:  "გ) უუფროსო სახლში ყველა უფროსია.  ",   correct: false},
+          { text:  "დ) სიყვარული ნემსის ყუნწში გამძვრენიაო. ",     correct: false},
+          ]
+      },
+  
+  ];
+
+  
+  const questionElement = document.getElementById("question");
+  const answerButton = document.getElementById("answer-buttons");
+  const nextButton = document.getElementById("next-btn");
+  
   let currentQuestionIndex = 0;
   let score = 0;
-  let isSubmitted = false;
   
-  function showQuestion() {
-    const quizElement = document.getElementById("quiz");
-    quizElement.innerHTML = ""; // Clear existing content
+  function startQuiz(){
+    currentQuestionIndex = 0;
+    score = 0;
+    nextButton.innerHTML = "Next";
+    showQuestion();
+  }
   
-    const questionContainer = document.createElement("div");
-    questionContainer.classList.add("question");
-    questionContainer.innerHTML = `<p>${currentQuestionIndex + 1}. ${questions[currentQuestionIndex].question}</p>`;
+  function showQuestion(){
+      resetState();
+      let currentQuestion = questions[currentQuestionIndex];
+      let questionNo = currentQuestionIndex + 1;
+      questionElement.innerHTML = questionNo + ". " + currentQuestion.question;
   
-    const answersContainer = document.createElement("div");
-    answersContainer.classList.add("answers");
+      currentQuestion.answers.forEach(answer => {
+         const button = document.createElement("button");
+         button.innerHTML = answer.text;
+         button.classList.add("btn");
+         answerButton.appendChild(button);
   
-    questions[currentQuestionIndex].answers.forEach((answer, i) => {
-      const answerElement = document.createElement("div");
-      answerElement.classList.add("answer");
-      const input = document.createElement("input");
-      input.setAttribute("type", questions[currentQuestionIndex].allowMultiple ? "checkbox" : "radio");
-      input.setAttribute("name", `q${currentQuestionIndex}`);
-      input.setAttribute("value", i);
-      answerElement.appendChild(input);
-      answerElement.appendChild(document.createTextNode(answer));
-      answersContainer.appendChild(answerElement);
-    });
+         if(answer.correct){
+          button.dataset.correct = answer.correct;
+         }
+         button.addEventListener("click", selectAnswer);
+  });
+  }
   
-    questionContainer.appendChild(answersContainer);
-  
-    const nextButton = document.createElement("button");
-    nextButton.textContent = "Next";
-    nextButton.disabled = true;
-  
-    answersContainer.addEventListener("change", () => {
-      nextButton.disabled = false;
-    });
-  
-    nextButton.addEventListener("click", nextQuestion);
-  
-    const progressBar = document.querySelector(".progress");
-    progressBar.style.width = `${((currentQuestionIndex + 1) / questions.length) * 100}%`;
-  
-    quizElement.appendChild(questionContainer);
-    quizElement.appendChild(nextButton);
+  function resetState(){
+     nextButton.style.display = "none";
+     while(answerButton.firstChild){
+       answerButton.removeChild(answerButton.firstChild);
+  }
   }
   
   
-  function nextQuestion() {
-    const answerElements = document.querySelectorAll(`input[name=q${currentQuestionIndex}]:checked`);
-    const question = questions[currentQuestionIndex];
-    let questionScore = 1;
+  function selectAnswer(e){
+      const selectedBtn = e.target;
+      const isCorrect = selectedBtn.dataset.correct === "true";
   
-    answerElements.forEach((answerElement) => {
-      const selectedAnswer = parseInt(answerElement.value);
-  
-      if (question.correctAnswers.includes(selectedAnswer)) {
-        if (question.correctAnswers.length === 1) {
-          questionScore = 0.8; // Both correct answers selected, full credit
-        } else {
-          questionScore = 0; // Only one correct answer selected, half credit
-        }
+      if(isCorrect){
+          selectedBtn.classList.add("correct");
+          score++;
+      }else{
+          selectedBtn.classList.add("incorrect");
       }
-    });
   
-    score += questionScore;
   
-    currentQuestionIndex++;
-  
-    if (currentQuestionIndex === questions.length) {
-      showResults();
-    } else {
-      showQuestion();
-    }
+      Array.from(answerButton.children).forEach(button => {
+          if(button.dataset.correct === "true"){
+               button.classList.add("correct");
+          }    
+          button.disabled = true; 
+          });
+          nextButton.style.display = "block"  
   }
   
-
-
-  function showResults() {
-    isSubmitted = true;
-    const quizElement = document.getElementById("quiz");
-    quizElement.style.display = "none";
   
-    const resultsElement = document.getElementById("results");
-    resultsElement.innerHTML = `<p>Your final score is: ${calculatePercentage(score, questions.length)}%</p>`;
+  function showScore() {
+    resetState();
+    const percentage = (score / questions.length) * 100;
+    const roundedPercentage = Math.round(percentage * 10) / 10; // Round to one decimal place
+    questionElement.innerHTML = `Your score: ${roundedPercentage}% (${score} out of ${questions.length})`;
+    nextButton.innerHTML = "Play Again";
+    nextButton.style.display = "block";
+}
 
-    function calculatePercentage(score, total) {
-        const percentage = (score / total) * 100;
-        return Math.min(100, percentage).toFixed(2);
+  
+  
+      function handleNextButton() {
+      currentQuestionIndex++;
+          if(currentQuestionIndex < questions.length){
+          showQuestion();
+          }else{
+          showScore();
+          }
       }
-  }
   
-
-  document.addEventListener("DOMContentLoaded", showQuestion);
-
-
-
-
+      nextButton.addEventListener("click", () => {
+      if(currentQuestionIndex < questions.length){
+          handleNextButton();
+      }else{
+          startQuiz();
+      }
+      });
+      
+startQuiz();
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
   

@@ -1,127 +1,157 @@
 const questions = [
-    {
-      question: "1.ბეფშვილდ, ზურლდ, დშდლდ, მიჟლდ, სარგლ, სოფლდ – ნაწარმოებ სახელთა რომელ ჯგუფს განეკუთვნება ჩამოთვლილი -ლდ სუფიქსიანი სახელები?  ",
-      answers: ["ა) ქონება-უქონლობისა ", "ბ) წარმომავლობისა ", "გ) დანიშნულებისა ", "დ) კნინობით-ალერსობითისა"],
-      correctAnswers: [3], // Shkhara is the correct answer
-      allowMultiple: false,
-    },
-    {
-      question: "2.  .ეჯრს ხოხახ მახე ხოჩა ამბვ – იმათ იციან კარგი ახალი ამბავი. რომელ ბრუნვაში დგას სუბიქტი ამ წინადადებაში: ",
-      answers: ["ა) მოთხრობითში", "ბ) ნათესაობითში", "გ) სახელობითში", "დ) მიცემითში "],
-      correctAnswers: [3], // Mestia-Ushguli Trek is the correct answer
-      allowMultiple: false,
-    },
-    {
-      question: "3. .ჩამოთვლილი ზმნებიდან რომელია ექსკლუზიური ფორმა?",
-      answers: ["ა) სგ ჯწდუნიხ – თქვენ გენატრებათ ", "ბ) ეჯრს ხწდუნიხ – იმათ ენატრებათ", "გ) ნ გვზნუნი – ჩვენ წასვლა გვინდა", "დ) ნ ნზნუნი – ჩვენ წასვლა გვინდა ", "ე) ნ გვწდუნი – ჩვენ გვენატრება "],
-      correctAnswers: [3], // Koshki is the correct answer
-      allowMultiple: false,
-    },
-    {
-      question: "4. .ხირლდ ხეკვეს ესხვდდდ მეედს – მხიარულად უნდა დახვდე მომსვლელს, სტუმარს. ამ წინადადებაში რომელ ბრუნვაში დგას ობიექტი [მეედს]? ",
-      answers: ["ა) სახელობითში ", "ბ) მოთხრობითში ", "გ) ნათესაობითში ", "დ) მიცემითში "],
-      correctAnswers: [3], // Koshki is the correct answer
-      allowMultiple: false,
-    }
-    
-  ];
-  
+  // 1 
+  {
+  question: "ბეფშვილდ, ზურლდ, დშდლდ, მიჟლდ, სარგლ, სოფლდ – ნაწარმოებ სახელთა რომელ ჯგუფს განეკუთვნება ჩამოთვლილი  -ლდ სუფიქსიანი სახელები? ",
+  answers: [
+  { text:  "ა) ქონება-უქონლობისა ",   correct:  false},
+  { text:  "ბ) წარმომავლობისა ",   correct: false},
+  { text:  "გ) დანიშნულებისა",   correct: false},
+  { text:  " დ) კნინობით-ალერსობითისა  ",   correct: true},
+        ]
+  },
 
+  // 2 
+  {
+      question: "ეჯრს ხოხახ მახე ხოჩა ამბვ – იმათ იციან კარგი ახალი ამბავი. რომელ ბრუნვაში დგას სუბიქტი ამ წინადადებაში: ",
+      answers: [
+      { text:  " ა) მოთხრობითში",   correct: false},
+      { text:  "ბ) ნათესაობითში  ",   correct: false},
+      { text:  "გ) სახელობითში",   correct: false},
+      { text:  "დ) მიცემითში ",     correct: true},
+            ]
+      },
+
+      // 3 
+      {
+          question: "ჩამოთვლილი ზმნებიდან რომელია ექსკლუზიური ფორმა? ",
+          answers: [
+          { text:  "ა) სგ ჯწდუნიხ – თქვენ გენატრებათ",   correct: false},
+          { text:  "ბ) ეჯრს ხწდუნიხ – იმათ ენატრებათ",   correct: false},
+          { text:  "გ) ნ გვზნუნი – ჩვენ წასვლა გვინდა",   correct: false},
+          { text:  "დ) ნ ნზნუნი – ჩვენ წასვლა გვინდა ",     correct: true},
+          { text:  "ე) ნ გვწდუნი – ჩვენ გვენატრება ",     correct: false},
+             ]
+          },
+  // 4  
+      {
+          question: "ხირლდ ხეკვეს ესხვდდდ მეედს – მხიარულად უნდა დახვდე მომსვლელს, სტუმარს. ამ წინადადებაში რომელ ბრუნვაში დგას ობიექტი [მეედს]? ",
+          answers: [
+          { text:  "ა) სახელობითში ",   correct:  false},
+          { text:  "ბ) მოთხრობითში ",   correct: false},
+          { text:  " გ) ნათესაობითში ",   correct: false},
+          { text:  "დ) მიცემითში  ",     correct: true},
+          ]
+      },
+  
+  ];
+
+  
+  const questionElement = document.getElementById("question");
+  const answerButton = document.getElementById("answer-buttons");
+  const nextButton = document.getElementById("next-btn");
+  
   let currentQuestionIndex = 0;
   let score = 0;
-  let isSubmitted = false;
   
-  function showQuestion() {
-    const quizElement = document.getElementById("quiz");
-    quizElement.innerHTML = ""; // Clear existing content
+  function startQuiz(){
+    currentQuestionIndex = 0;
+    score = 0;
+    nextButton.innerHTML = "Next";
+    showQuestion();
+  }
   
-    const questionContainer = document.createElement("div");
-    questionContainer.classList.add("question");
-    questionContainer.innerHTML = `<p>${currentQuestionIndex + 1}. ${questions[currentQuestionIndex].question}</p>`;
+  function showQuestion(){
+      resetState();
+      let currentQuestion = questions[currentQuestionIndex];
+      let questionNo = currentQuestionIndex + 1;
+      questionElement.innerHTML = questionNo + ". " + currentQuestion.question;
   
-    const answersContainer = document.createElement("div");
-    answersContainer.classList.add("answers");
+      currentQuestion.answers.forEach(answer => {
+         const button = document.createElement("button");
+         button.innerHTML = answer.text;
+         button.classList.add("btn");
+         answerButton.appendChild(button);
   
-    questions[currentQuestionIndex].answers.forEach((answer, i) => {
-      const answerElement = document.createElement("div");
-      answerElement.classList.add("answer");
-      const input = document.createElement("input");
-      input.setAttribute("type", questions[currentQuestionIndex].allowMultiple ? "checkbox" : "radio");
-      input.setAttribute("name", `q${currentQuestionIndex}`);
-      input.setAttribute("value", i);
-      answerElement.appendChild(input);
-      answerElement.appendChild(document.createTextNode(answer));
-      answersContainer.appendChild(answerElement);
-    });
+         if(answer.correct){
+          button.dataset.correct = answer.correct;
+         }
+         button.addEventListener("click", selectAnswer);
+  });
+  }
   
-    questionContainer.appendChild(answersContainer);
-  
-    const nextButton = document.createElement("button");
-    nextButton.textContent = "Next";
-    nextButton.disabled = true;
-  
-    answersContainer.addEventListener("change", () => {
-      nextButton.disabled = false;
-    });
-  
-    nextButton.addEventListener("click", nextQuestion);
-  
-    const progressBar = document.querySelector(".progress");
-    progressBar.style.width = `${((currentQuestionIndex + 1) / questions.length) * 100}%`;
-  
-    quizElement.appendChild(questionContainer);
-    quizElement.appendChild(nextButton);
+  function resetState(){
+     nextButton.style.display = "none";
+     while(answerButton.firstChild){
+       answerButton.removeChild(answerButton.firstChild);
+  }
   }
   
   
-  function nextQuestion() {
-    const answerElements = document.querySelectorAll(`input[name=q${currentQuestionIndex}]:checked`);
-    const question = questions[currentQuestionIndex];
-    let questionScore = 1;
+  function selectAnswer(e){
+      const selectedBtn = e.target;
+      const isCorrect = selectedBtn.dataset.correct === "true";
   
-    answerElements.forEach((answerElement) => {
-      const selectedAnswer = parseInt(answerElement.value);
-  
-      if (question.correctAnswers.includes(selectedAnswer)) {
-        if (question.correctAnswers.length === 1) {
-          questionScore = 0.8; // Both correct answers selected, full credit
-        } else {
-          questionScore = 0; // Only one correct answer selected, half credit
-        }
+      if(isCorrect){
+          selectedBtn.classList.add("correct");
+          score++;
+      }else{
+          selectedBtn.classList.add("incorrect");
       }
-    });
   
-    score += questionScore;
   
-    currentQuestionIndex++;
-  
-    if (currentQuestionIndex === questions.length) {
-      showResults();
-    } else {
-      showQuestion();
-    }
+      Array.from(answerButton.children).forEach(button => {
+          if(button.dataset.correct === "true"){
+               button.classList.add("correct");
+          }    
+          button.disabled = true; 
+          });
+          nextButton.style.display = "block"  
   }
   
-
-
-  function showResults() {
-    isSubmitted = true;
-    const quizElement = document.getElementById("quiz");
-    quizElement.style.display = "none";
   
-    const resultsElement = document.getElementById("results");
-    resultsElement.innerHTML = `<p>Your final score is: ${calculatePercentage(score, questions.length)}%</p>`;
+  function showScore() {
+    resetState();
+    const percentage = (score / questions.length) * 100;
+    const roundedPercentage = Math.round(percentage * 10) / 10; // Round to one decimal place
+    questionElement.innerHTML = `Your score: ${roundedPercentage}% (${score} out of ${questions.length})`;
+    nextButton.innerHTML = "Play Again";
+    nextButton.style.display = "block";
+}
 
-    function calculatePercentage(score, total) {
-        const percentage = (score / total) * 100;
-        return Math.min(100, percentage).toFixed(2);
+  
+  
+      function handleNextButton() {
+      currentQuestionIndex++;
+          if(currentQuestionIndex < questions.length){
+          showQuestion();
+          }else{
+          showScore();
+          }
       }
-  }
   
-
-  document.addEventListener("DOMContentLoaded", showQuestion);
-
-
-
-
+      nextButton.addEventListener("click", () => {
+      if(currentQuestionIndex < questions.length){
+          handleNextButton();
+      }else{
+          startQuiz();
+      }
+      });
+      
+startQuiz();
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
   

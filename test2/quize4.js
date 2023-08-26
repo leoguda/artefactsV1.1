@@ -1,126 +1,155 @@
 const questions = [
-    {
-      question: "1. ვის ეკუთვნის სვანური ლექსიკის პირველი სამეცნიერო ჩანაწერები? ",
-      answers: ["ა) გიულდენშტედტს", "ბ) ნიკო მარს ", "გ) მარი ბროსეს", "დ) გერჰარდ დეეტერსს"],
-      correctAnswers: [0], // Shkhara is the correct answer
-      allowMultiple: false,
-    },
-    {
-        question: "2. პარადიგმის რომელი წყვილი გამოხატავს „ცხოვრობს“ ზმნის მესამე პირს?",
-        answers: ["ა) ხვიზგე – ხვიზგედ", "ბ) იზგე – ხვიზგედ", "გ) ხიზგედ – ხიზგე", "დ) იზგე – იზგეხ "],
-        correctAnswers: [3], // Shkhara is the correct answer
-        allowMultiple: false,
+  // 1
+  {
+  question: "ვის ეკუთვნის სვანური ლექსიკის პირველი სამეცნიერო ჩანაწერები? ",
+  answers: [
+  { text:  "ა) გიულდენშტედტს",   correct:  true},
+  { text:  "ბ) ნიკო მარს ",   correct: false},
+  { text:  "გ) მარი ბროსეს ",   correct: false},
+  { text:  "დ) გერჰარდ დეეტერსს",     correct: false},
+        ]
+  },
+  // 2 
+  {
+      question: "პარადიგმის რომელი წყვილი გამოხატავს „ცხოვრობს“ ზმნის მესამე პირს?",
+      answers: [
+      { text:  "ა) ხვიზგე – ხვიზგედ",   correct: false},
+      { text:  "ბ) იზგე – ხვიზგედ",   correct: false},
+      { text:  "გ) ხიზგედ – ხიზგე",   correct: false},
+      { text:  "დ) იზგე – იზგეხ",     correct: true},
+            ]
       },
-      {
-        question: "3. რამდენი ხმოვანი გვაქვს სვანური ენის ბალსქვემოურ დიალექტში? ",
-        answers: ["ა) 7 ხმოვანი ", "ბ) 9 ხმოვანი ", "გ) 12 ხმოვანი ", "დ) 18 ხმოვანი "],
-        correctAnswers: [1], // Shkhara is the correct answer
-        allowMultiple: false,
-      },
-      {
-        question: "4. ჩამოთვლილ ფორმათაგან რომელი გამოხატავს მომავალ დროს:",
-        answers: ["ა) მი მირი – სი ჯარდნა ", "ბ) ეჩას ხორდა – სი ჯირი", "გ) სი ჯერდი – მი მერდი ", "დ) სი ჯირი – ეჩას ხარდნა "],
-        correctAnswers: [2], // Shkhara is the correct answer
-        allowMultiple: false,
-      }
-  ];
-  
 
+      // 3 
+      {
+          question: "რამდენი ხმოვანი გვაქვს სვანური ენის ბალსქვემოურ დიალექტში?",
+          answers: [
+          { text:  "ა) 7 ხმოვანი",   correct: false},
+          { text:  "ბ) 9 ხმოვანი",   correct: true},
+          { text:  "გ) 12 ხმოვანი ",   correct: false},
+          { text:  "დ) 18 ხმოვანი",     correct: false},
+             ]
+          },
+  // 4  
+      {
+          question: "ჩამოთვლილ ფორმათაგან რომელი გამოხატავს მომავალ დროს:",
+          answers: [
+          { text:  "ა) მი მირი – სი ჯარდნა",   correct:  false},
+          { text:  "ბ) ეჩას ხორდა – სი ჯირი",   correct: false},
+          { text:  "გ) სი ჯერდი – მი მერდი",   correct: true},
+          { text:  "დ) სი ჯირი – ეჩას ხარდნა",     correct: false},
+          ]
+      },
+  
+  ];
+
+  
+  const questionElement = document.getElementById("question");
+  const answerButton = document.getElementById("answer-buttons");
+  const nextButton = document.getElementById("next-btn");
+  
   let currentQuestionIndex = 0;
   let score = 0;
-  let isSubmitted = false;
   
-  function showQuestion() {
-    const quizElement = document.getElementById("quiz");
-    quizElement.innerHTML = ""; // Clear existing content
+  function startQuiz(){
+    currentQuestionIndex = 0;
+    score = 0;
+    nextButton.innerHTML = "Next";
+    showQuestion();
+  }
   
-    const questionContainer = document.createElement("div");
-    questionContainer.classList.add("question");
-    questionContainer.innerHTML = `<p>${currentQuestionIndex + 1}. ${questions[currentQuestionIndex].question}</p>`;
+  function showQuestion(){
+      resetState();
+      let currentQuestion = questions[currentQuestionIndex];
+      let questionNo = currentQuestionIndex + 1;
+      questionElement.innerHTML = questionNo + ". " + currentQuestion.question;
   
-    const answersContainer = document.createElement("div");
-    answersContainer.classList.add("answers");
+      currentQuestion.answers.forEach(answer => {
+         const button = document.createElement("button");
+         button.innerHTML = answer.text;
+         button.classList.add("btn");
+         answerButton.appendChild(button);
   
-    questions[currentQuestionIndex].answers.forEach((answer, i) => {
-      const answerElement = document.createElement("div");
-      answerElement.classList.add("answer");
-      const input = document.createElement("input");
-      input.setAttribute("type", questions[currentQuestionIndex].allowMultiple ? "checkbox" : "radio");
-      input.setAttribute("name", `q${currentQuestionIndex}`);
-      input.setAttribute("value", i);
-      answerElement.appendChild(input);
-      answerElement.appendChild(document.createTextNode(answer));
-      answersContainer.appendChild(answerElement);
-    });
+         if(answer.correct){
+          button.dataset.correct = answer.correct;
+         }
+         button.addEventListener("click", selectAnswer);
+  });
+  }
   
-    questionContainer.appendChild(answersContainer);
-  
-    const nextButton = document.createElement("button");
-    nextButton.textContent = "Next";
-    nextButton.disabled = true;
-  
-    answersContainer.addEventListener("change", () => {
-      nextButton.disabled = false;
-    });
-  
-    nextButton.addEventListener("click", nextQuestion);
-  
-    const progressBar = document.querySelector(".progress");
-    progressBar.style.width = `${((currentQuestionIndex + 1) / questions.length) * 100}%`;
-  
-    quizElement.appendChild(questionContainer);
-    quizElement.appendChild(nextButton);
+  function resetState(){
+     nextButton.style.display = "none";
+     while(answerButton.firstChild){
+       answerButton.removeChild(answerButton.firstChild);
+  }
   }
   
   
-  function nextQuestion() {
-    const answerElements = document.querySelectorAll(`input[name=q${currentQuestionIndex}]:checked`);
-    const question = questions[currentQuestionIndex];
-    let questionScore = 1;
+  function selectAnswer(e){
+      const selectedBtn = e.target;
+      const isCorrect = selectedBtn.dataset.correct === "true";
   
-    answerElements.forEach((answerElement) => {
-      const selectedAnswer = parseInt(answerElement.value);
-  
-      if (question.correctAnswers.includes(selectedAnswer)) {
-        if (question.correctAnswers.length === 1) {
-          questionScore = 0.8; // Both correct answers selected, full credit
-        } else {
-          questionScore = 0; // Only one correct answer selected, half credit
-        }
+      if(isCorrect){
+          selectedBtn.classList.add("correct");
+          score++;
+      }else{
+          selectedBtn.classList.add("incorrect");
       }
-    });
   
-    score += questionScore;
   
-    currentQuestionIndex++;
-  
-    if (currentQuestionIndex === questions.length) {
-      showResults();
-    } else {
-      showQuestion();
-    }
+      Array.from(answerButton.children).forEach(button => {
+          if(button.dataset.correct === "true"){
+               button.classList.add("correct");
+          }    
+          button.disabled = true; 
+          });
+          nextButton.style.display = "block"  
   }
   
-
-
-  function showResults() {
-    isSubmitted = true;
-    const quizElement = document.getElementById("quiz");
-    quizElement.style.display = "none";
   
-    const resultsElement = document.getElementById("results");
-    resultsElement.innerHTML = `<p>Your final score is: ${calculatePercentage(score, questions.length)}%</p>`;
+  function showScore() {
+    resetState();
+    const percentage = (score / questions.length) * 100;
+    const roundedPercentage = Math.round(percentage * 10) / 10; // Round to one decimal place
+    questionElement.innerHTML = `Your score: ${roundedPercentage}% (${score} out of ${questions.length})`;
+    nextButton.innerHTML = "Play Again";
+    nextButton.style.display = "block";
+}
 
-    function calculatePercentage(score, total) {
-        const percentage = (score / total) * 100;
-        return Math.min(100, percentage).toFixed(2);
+  
+  
+      function handleNextButton() {
+      currentQuestionIndex++;
+          if(currentQuestionIndex < questions.length){
+          showQuestion();
+          }else{
+          showScore();
+          }
       }
-  }
   
-
-  document.addEventListener("DOMContentLoaded", showQuestion);
-
-
-
-
+      nextButton.addEventListener("click", () => {
+      if(currentQuestionIndex < questions.length){
+          handleNextButton();
+      }else{
+          startQuiz();
+      }
+      });
+      
+startQuiz();
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
   
