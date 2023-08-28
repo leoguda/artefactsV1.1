@@ -114,7 +114,7 @@ function selectAnswer(e){
         });
         nextButton.style.display = "block"  
 }
-
+ 
 
 function showScore() {
     resetState();
