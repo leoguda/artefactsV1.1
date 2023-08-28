@@ -549,6 +549,7 @@ header{
       max-width: 1000px;
       padding: 2em;
       background-color: rgba(185, 185, 185, 0.174);}
+      
 /* for-activities */
   /* .for-activities-main-blog-meaning{
   } */
@@ -564,6 +565,12 @@ header{
   .for-vocabulary-main-blog-meaning-div{
     background-color: rgb(252, 162, 97);
   }
+  .for-vocabulary-main-blog-meaning-div td {
+    border:1px solid black;
+    padding: 0.3em;
+    max-width: 333px;
+  }
+  
 /* for-vocabulary */
 
 /* for-stories */
@@ -1198,12 +1205,38 @@ header{
     top: 6em;
   }
   .for-all-blogs-main-blog-meaning-div{
-    padding: 1em;
+    padding: 0.2em;
   }
+  .for-vocabulary-main-blog-meaning-div td {
+    padding: 0.4em;
+    font-size: 0.8em;
   }
+  .for-all-blogs-main-blog-meaning-div-text-box-bright{
+    padding: 0.7em;
+  }
+  .for-all-blogs-main-blog-meaning-div-text-box-dark{
+    padding: 0.7em;
+  }
+}
   @media (max-width:400px){
   .nav-info-responsive ul{
     top: 4em;
+  }
+  .for-all-blogs-main-blog-meaning-div{
+    padding: 0.01em;
+  }
+  .for-all-blogs-main-blog-meaning-div h4{
+    text-align: center;
+  }
+  .for-vocabulary-main-blog-meaning-div td {
+    padding: 0.4em;
+    font-size: 0.7em;
+  }
+  .for-all-blogs-main-blog-meaning-div-text-box-bright{
+    padding: 0.2em;
+  }
+  .for-all-blogs-main-blog-meaning-div-text-box-dark{
+    padding: 0.2em;
   }
   }
   @media (max-width:371px){
