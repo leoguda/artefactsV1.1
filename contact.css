@@ -127,6 +127,11 @@ text-decoration: none;
 color: #e7e7e7;
 }
 
+
+.kkk:hover {
+  color: #e7e7e7;
+}
+
 /* kontaqti */
 .contact-container {
   max-width: 600px;
