@@ -1225,6 +1225,9 @@ header{
   .for-all-blogs-main-blog-meaning-div{
     padding: 0.01em;
   }
+  .for-all-blogs-main-blog-meaning-div h2{
+    padding-top: 1em;
+  }
   .for-all-blogs-main-blog-meaning-div h4{
     text-align: center;
   }
