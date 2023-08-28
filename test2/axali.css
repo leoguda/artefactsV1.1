@@ -33,6 +33,29 @@ padding: 30px;
     padding-bottom: 30px;
 }
 
+
+.homepage {
+    display: flex;
+    justify-content: center;
+    font-size: 1.2em;
+    border: 1px solid rgb(170, 170, 170);
+    background-color: rgb(170, 170, 170);
+    height: 40px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: white;
+    margin-top: 1.1em;
+}
+
+
+.homepage p {
+    display: flex;
+    align-items: center;
+    font-family: sans-serif;
+
+}
+
+
 .quiz{
 padding: 20px 0;
 }
