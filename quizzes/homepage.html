@@ -28,9 +28,23 @@
             <h2> ხოჩა ლადეღ  <span style="text-transform:capitalize;"><%= user.name%></span></h2>
             <br>
             <div>
+
+                <button style="width: 10em;
+                
+                transition:0.1s;
+                height: 2.5em;
+                background-color: #5794ff;
+                border: none;
+                border-radius: 1em;
+                cursor: pointer;" 
+                onMouseOver="this.style.color='white'"
+                onMouseOut="this.style.color='black'"
+                type="submit">სილაბუსი</button>
+
                 <form method="POST" action="/logout">
                     <button style="width: 10em;
                     transition:0.1s;
+                    margin-top: 1.1em;
                     height: 2.5em;
                     background-color: darkcyan;
                     border: none;
@@ -39,12 +53,22 @@
                     onMouseOver="this.style.color='white'"
                     onMouseOut="this.style.color='black'"
                     type="submit">გამოსვლა</button>
+
                 </form>
             </div>
         </div>
 
         <span class="span-column">
             <span class="span-column-1">
+
+                <div class="accordion-container">
+                    <a href="actual-quizzes/pretest.html"><button class="accordion" id="lection-one">პრე-ტესტი</button></a>
+                </div>
+
+
+
+
+
                 <div class="accordion-container">
                     <button class="accordion" id="lection-one">ლექცია I</button>
                     <div class="panel">
@@ -410,6 +434,12 @@
                             </ul>
                         </div>
                     </div>
+                </div>
+
+
+
+                <div class="accordion-container">
+                    <a href="actual-quizzes/pretest.html"><button class="accordion" id="lection-one">პოსტ-ტესტი</button></a>
                 </div>
             </span>
         </span>
