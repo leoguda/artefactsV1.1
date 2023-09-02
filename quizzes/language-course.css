@@ -16,16 +16,43 @@
   .logo-responsive a img, .logo a img{
     width:130px;
   }
+  .main-container{
+    background-color: rgb(199, 220, 199);
+    display: flex;
+    justify-content: flex-start;
+  }
   .div-accordion-container{
     margin: 0;
     background-color: #f1f0f0;
   }
-  .main-container{
-    background-color: rgb(199, 220, 199);
+  .all-quizzes{
+    background-color: rebeccapurple;
     display: flex;
-    justify-content: space-between;
+    position: fixed;
+    max-width: 1300px;
+    width: 100%;
+    max-height: 800px;
+    height: 100%;
+    right: 0;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(199, 220, 199);
   }
-  .quiz {
+  .app{
+    display: none;
+    background: #fff;
+    width: 60%;
+    border-radius: 10px;
+    border: 1px solid rgb(179, 179, 179);
+    padding: 30px;
+  }
+  .show{
+    display: block;
+  }
+  .quiz{
+    padding: 20px 0;
+    }
+  .quiz-button{
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -35,7 +62,7 @@
     margin-left: 1em;
     font-size: 1.2em;
   }
-  .quiz::after{
+  .quiz-button::after{
     content: ' ';
     width: 1em;
     height: 0em;
@@ -44,7 +71,7 @@
     background-repeat: no-repeat;
     transition: 0.1s;
   }
-  .quiz:hover::after {
+  .quiz-button:hover::after {
     height: 1em;
   }
   .accordion-container{

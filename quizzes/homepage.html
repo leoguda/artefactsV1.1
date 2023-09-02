@@ -27,10 +27,9 @@
         max-width: 270px;">
             <h2> ხოჩა ლადეღ  <span style="text-transform:capitalize;"><%= user.name%></span></h2>
             <br>
-            <div>
-
+            <a class="myBtn">წესები</a>
+            <a href="Artefacts_Silabus.pdf" target="_blank">
                 <button style="width: 10em;
-                
                 transition:0.1s;
                 height: 2.5em;
                 background-color: #5794ff;
@@ -40,6 +39,9 @@
                 onMouseOver="this.style.color='white'"
                 onMouseOut="this.style.color='black'"
                 type="submit">სილაბუსი</button>
+            </a>
+            <div>
+                
 
                 <form method="POST" action="/logout">
                     <button style="width: 10em;
@@ -64,10 +66,6 @@
                 <div class="accordion-container">
                     <a href="actual-quizzes/pretest.html"><button class="accordion" id="lection-one">პრე-ტესტი</button></a>
                 </div>
-
-
-
-
 
                 <div class="accordion-container">
                     <button class="accordion" id="lection-one">ლექცია I</button>

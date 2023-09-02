@@ -101,11 +101,27 @@ border-radius: 4px;
 cursor: pointer;
 display: none;
 }
-
 .correct{
     background: #9aeabc;
 }
-
 .incorrect{
     background: #ff9393;
 }
+.quiz > span{
+    display: flex;
+    justify-content: center;
+}
+
+#sendBtn{
+    margin-top: 1em;
+    background-color: #004d03;
+    color: white;
+    text-decoration: none;
+    padding: 0.87em;
+    border-radius: 3px;
+    font-size: 0.8125em;
+}
+.disabled-btn{
+    pointer-events: none;
+    opacity: .65;
+  }
