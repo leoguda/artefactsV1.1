@@ -28,8 +28,8 @@ const questions = [
           answers: [
           { text:  "ა) ზედსართავი სახელი",   correct: false},
           { text:  "ბ) რიცხვითი სახელი",   correct: false},
-          { text:  "გ) ზმნიზედა ",   correct: true},
-          { text:  "დ) არსებითი სახელი ",     correct: false},
+          { text:  "გ) ზმნიზედა ",   correct: false},
+          { text:  "დ) არსებითი სახელი ",     correct: true},
              ]
           },
   // 4  

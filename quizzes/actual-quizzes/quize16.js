@@ -16,8 +16,8 @@ const questions = [
       answers: [
       { text:  " ა) მოთხრობითში",   correct: false},
       { text:  "ბ) სახელობითში  ",   correct: false},
-      { text:  "გ) მოქმედებითში",   correct: false},
-      { text:  "დ) ნათესაობითში",     correct: true},
+      { text:  "გ) მოქმედებითში",   correct: true},
+      { text:  "დ) ნათესაობითში",     correct: false},
             ]
       },
 
