@@ -6,12 +6,10 @@
     <title>Svan Language</title>
     <link rel="icon" href="5.png">
     <link rel="stylesheet" href="language-course.css">
+    <link rel="stylesheet" href="/quizzes/actual-quizzes/axali.css">
 </head>
 <body>
 <div class="main-container">
-    
-    <div id="player"></div>
-    
     <div class="div-accordion-container">
         <div class="logo-responsive">
             <a href="index.html">
@@ -25,12 +23,39 @@
         text-align: center;
         margin: auto;
         max-width: 270px;">
-            <h2> ხოჩა ლადეღ <span style="text-transform:capitalize;"><%= user.name%></span></h2>
+            <h2> ხოჩა ლადეღ  <span style="text-transform:capitalize;"><%= user.name%></span></h2>
             <br>
+            <button style="
+                width: 10em;
+                transition:0.1s;
+                height: 2.5em;
+                background-color: #ffaf55;
+                border: none;
+                border-radius: 1em;
+                cursor: pointer;" 
+                onMouseOver="this.style.color='white'"
+                onMouseOut="this.style.color='black'"
+                type="submit">წესები</button>
+            <a href="Artefacts_Silabus.pdf" target="_blank">
+                <button style="
+                width: 10em;
+                transition:0.1s;
+                margin-top: 1.1em;
+                height: 2.5em;
+                background-color: #5794ff;
+                border: none;
+                border-radius: 1em;
+                cursor: pointer;" 
+                onMouseOver="this.style.color='white'"
+                onMouseOut="this.style.color='black'"
+                type="submit">სილაბუსი</button>
+            </a>
             <div>
                 <form method="POST" action="/logout">
-                    <button style="width: 10em;
+                    <button style="
+                    width: 10em;
                     transition:0.1s;
+                    margin-top: 1.1em;
                     height: 2.5em;
                     background-color: darkcyan;
                     border: none;
@@ -50,51 +75,34 @@
                     <div class="panel">
                         <div class="container-button">
                             <ul>
-                                <li><button class="buttons" onclick="playThisVideo('G5CW2Cq3QzA'),showCurrentVideo()">პირველი ვიდეო</button></li>  
-                                <li><button class="buttons" onclick="playThisVideo('jge7NTVJ6iI'),showCurrentVideo()">მეორე ვიდეო</button></li>  
-                                <li><button class="buttons" onclick="playThisVideo('B44C500DTxg'),showCurrentVideo()">მესამე ვიდეო</button></li>  
-                                <li><button class="buttons" onclick="playThisVideo('ngkaWQwfx5c'),showCurrentVideo()">მეოთხე ვიდეო</button></li> 
-                                <li><button class="buttons" onclick="playThisVideo('rKb1N5mw4Zw'),showCurrentVideo()">მეხუთე ვიდეო</button></li> 
-                                <li><button class="buttons" onclick="playThisVideo('od9uI2Ia9I8'),showCurrentVideo()">მეექვსე ვიდეო</button></li> 
-                                <li><button class="buttons" onclick="playThisVideo('CXjwGTLCSkY'),showCurrentVideo()">მეშვიდე ვიდეო</button></li> 
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="accordion-container">
-                    <button class="accordion">ლექცია II</button>
-                    <div class="panel">
-                        <div class="container-button">
-                            <ul>
-                                <li><button class="buttons" onclick="playThisVideo('5Lin0bfAtyI'),showCurrentVideo()">პირველი ვიდეო</button></li>  
-                                <li><button class="buttons" onclick="playThisVideo('X4ajFWDMe8s'),showCurrentVideo()">მეორე ვიდეო</button></li>  
-                                <li><button class="buttons" onclick="playThisVideo('QT69EykweLE'),showCurrentVideo()">მესამე ვიდეო</button></li>  
-                                <li><button class="buttons" onclick="playThisVideo('0u9auv2zDGg'),showCurrentVideo()">მეოთხე ვიდეო</button></li> 
-                                <li><button class="buttons" onclick="playThisVideo('VxIT4J7QSH0'),showCurrentVideo()">მეხუთე ვიდეო</button></li> 
-                                <li><button class="buttons" onclick="playThisVideo('jkX5ouC_GE0'),showCurrentVideo()">მეექვსე ვიდეო</button></li> 
-                                <li><button class="buttons" onclick="playThisVideo('py9e5wGzYSY'),showCurrentVideo()">მეშვიდე ვიდეო</button></li> 
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="accordion-container">
-                    <button class="accordion">ლექცია III</button>
-                    <div class="panel">
-                        <div class="container-button">
-                            <ul>
-                                <li><button class="buttons" onclick="playThisVideo('m1FOJJqa1c0'),showCurrentVideo()">პირველი ვიდეო</button></li>  
-                                <li><button class="buttons" onclick="playThisVideo('qFnXvIX8vDI'),showCurrentVideo()">მეორე ვიდეო</button></li>  
-                                <li><button class="buttons" onclick="playThisVideo('ejqGxn1OqFE'),showCurrentVideo()">მესამე ვიდეო</button></li>  
-                                <li><button class="buttons" onclick="playThisVideo('4DYu6q-26qE'),showCurrentVideo()">მეოთხე ვიდეო</button></li> 
-                                <li><button class="buttons" onclick="playThisVideo('Ffk8MZ6kgag'),showCurrentVideo()">მეხუთე ვიდეო</button></li> 
-                                <li><button class="buttons" onclick="playThisVideo('goZo9ycN1c4'),showCurrentVideo()">მეექვსე ვიდეო</button></li> 
-                                <li><button class="buttons" onclick="playThisVideo('pGZKQ0Zi6Ig'),showCurrentVideo()">მეშვიდე ვიდეო</button></li> 
+                                <li><button class="buttons" onclick="playThisVideo('G5CW2Cq3QzA'),showCurrentVideo(),showThisQuizV('quiz1')">პირველი ვიდეო</button></li>  
+                                <li><button class="buttons" onclick="playThisVideo('jge7NTVJ6iI'),showCurrentVideo(),showThisQuizV('quiz1')"">მეორე ვიდეო</button></li>  
+                                <li><button class="buttons" onclick="playThisVideo('B44C500DTxg'),showCurrentVideo(),showThisQuizV('quiz1')"">მესამე ვიდეო</button></li>  
+                                <li><button class="buttons" onclick="playThisVideo('ngkaWQwfx5c'),showCurrentVideo(),showThisQuizV('quiz1')"">მეოთხე ვიდეო</button></li> 
+                                <li><button class="buttons" onclick="playThisVideo('rKb1N5mw4Zw'),showCurrentVideo(),showThisQuizV('quiz1')"">მეხუთე ვიდეო</button></li> 
+                                <li><button class="buttons" onclick="playThisVideo('od9uI2Ia9I8'),showCurrentVideo(),showThisQuizV('quiz1')"">მეექვსე ვიდეო</button></li> 
+                                <li><button class="buttons" onclick="playThisVideo('CXjwGTLCSkY'),showCurrentVideo(),showThisQuizV('quiz1')"">მეშვიდე ვიდეო</button></li> 
                                 <li>
-                                    <a href="actual-quizzes/quize3.html" class="quiz">
-                                        <span>ქვიზი</span>
-                                    </a>
+                                </li> 
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="accordion-container">
+                    <button class="accordion" id="lection-one">ლექცია II</button>
+                    <div class="panel">
+                        <div class="container-button">
+                            <ul>
+                                <li><button class="buttons" onclick="playThisVideo('5Lin0bfAtyI'),showCurrentVideo(),showThisQuizV('quiz2')">პირველი ვიდეო</button></li>  
+                                <li><button class="buttons" onclick="playThisVideo('X4ajFWDMe8s'),showCurrentVideo(),showThisQuizV('quiz2')">მეორე ვიდეო</button></li>  
+                                <li><button class="buttons" onclick="playThisVideo('QT69EykweLE'),showCurrentVideo(),showThisQuizV('quiz2')">მესამე ვიდეო</button></li>  
+                                <li><button class="buttons" onclick="playThisVideo('0u9auv2zDGg'),showCurrentVideo(),showThisQuizV('quiz2')">მეოთხე ვიდეო</button></li> 
+                                <li><button class="buttons" onclick="playThisVideo('VxIT4J7QSH0'),showCurrentVideo(),showThisQuizV('quiz2')">მეხუთე ვიდეო</button></li> 
+                                <li><button class="buttons" onclick="playThisVideo('jkX5ouC_GE0'),showCurrentVideo(),showThisQuizV('quiz2')">მეექვსე ვიდეო</button></li> 
+                                <li><button class="buttons" onclick="playThisVideo('py9e5wGzYSY'),showCurrentVideo(),showThisQuizV('quiz2')">მეშვიდე ვიდეო</button></li> 
+                                <li>
                                 </li> 
                             </ul>
                         </div>
@@ -102,19 +110,39 @@
                 </div>
 
                 <div class="accordion-container">
-                    <button class="accordion">ლექცია IV</button>
+                    <button class="accordion" id="lection-one">ლექცია III</button>
                     <div class="panel">
                         <div class="container-button">
                             <ul>
-                                <li><button class="buttons" onclick="playThisVideo('4O1YpFJFbzU'),showCurrentVideo()">პირველი ვიდეო</button></li>  
-                                <li><button class="buttons" onclick="playThisVideo('YNIi3gE_rDQ'),showCurrentVideo()">მეორე ვიდეო</button></li>  
-                                <li><button class="buttons" onclick="playThisVideo('Je6jGBev_t4'),showCurrentVideo()">მესამე ვიდეო</button></li>  
-                                <li><button class="buttons" onclick="playThisVideo('D_lVenRg0fo'),showCurrentVideo()">მეოთხე ვიდეო</button></li> 
-                                <li><button class="buttons" onclick="playThisVideo('Bm--DT2K1eM'),showCurrentVideo()">მეხუთე ვიდეო</button></li> 
-                                <li><button class="buttons" onclick="playThisVideo('jXzgdrReIv4'),showCurrentVideo()">მეექვსე ვიდეო</button></li> 
-                                <li><button class="buttons" onclick="playThisVideo('jXzgdrReIv4'),showCurrentVideo()">მეშვიდე ვიდეო</button></li> 
+                                <li><button class="buttons" onclick="playThisVideo('m1FOJJqa1c0'),showCurrentVideo(),showThisQuizV('quiz3')">პირველი ვიდეო</button></li>  
+                                <li><button class="buttons" onclick="playThisVideo('qFnXvIX8vDI'),showCurrentVideo(),showThisQuizV('quiz3')">მეორე ვიდეო</button></li>  
+                                <li><button class="buttons" onclick="playThisVideo('ejqGxn1OqFE'),showCurrentVideo(),showThisQuizV('quiz3')">მესამე ვიდეო</button></li>  
+                                <li><button class="buttons" onclick="playThisVideo('4DYu6q-26qE'),showCurrentVideo(),showThisQuizV('quiz3')">მეოთხე ვიდეო</button></li> 
+                                <li><button class="buttons" onclick="playThisVideo('Ffk8MZ6kgag'),showCurrentVideo(),showThisQuizV('quiz3')">მეხუთე ვიდეო</button></li> 
+                                <li><button class="buttons" onclick="playThisVideo('goZo9ycN1c4'),showCurrentVideo(),showThisQuizV('quiz3')">მეექვსე ვიდეო</button></li> 
+                                <li><button class="buttons" onclick="playThisVideo('pGZKQ0Zi6Ig'),showCurrentVideo(),showThisQuizV('quiz3')">მეშვიდე ვიდეო</button></li> 
                                 <li>
-                                    <a href="actual-quizzes/quize4.html" class="quiz">
+                                </li> 
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-container">
+                    <button class="accordion" id="lection-one">ლექცია IV</button>
+                    <div class="panel">
+                        <div class="container-button">
+                            <ul>
+                                <li><button class="buttons" onclick="playThisVideo('4O1YpFJFbzU'),showCurrentVideo(),showThisQuizV('quiz4')">პირველი ვიდეო</button></li>  
+                                <li><button class="buttons" onclick="playThisVideo('YNIi3gE_rDQ'),showCurrentVideo(),showThisQuizV('quiz4')">მეორე ვიდეო</button></li>  
+                                <li><button class="buttons" onclick="playThisVideo('Je6jGBev_t4'),showCurrentVideo(),showThisQuizV('quiz4')">მესამე ვიდეო</button></li>  
+                                <li><button class="buttons" onclick="playThisVideo('D_lVenRg0fo'),showCurrentVideo(),showThisQuizV('quiz4')">მეოთხე ვიდეო</button></li> 
+                                <li><button class="buttons" onclick="playThisVideo('Bm--DT2K1eM'),showCurrentVideo(),showThisQuizV('quiz4')">მეხუთე ვიდეო</button></li> 
+                                <li><button class="buttons" onclick="playThisVideo('jXzgdrReIv4'),showCurrentVideo(),showThisQuizV('quiz4')">მეექვსე ვიდეო</button></li> 
+                                <li><button class="buttons" onclick="playThisVideo('jXzgdrReIv4'),showCurrentVideo(),showThisQuizV('quiz4')">მეშვიდე ვიდეო</button></li> 
+                                <li>
+                                    <!-- <a href="actual-quizzes/quize1.html" class="quiz"> -->
+                                    <a onclick="showThisQuiz('quiz4')" class="quiz-button">
                                         <span>ქვიზი</span>
                                     </a>
                                 </li> 
@@ -122,7 +150,6 @@
                         </div>
                     </div>
                 </div>
-
 
                 <div class="accordion-container-not-functional">
                     <button class="accordion-not-functional">
@@ -245,6 +272,26 @@
             </span>
         </span>
     </div>
+    <div class="all-quizzes">
+        <div id="player"></div>
+    
+        <div id="quiz4" class="app">
+          <h1>ქვიზი 4</h1>
+          <div class="quiz">
+              <h2 id="question">Questions goes here</h2>
+              <div id="answer-buttons">
+                  <button class="btn">Answer 1</button>
+                  <button class="btn">Answer 2</button>
+                  <button class="btn">Answer 3</button>
+                  <button class="btn">Answer 4</button>
+              </div>
+              <button id="next-btn">Next</button>
+              <span>
+                <a id="sendBtn" class="disabled-btn" href="/quizzes/lection-5.html">შემდეგი ლექცია</a>
+              </span>          
+            </div>
+        </div>
+    </div> 
 </div>
 
     <script>// 2. This code loads the IFrame Player API code asynchronously.
@@ -289,6 +336,9 @@
                 'onStateChange': onPlayerStateChange
                 }
           });
+
+
+
           var done = false;
         function onPlayerStateChange(event) {
           if (event.data == YT.PlayerState.PLAYING && !done) {
@@ -297,8 +347,8 @@
           }
         }
         }
-        let acc = document.getElementsByClassName("accordion");
-        let i;
+        var acc = document.getElementsByClassName("accordion");
+        var i;
         
         for (i = 0; i < acc.length; i++) {
           acc[i].addEventListener("click", function() {
@@ -335,6 +385,21 @@
             }
             event.currentTarget.classList.add("hoverColor");
         }
-        </script>
+        function showThisQuiz(thisQuiz){
+            document.getElementById(thisQuiz).classList.toggle("show");
+            if(player) {
+                player.destroy();
+            }
+        }
+       
+        function showThisQuizV(thisQuiz){
+            if(document.getElementById(thisQuiz).classList.toggle("show")){
+            document.getElementById(thisQuiz).classList.toggle("show");
+            }
+        }
+
+    </script>
+    <script src="/quizzes/actual-quizzes/quize4.js"></script>
+
 </body>
 </html>

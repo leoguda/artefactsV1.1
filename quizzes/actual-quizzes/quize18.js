@@ -117,6 +117,13 @@ const questions = [
     questionElement.innerHTML = `Your score: ${roundedPercentage}% (${score} out of ${questions.length})`;
     nextButton.innerHTML = "Play Again";
     nextButton.style.display = "block";
+    const sendBtn = document.getElementById("sendBtn");
+    if(percentage>=60){
+        // resetState()
+        sendBtn.classList.remove("disabled-btn")
+    }else(
+        sendBtn.classList.add("disabled-btn")
+    )
 }
 
   
@@ -139,20 +146,3 @@ const questions = [
       });
       
 startQuiz();
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
