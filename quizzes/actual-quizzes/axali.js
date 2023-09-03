@@ -123,7 +123,7 @@ const questionElement = document.getElementById("question");
     nextButton.innerHTML = "Play Again";
     nextButton.style.display = "block";
     const sendBtn = document.getElementById("sendBtn");
-    if(percentage>=60){
+    if(percentage>=75){
         // resetState()
         sendBtn.classList.remove("disabled-btn")
     }else(
