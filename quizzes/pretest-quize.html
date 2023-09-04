@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Svan Language</title>
+    <link rel="icon" href="5.png">
+    <link rel="stylesheet" href="language-course.css">
+    <link rel="stylesheet" href="/quizzes/actual-quizzes/axali.css">
+</head>
+<body>
+<div class="main-container">
+    <div class="div-accordion-container">
+        <div class="logo-responsive">
+            <a href="index.html">
+                <img src="4.png" alt="logo">
+            </a>
+        </div>
+
+        <div style="display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin: auto;
+        max-width: 270px;">
+            <!-- <h2>ხოჩა ლადეღ <span style="text-transform:capitalize;"><%= user.name%></span></h2> -->
+            <br>
+            <button
+                style="
+                width: 10em;
+                transition:0.1s;
+                height: 2.5em;
+                background-color: #ffaf55;
+                border: none;
+                border-radius: 1em;
+                cursor: pointer;" 
+                onMouseOver="this.style.color='white'"
+                onMouseOut="this.style.color='black'"
+                onclick="showRules()"
+                type="submit">წესები</button>
+            <a href="Artefacts_Silabus.pdf" target="_blank">
+                <button style="
+                width: 10em;
+                transition:0.1s;
+                margin-top: 1.1em;
+                height: 2.5em;
+                background-color: #5794ff;
+                border: none;
+                border-radius: 1em;
+                cursor: pointer;" 
+                onMouseOver="this.style.color='white'"
+                onMouseOut="this.style.color='black'"
+                type="submit">სილაბუსი</button>
+            </a>
+            <div>
+                <form method="POST" action="/logout">
+                    <button style="
+                    width: 10em;
+                    transition:0.1s;
+                    margin-top: 1.1em;
+                    height: 2.5em;
+                    background-color: darkcyan;
+                    border: none;
+                    border-radius: 1em;
+                    cursor: pointer;" 
+                    onMouseOver="this.style.color='white'"
+                    onMouseOut="this.style.color='black'"
+                    type="submit">გამოსვლა</button>
+                </form>
+            </div>
+        </div>
+
+        <span class="span-column">
+            <span class="span-column-1">
+
+                <div class="accordion-container">
+                    <a href="actual-quizzes/pretest.html"><button class="accordion" id="lection-one">პრე-ტესტი</button></a>
+                </div>
+
+                <div class="accordion-container">
+                    <button class="accordion accordion-not-functional1">
+                        <span>ლექცია I</span>
+                        <img src="lock-24px.png" alt="locked">
+                    </button>
+                    <div class="panel">
+                        <div class="container-button">
+                            <ul>
+                                <li><a href="actual-quizzes/quize1.html" class="quiz-button">ქვიზი</a></li> 
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-container">
+                    <button class="accordion accordion-not-functional1">
+                        <span>ლექცია II</span>
+                        <img src="lock-24px.png" alt="locked">
+                    </button>
+                    <div class="panel">
+                        <div class="container-button">
+                            <ul>
+                                <li><a href="actual-quizzes/quize1.html" class="quiz-button">ქვიზი</a></li> 
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-container">
+                    <button class="accordion accordion-not-functional1">
+                        <span>ლექცია III</span>
+                        <img src="lock-24px.png" alt="locked">
+                    </button>
+                    <div class="panel">
+                        <div class="container-button">
+                            <ul>
+                                <li><a href="actual-quizzes/quize2.html" class="quiz-button">ქვიზი</a></li> 
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-container">
+                    <button class="accordion accordion-not-functional1">
+                        <span>ლექცია IV</span>
+                        <img src="lock-24px.png" alt="locked">
+                    </button>
+                    <div class="panel">
+                        <div class="container-button">
+                            <ul>
+                                <li><a href="actual-quizzes/quize3.html" class="quiz-button">ქვიზი</a></li> 
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-container">
+                    <button class="accordion accordion-not-functional1">
+                        <span>ლექცია V</span>
+                        <img src="lock-24px.png" alt="locked">
+                    </button>
+                    <div class="panel">
+                        <div class="container-button">
+                            <ul>
+                                <li><a href="actual-quizzes/quize4.html" class="quiz-button">ქვიზი</a></li> 
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-container">
+                    <button class="accordion accordion-not-functional1">
+                        <span>ლექცია VI</span>
+                        <img src="lock-24px.png" alt="locked">
+                    </button>
+                    <div class="panel">
+                        <div class="container-button">
+                            <ul>
+                                <li><a href="actual-quizzes/quize5.html" class="quiz-button">ქვიზი</a></li> 
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-container">
+                    <button class="accordion accordion-not-functional1">
+                        <span>ლექცია VII</span>
+                        <img src="lock-24px.png" alt="locked">
+                    </button>
+                    <div class="panel">
+                        <div class="container-button">
+                            <ul>
+                                <li><a href="actual-quizzes/quize6.html" class="quiz-button">ქვიზი</a></li> 
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-container">
+                    <button class="accordion accordion-not-functional1">
+                        <span>ლექცია VIII</span>
+                        <img src="lock-24px.png" alt="locked">
+                    </button>
+                    <div class="panel">
+                        <div class="container-button">
+                            <ul>
+                                <li><a href="actual-quizzes/quize7.html" class="quiz-button">ქვიზი</a></li> 
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-container">
+                    <button class="accordion accordion-not-functional1">
+                        <span>ლექცია IX</span>
+                        <img src="lock-24px.png" alt="locked">
+                    </button>
+                    <div class="panel">
+                        <div class="container-button">
+                            <ul>
+                                <li><a href="actual-quizzes/quize8.html" class="quiz-button">ქვიზი</a></li> 
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-container">
+                    <button class="accordion accordion-not-functional1">
+                        <span>ლექცია X</span>
+                        <img src="lock-24px.png" alt="locked">
+                    </button>
+                    <div class="panel">
+                        <div class="container-button">
+                            <ul>
+                                <li><a href="actual-quizzes/quize9.html" class="quiz-button">ქვიზი</a></li> 
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </span>
+
+
+            <span class="span-column-1">
+                <div class="accordion-container">
+                    <button class="accordion accordion-not-functional1">
+                        <span>ლექცია XI</span>
+                        <img src="lock-24px.png" alt="locked">
+                    </button>
+                    <div class="panel">
+                        <div class="container-button">
+                            <ul>
+                                <li><a href="actual-quizzes/quize10.html" class="quiz-button">ქვიზი</a></li> 
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-container">
+                    <button class="accordion accordion-not-functional1">
+                        <span>ლექცია XII</span>
+                        <img src="lock-24px.png" alt="locked">
+                    </button>
+                    <div class="panel">
+                        <div class="container-button">
+                            <ul>
+                                <li><a href="actual-quizzes/quize11.html" class="quiz-button">ქვიზი</a></li> 
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-container">
+                    <button class="accordion accordion-not-functional1">
+                        <span>ლექცია XIII</span>
+                        <img src="lock-24px.png" alt="locked">
+                    </button>
+                    <div class="panel">
+                        <div class="container-button">
+                            <ul>
+                                <li><a href="actual-quizzes/quize12.html" class="quiz-button">ქვიზი</a></li> 
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="accordion-container">
+                    <button class="accordion accordion-not-functional1">
+                        <span>ლექცია XIV</span>
+                        <img src="lock-24px.png" alt="locked">
+                    </button>
+                    <div class="panel">
+                        <div class="container-button">
+                            <ul>
+                                <li><a href="actual-quizzes/quize13.html" class="quiz-button">ქვიზი</a></li> 
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="accordion-container">
+                    <button class="accordion accordion-not-functional1">
+                        <span>ლექცია XV</span>
+                        <img src="lock-24px.png" alt="locked">
+                    </button>
+                    <div class="panel">
+                        <div class="container-button">
+                            <ul>
+                                <li><a href="actual-quizzes/quize14.html" class="quiz-button">ქვიზი</a></li> 
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="accordion-container">
+                    <button class="accordion accordion-not-functional1">
+                        <span>ლექცია XVI</span>
+                        <img src="lock-24px.png" alt="locked">
+                    </button>
+                    <div class="panel">
+                        <div class="container-button">
+                            <ul>
+                                <li><a href="actual-quizzes/quize15.html" class="quiz-button">ქვიზი</a></li> 
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-container">
+                    <button class="accordion accordion-not-functional1">
+                        <span>ლექცია XVII</span>
+                        <img src="lock-24px.png" alt="locked">
+                    </button>
+                    <div class="panel">
+                        <div class="container-button">
+                            <ul>
+                                <li><a href="actual-quizzes/quize16.html" class="quiz-button">ქვიზი</a></li> 
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-container">
+                    <button class="accordion accordion-not-functional1">
+                        <span>ლექცია XVIII</span>
+                        <img src="lock-24px.png" alt="locked">
+                    </button>
+                    <div class="panel">
+                        <div class="container-button">
+                            <ul>
+                                <li><a href="actual-quizzes/quize17.html" class="quiz-button">ქვიზი</a></li> 
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-container">
+                    <button class="accordion accordion-not-functional1">
+                        <span>ლექცია XIX</span>
+                        <img src="lock-24px.png" alt="locked">
+                    </button>
+                    <div class="panel">
+                        <div class="container-button">
+                            <ul>
+                                <li><a href="actual-quizzes/quize18.html" class="quiz-button">ქვიზი</a></li> 
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-container">
+                    <button class="accordion accordion-not-functional1">
+                        <span>ლექცია XX</span>
+                        <img src="lock-24px.png" alt="locked">
+                    </button>
+                    <div class="panel">
+                        <div class="container-button">
+                            <ul>
+                                <li><a href="actual-quizzes/quize19.html" class="quiz-button">ქვიზი</a></li> 
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-container-not-functional">
+                    <button class="accordion-not-functional">
+                        <span>პოსტ-ტესტი</span>
+                        <img src="lock-24px.png" alt="locked">
+                    </button>
+                </div>
+            </span>
+        </span>
+    </div>
+    <div class="all-quizzes">
+        <div id="player"></div>
+    
+        <div id="quiz1" class="app">
+          <h1>ქვიზი 1</h1>
+          <div class="quiz">
+              <h2 id="question">Questions goes here</h2>
+              <div id="answer-buttons">
+                  <button class="btn">Answer 1</button>
+                  <button class="btn">Answer 2</button>
+                  <button class="btn">Answer 3</button>
+                  <button class="btn">Answer 4</button>
+              </div>
+              <button id="next-btn">Next</button>
+              <span>
+                <a id="sendBtn" class="disabled-btn" href="/quizzes/lection-2.html">შემდეგი ლექცია</a>
+              </span>          
+            </div>
+        </div>
+
+        <div id="rules" class="rules-div">
+            <h2>წესები</h2>
+            <br>
+            <hr>
+            <br>
+            <div class="actual-rules">
+                <h3>აღწერა</h3>
+                <br>
+                <p class="actual-rule"> მომხმარებელი, ვალდებულია თანმიმდევრობით გაიაროს ლექციები, ყოველი ლექციის გავლის შემდეგ წარმატებით ჩააბაროს ქვიზი,
+                    რათა მიეცეს საშუალება გადავიდეს შემდეგ ლექციაზე. ყველა სალექციო კვირის წარმატებით გავლის შემდეგ, მომხმარებელს საშუალება ეძლევა, ჩააბაროს
+                    ფინალური ტესტი, რის შედეგადაც მიიღებსს სვანური ენის სერტიფიკატი.</p>
+                <br>
+                <h3>წესი 1</h3>
+                <br>
+                <p class="actual-rule"> მომხმარებელს, ყოველ ახალ შემოსვლაზე საშუალება ექნება გააგრძელოს მისი პროგრესი, შეწყვეტილ კვირაზე არსებული ქვიზის გავლით,
+                    რის შედეგადაც, ხელახლა გაეხსნება წვდომა არსებულ მასალაზე.</p>
+                <br>
+                <h3>წესი 2</h3>
+                <br>
+                <p class="actual-rule"> აუცილებელი პირობაა, მომხმარებელმა ყველა ქვიზი წარმატებით ჩააბაროს, რათა შეძლოს პოსტ-ტესტის გავლა და სერტიფიკატის აღება, გისურვებთ წარმატებებს.</p>
+                <br>
+            </div>
+        </div>
+    </div> 
+</div>
+
+    <script>// 2. This code loads the IFrame Player API code asynchronously.
+        var tag = document.createElement('script');
+        
+        tag.src = "https://www.youtube.com/iframe_api";
+        var firstScriptTag = document.getElementsByTagName('script')[0];
+        firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+        
+        // 3. This function creates an <iframe> (and YouTube player)
+        //    after the API code downloads.
+        
+        function onYouTubeIframeAPIReady() {
+          console.log("YouTube is Ready!")
+        }
+        
+        // 4. The API will call this function when the video player is ready.
+        function onPlayerReady(event) {
+          event.target.playVideo();
+        }
+        
+        // 5. The API calls this function when the player's state changes.
+        //    The function indicates that when playing a video (state=1),
+        //    the player should play for six seconds and then stop.
+        
+        function stopVideo() {
+          player.stopVideo();
+        }
+        
+        let player;
+        function playThisVideo(vidid){
+            if(player) {
+                player.destroy();
+            }
+        
+            player = new YT.Player('player', {
+                height: '720',
+                width: '1280',
+                videoId: vidid,
+                events: {
+                'onReady': onPlayerReady,
+                'onStateChange': onPlayerStateChange
+                }
+          });
+
+
+
+          var done = false;
+        function onPlayerStateChange(event) {
+          if (event.data == YT.PlayerState.PLAYING && !done) {
+            setTimeout(stopVideo, 0);
+            done = true;
+          }
+        }
+        }
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+        
+        for (i = 0; i < acc.length; i++) {
+          acc[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.display === "block") {
+              panel.style.display = "none";
+            } else {
+              panel.style.display = "block";
+            }
+          });
+        }
+       
+        
+        for (i = 0; i < acc.length; i++) {
+          acc[i].addEventListener("click", function() {
+              var panel = this.nextElementSibling;
+              var activeAccordions = document.querySelectorAll(".div-accordion-container .accordion.active");
+              for (var j = 0; j < activeAccordions.length; j++) {
+                  activeAccordions[j].classList.remove("active");
+                  activeAccordions[j].nextElementSibling.style.maxHeight = null;
+              }
+        
+              this.classList.toggle("active");
+              panel.style.maxHeight = panel.scrollHeight + "px";
+          });
+        }
+
+        const currentVideos = document.getElementsByClassName("buttons");
+        
+        function showCurrentVideo(){
+            for(currentVideo of currentVideos){
+                currentVideo.classList.remove("hoverColor")
+            }
+            event.currentTarget.classList.add("hoverColor");
+        }
+
+        function showRules(){
+            document.getElementById("quiz1").classList.remove("show")
+
+            document.getElementById("rules").classList.toggle("show1");
+            if(player){
+                player.destroy();
+            }
+        }
+
+
+
+        function showThisQuiz(thisQuiz){
+            document.getElementById(thisQuiz).classList.toggle("show");
+            document.getElementById("rules").classList.remove("show1");
+            if(player) {
+                player.destroy();
+            }
+        }
+       
+        function showThisQuizV(){
+            document.getElementById("rules").classList.remove("show1");
+            document.getElementById("quiz1").classList.remove("show");
+
+            // if(document.getElementById(thisQuiz).classList.toggle("show")){
+            // document.getElementById(thisQuiz).classList.toggle("show");
+            // }
+        }
+    </script>
+    <script src="/quizzes/actual-quizzes/axali.js"></script>
+
+</body>
+</html>
