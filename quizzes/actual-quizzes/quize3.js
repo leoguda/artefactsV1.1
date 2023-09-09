@@ -17,14 +17,13 @@ const questions = [
       { text:  "ბ) ლუფხვ",   correct: true},
       { text:  "გ) გვირკ",   correct: false},
       { text:  "დ) ლალხორშ ",     correct: false},
-      { text:  "ე) მუჟღვერ",     correct: true},
             ]
       },
       // 3 შესასწორებელი
       {
           question: " რომელია მცდარი ფორმა:",
           answers: [
-          { text:  "ა) სი ხი შვნს.",   correct: true},
+          { text:  "ა) სი ხი შვნს.",   correct: false},
           { text:  "ბ) სი ხრი სტუდენტ.",   correct: true},
           { text:  "გ) სი ხრი შვნს.",   correct: false},
           { text:  "დ) სი ხი სტუდენტ.",     correct: false},

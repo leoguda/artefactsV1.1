@@ -37,7 +37,7 @@ const questions = [
           { text:  "ა) ხითვრიდ",   correct: false },
           { text:  "ბ) ლითვრიდ ",   correct: true},
           { text:  "გ) ითვრიხ  ",   correct: false},
-          { text:  "დ) ხვითვრიდ",     correct: true},
+          { text:  "დ) ხვითვრიდ",     correct: false},
           ]
       },
   

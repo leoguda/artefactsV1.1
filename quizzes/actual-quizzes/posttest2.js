@@ -125,11 +125,10 @@ const questions = [
             question: "წელიწადის  დროს  აღნიშნავს: ",
             answers: [
             { text:  "ა)    ლიმრიე",   correct: false},
-            { text:  "ბ)   თანაფ     ",   correct: false },
+            { text:  "ბ)   ლინთვ        ",   correct: true },
             { text:  "გ)    გვირკ",   correct: false },
             { text:  "დ)   ლალხორშ  ",     correct: false},
-            { text:  "ე)     მუჟღვერ  ",     correct: true},
-            { text:  "ვ)    ლუფხვ  ",     correct: true},
+            { text:  "ე)     თანაფ  ",     correct: false},
             ]
         },
 //  13
@@ -150,7 +149,7 @@ const questions = [
             { text:  "ა)     მარი ბროსე",   correct: false},
             { text:  "ბ)    ნიკო მარი",   correct: false},
             { text:  "გ)    გეორგ  როზენი",   correct: true  },
-            { text:  "დ)    ბესარიონ  ნიჟარაძე ",     correct: true},
+            { text:  "დ)    ბესარიონ  ნიჟარაძე ",     correct: false},
             { text:  "ე)    გერჰარდ  დეეტერსი",     correct: false},
             { text:  "ვ)   აკაკი  შანიძე",     correct: false},
             ]
@@ -172,7 +171,7 @@ const questions = [
             question: "„სწავლობს“   ზმნის  მრავლობითი  რიცხვის  I  პირის  ფორმაა:       ",
             answers: [
             { text:  "ა)    ლითვრიდ  ",    correct: false},
-            { text:  "ბ)    ხითვრიდ   ",   correct: true},
+            { text:  "ბ)    ხითვრიდ   ",   correct: false},
             { text:  "გ)    ითვრიხ   ",     correct: false},
             { text:  "დ)   ხვითვრიდ    ",  correct: true},
             { text:  "ე)   ხითორდს",   correct: false},

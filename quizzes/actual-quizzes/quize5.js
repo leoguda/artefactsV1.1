@@ -5,7 +5,7 @@ const questions = [
   answers: [
   { text:  "ა) მარი ბროსე",   correct:  false},
   { text:  "ბ) ნიკო მარი",   correct: false},
-  { text:  "გ) ბესარიონ ნიჟარაძე",   correct: true},
+  { text:  "გ) ბესარიონ ნიჟარაძე",   correct: false},
   { text:  "დ) გეორგ როზენი",     correct: true},
         ]
   },

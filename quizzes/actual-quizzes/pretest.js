@@ -69,7 +69,6 @@ const questions = [
         { text:  "გ) გვირკ  ",   correct: false},
         { text:  "დ) ლალხორშ  ",     correct: false},
         { text:  "ე) მუჟღვერ ",     correct: true},
-        { text:  "ვ) ლუფხვ  ",     correct: true},
         ]
     },
 
@@ -79,7 +78,7 @@ const questions = [
         { text:  "ა) მარი ბროსე ",   correct: false },
         { text:  "ბ) ნიკო მარი",   correct: false},
         { text:  "გ) გეორგ  როზენი",   correct: true},
-        { text:  "დ) ბესარიონ  ნიჟარაძე ",     correct: true},
+        { text:  "დ) ბესარიონ  ნიჟარაძე ",     correct: false},
         { text:  "ე) გერჰარდ  დეეტერსი",     correct: false},
         { text:  "ვ) აკაკი  შანიძე",     correct: false},
         ]
@@ -91,7 +90,7 @@ const questions = [
         { text:  "ა)    ლითვრიდ      ",   correct: true },
         { text:  "ბ)    ხითვრიდ   ",   correct: false},
         { text:  "გ)    ითვრიხ       ",   correct: false},
-        { text:  "დ)   ხვითვრიდ    ",     correct: true},
+        { text:  "დ)   ხვითვრიდ    ",     correct: false},
         { text:  "ე)     ხითორდს",     correct: false},
         ]
     },
