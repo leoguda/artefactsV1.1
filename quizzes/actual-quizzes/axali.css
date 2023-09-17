@@ -102,11 +102,12 @@ cursor: pointer;
 display: none;
 }
 .correct{
-    background: #9aeabc;
+    background: #000000;
+    color: white;
 }
-.incorrect{
-    background: #ff9393;
-}
+
+
+
 .quiz > span{
     display: flex;
     justify-content: center;

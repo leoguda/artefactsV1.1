@@ -182,7 +182,7 @@ article img {
 .articles img{
   width: 100%;
   object-fit: cover;
-  max-height: 300px;
+  max-height: 360px;
   filter: grayscale(20%);
   transition: 300ms;
 }
