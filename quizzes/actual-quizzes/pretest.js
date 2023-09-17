@@ -590,6 +590,9 @@ const questions = [
      while(answerButton.firstChild){
        answerButton.removeChild(answerButton.firstChild);
   }
+
+    const progressBar = document.querySelector(".progress");
+    progressBar.style.width = `${((currentQuestionIndex + 1) / questions.length) * 100}%`;
   }
   
   

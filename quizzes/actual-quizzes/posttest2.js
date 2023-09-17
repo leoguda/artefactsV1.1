@@ -629,6 +629,9 @@ const questions = [
            }
            button.addEventListener("click", selectAnswer);
     });
+    
+    const progressBar = document.querySelector(".progress");
+    progressBar.style.width = `${((currentQuestionIndex + 1) / questions.length) * 100}%`;
     }
     
     function resetState(){
