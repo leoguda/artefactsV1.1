@@ -91,16 +91,12 @@ const questions = [
       const isCorrect = selectedBtn.dataset.correct === "true";
   
       if(isCorrect){
-          selectedBtn.classList.add("correct");
           score++;
-      }else{
-          selectedBtn.classList.add("incorrect");
       }
   
   
       Array.from(answerButton.children).forEach(button => {
           if(button.dataset.correct === "true"){
-               button.classList.add("correct");
           }    
           button.disabled = true; 
           });
@@ -116,7 +112,7 @@ const questions = [
     nextButton.innerHTML = "Play Again";
     nextButton.style.display = "block";
     const sendBtn = document.getElementById("sendBtn");
-    if(percentage>=60){
+    if(percentage>=75){
         // resetState()
         sendBtn.classList.remove("disabled-btn")
     }else(
@@ -144,5 +140,3 @@ const questions = [
       });
       
 startQuiz();
-  
-  
