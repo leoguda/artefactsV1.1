@@ -1,9 +1,17 @@
 html {
   scroll-behavior: smooth;
 }
+@font-face {
+  font-family: myfont;
+  src: url(bpg_extrasquare_mtavruli_2009.ttf);
+}
+
+
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    font-family: myfont;
 }
 *,
 *::before,
@@ -182,7 +190,7 @@ article img {
 .articles img{
   width: 100%;
   object-fit: cover;
-  max-height: 360px;
+  max-height: 450px;
   filter: grayscale(20%);
   transition: 300ms;
 }
@@ -247,7 +255,6 @@ article img {
 
 
 .news-section{
-
   max-width: 700px;
   display: flex;
   flex-wrap: wrap;
